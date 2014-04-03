@@ -1,0 +1,107 @@
+/**
+ * @version: $Id: details.css 1403 2011-05-24 07:47:50Z Sigrid Suski $
+ * @package: SobiPro Template SobiRestara
+ * ===================================================
+ * @author
+ * Name: Sigrid Suski & Radek Suski, Sigsiu.NET GmbH
+ * Email: sobi[at]sigsiu.net
+ * Url: http://www.Sigsiu.NET
+ * ===================================================
+ * @copyright Copyright (C) 2006 - 2011 Sigsiu.NET GmbH (http://www.sigsiu.net). All rights reserved.
+ * @license Sigsiu.NET Template License V1.
+ * ===================================================
+ * $Date: 2011-05-24 09:47:50 +0200 (Di, 24 Mai 2011) $
+ * $Revision: 1403 $
+ * $Author: Sigrid Suski $
+ */
+
+a.modal {
+	text-decoration: none!important;
+}
+
+div.spField strong {
+	min-width: 150px;
+	display:block;
+	float: left;
+}
+
+// Based on Joomla! CSS styles for the Smodal window 
+
+.body-overlayed embed, .body-overlayed object, .body-overlayed select
+{
+	visibility:hidden;
+}
+
+#sbox-window embed, #sbox-window object, #sbox-window select
+{
+	visibility:visible;
+}
+
+#sbox-overlay
+{
+	position:absolute;
+	background-color:		#000;
+}
+
+#sbox-window
+{
+	position:absolute;
+	background-color:		#000;
+	text-align:left;
+	overflow:visible;
+	padding:10px;
+	-moz-border-radius:		3px;
+}
+
+* html #sbox-window
+{
+	top: 50% !important;
+	left: 50% !important;
+}
+
+#sbox-btn-close
+{
+	position:absolute;
+	width:	30px;
+	height:	30px;
+	right:	-15px;
+	top:	-15px;
+	background:url(../../../../../../media/system/images/closebox.png) no-repeat top left;
+	border:	none;
+}
+
+.sbox-loading #sbox-content
+{
+	background-image:		url(../../../../../../media/system/images/spinner.gif);
+	background-repeat:		no-repeat;
+	background-position:	center;
+}
+
+#sbox-content
+{
+	clear:	both;
+	overflow:auto;
+	background-color:		#fff;
+	height:	100%;
+	width:	100%;
+}
+
+.sbox-content-image#sbox-content
+{
+	overflow:visible;
+}
+
+#sbox-image
+{
+	display:block;
+}
+
+.sbox-content-image img
+{
+	display:block;
+}
+
+.sbox-content-iframe#sbox-content
+{
+	overflow:visible;
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>accessDate</key>
+		<date>2014-01-09T12:51:36Z</date>
+		<key>actualSize</key>
+		<integer>1842</integer>
+		<key>attributeModDate</key>
+		<date>2014-01-05T18:18:25Z</date>
+		<key>createDate</key>
+		<date>2013-11-24T21:31:33Z</date>
+		<key>creationDate</key>
+		<date>2014-01-30T19:53:14Z</date>
+		<key>encrypted</key>
+		<false/>
+		<key>id</key>
+		<string>77B196D5-A837-4373-A029-0FFAD1D8B793</string>
+		<key>lastModifiedDate</key>
+		<date>2013-11-24T21:31:33Z</date>
+		<key>originalPath</key>
+		<string>/Users/RichardClark/Sites/E/modules/mod_sobiProSearch_RC/mod_sobiProSearch_RC.xml</string>
+		<key>originalSize</key>
+		<integer>1842</integer>
+		<key>versionMetadataList</key>
+		<array>
+			<dict>
+				<key>POSIXPermissions</key>
+				<integer>-32348</integer>
+				<key>creatorCode</key>
+				<integer>0</integer>
+				<key>fileType</key>
+				<integer>0</integer>
+				<key>id</key>
+				<string>22402856-486B-44D6-81A0-418996A70233</string>
+				<key>macAttributes</key>
+				<integer>0</integer>
+				<key>ownerGID</key>
+				<integer>20</integer>
+				<key>ownerUID</key>
+				<integer>501</integer>
+			</dict>
+		</array>
+		<key>versionType</key>
+		<integer>0</integer>
+	</dict>
+</array>
+</plist>

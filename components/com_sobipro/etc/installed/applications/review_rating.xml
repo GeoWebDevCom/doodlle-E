@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SobiProApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.sigsiu.net/SobiPro/application.xsd">
+  <name>Review and Rating</name>
+  <id>review_rating</id>
+  <authorName>Sigsiu.NET GmbH</authorName>
+  <authorEmail>sobi@sigsiu.net</authorEmail>
+  <authorUrl>http://www.Sigsiu.NET</authorUrl>
+  <copyright>Copyright (C) 2009-2013 Sigsiu.NET GmbH</copyright>
+  <license>GNU General Public License v3</license>
+  <creationDate>2013-07-31</creationDate>
+  <type>application</type>
+  <version>2.0</version>
+  <description>Review and Rating Application for SobiPro</description>
+  <sql>install.sql</sql>
+  <language folder="Languages">
+    <file lang="ar_AA">ar-AA.SpApp.review_rating.ini</file>
+    <file lang="ar_AA">ar-AA.SpApp.review_rating_notifications.ini</file>
+    <file lang="bg_BG">bg-BG.SpApp.review_rating.ini</file>
+    <file lang="bg_BG">bg-BG.SpApp.review_rating_notifications.ini</file>
+    <file lang="cs_CZ">cs-CZ.SpApp.review_rating.ini</file>
+    <file lang="cs_CZ">cs-CZ.SpApp.review_rating_notifications.ini</file>
+    <file lang="da_DK">da-DK.SpApp.review_rating.ini</file>
+    <file lang="da_DK">da-DK.SpApp.review_rating_notifications.ini</file>
+    <file lang="de_DE">de-DE.SpApp.review_rating.ini</file>
+    <file lang="de_DE">de-DE.SpApp.review_rating_notifications.ini</file>
+    <file lang="el_GR">el-GR.SpApp.review_rating.ini</file>
+    <file lang="el_GR">el-GR.SpApp.review_rating_notifications.ini</file>
+    <file lang="en_GB">en-GB.SpApp.review_rating.ini</file>
+    <file lang="en_GB">en-GB.SpApp.review_rating_notifications.ini</file>
+    <file lang="es_ES">es-ES.SpApp.review_rating.ini</file>
+    <file lang="es_ES">es-ES.SpApp.review_rating_notifications.ini</file>
+    <file lang="fi_FI">fi-FI.SpApp.review_rating.ini</file>
+    <file lang="fi_FI">fi-FI.SpApp.review_rating_notifications.ini</file>
+    <file lang="fr_FR">fr-FR.SpApp.review_rating.ini</file>
+    <file lang="fr_FR">fr-FR.SpApp.review_rating_notifications.ini</file>
+    <file lang="hr_HR">hr-HR.SpApp.review_rating.ini</file>
+    <file lang="hr_HR">hr-HR.SpApp.review_rating_notifications.ini</file>
+    <file lang="hu_HU">hu-HU.SpApp.review_rating.ini</file>
+    <file lang="hu_HU">hu-HU.SpApp.review_rating_notifications.ini</file>
+    <file lang="it_IT">it-IT.SpApp.review_rating.ini</file>
+    <file lang="it_IT">it-IT.SpApp.review_rating_notifications.ini</file>
+    <file lang="ja_JP">ja-JP.SpApp.review_rating.ini</file>
+    <file lang="ja_JP">ja-JP.SpApp.review_rating_notifications.ini</file>
+    <file lang="nl_NL">nl-NL.SpApp.review_rating.ini</file>
+    <file lang="nl_NL">nl-NL.SpApp.review_rating_notifications.ini</file>
+    <file lang="pl_PL">pl-PL.SpApp.review_rating.ini</file>
+    <file lang="pl_PL">pl-PL.SpApp.review_rating_notifications.ini</file>
+    <file lang="ro_RO">ro-RO.SpApp.review_rating.ini</file>
+    <file lang="ru_RU">ro-RO.SpApp.review_rating_notifications.ini</file>
+    <file lang="ru_RU">ru-RU.SpApp.review_rating.ini</file>
+    <file lang="ru_RU">ru-RU.SpApp.review_rating_notifications.ini</file>
+    <file lang="sv_SE">sv-SE.SpApp.review_rating.ini</file>
+    <file lang="sv_SE">sv-SE.SpApp.review_rating_notifications.ini</file>
+    <file lang="th_TH">th-TH.SpApp.review_rating.ini</file>
+    <file lang="th_TH">th-TH.SpApp.review_rating_notifications.ini</file>
+    <file lang="tr_TR">tr-TR.SpApp.review_rating.ini</file>
+    <file lang="tr_TR">tr-TR.SpApp.review_rating_notifications.ini</file>
+    <file lang="vi_VN">vi-VN.SpApp.review_rating.ini</file>
+    <file lang="vi_VN">vi-VN.SpApp.review_rating_notifications.ini</file>
+    <file lang="zh_CN">zh-CN.SpApp.review_rating.ini</file>
+    <file lang="zh_CN">zh-CN.SpApp.review_rating_notifications.ini</file>
+  </language>
+  <files path="adm:extensions.review-rating">
+    <folder>Adm/</folder>
+  </files>
+  <files path="img:icons">
+    <folder>Media/icons/</folder>
+  </files>
+  <files path="css:">
+    <folder>Media/css/</folder>
+  </files>
+  <files path="css:">
+    <folder>Media/less/</folder>
+  </files>
+  <files path="ctrl:">
+    <folder>Site/ctrl/</folder>
+  </files>
+  <files path="js:">
+    <folder>Site/js/</folder>
+  </files>
+  <files path="models:">
+    <folder>Site/models/</folder>
+  </files>
+  <files path="templates:default.common">
+    <file>Templates/review.xsl</file>
+  </files>
+  <files path="templates:default.listing">
+    <file>Templates/most-rated.xsl</file>
+    <file>Templates/top-rated.xsl</file>
+  </files>
+  <files path="templates:default.entry">
+    <file>Templates/ajax-review.xsl</file>
+  </files>
+  <files path="home:">
+    <file>init.php</file>
+    <file>notifications.php</file>
+    <file>changelog.txt</file>
+    <file>gplv3.txt</file>
+    <file>gplv3addterms.txt</file>
+  </files>
+  <files path="config:">
+    <folder>Site/etc/</folder>
+  </files>
+  <files path="front:opt.listing.">
+    <file>Site/opt/rating.php</file>
+  </files>
+  <actions>
+    <action>adm.*</action>
+    <action>entry.details</action>
+    <action>category.view</action>
+    <action>section.view</action>
+    <action>list.*</action>
+  </actions>
+  <permissions>
+    <permission>review.add.own</permission>
+    <permission>review.see.valid</permission>
+    <permission>review.autopublish.own</permission>
+  </permissions>
+  <requirements>
+    <core version="1.1.0.3510"/>
+  </requirements>
+  <installLog>
+    <permissions>
+      <permission>review.add.own</permission>
+      <permission>review.see.valid</permission>
+      <permission>review.autopublish.own</permission>
+    </permissions>
+    <actions>
+      <action>adm.*</action>
+      <action>entry.details</action>
+      <action>category.view</action>
+      <action>section.view</action>
+      <action>list.*</action>
+    </actions>
+    <modified/>
+    <files>
+      <file>/Users/RichardClark/Sites/E/administrator/components/com_sobipro/extensions/review-rating/</file>
+      <file>/Users/RichardClark/Sites/E/administrator/components/com_sobipro/extensions/review-rating/config.xml</file>
+      <file>/Users/RichardClark/Sites/E/administrator/components/com_sobipro/extensions/review-rating/field.xml</file>
+      <file>/Users/RichardClark/Sites/E/administrator/components/com_sobipro/extensions/review-rating/review.xml</file>
+      <file>/Users/RichardClark/Sites/E/administrator/components/com_sobipro/extensions/review-rating/reviews.xml</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/delete.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-blue-black.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-blue-grey.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-cyan-black.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-cyan-grey.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-darkblue-black.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-darkblue-grey.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-darkred-black.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-darkred-grey.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-gold-black.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-gold-grey.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-green-black.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-green-grey.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-magenta-black.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-magenta-grey.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-orange-black.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-orange-grey.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-red-black.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/star-red-grey.gif</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-blue-black.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-blue-grey.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-cyan-black.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-cyan-grey.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-darkblue-black.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-darkblue-grey.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-darkred-black.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-darkred-grey.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-gold-black.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-gold-grey.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-green-black.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-green-grey.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-magenta-black.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-magenta-grey.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-orange-black.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-orange-grey.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-red-black.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/icons/rating/stars-red-grey.png</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/css/adm/review.css</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/css/review.css</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/css/adm/review.less</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/css/review.less</file>
+      <file>/Users/RichardClark/Sites/E/media/sobipro/css/star-color.less</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/lib/ctrl/adm/review.php</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/lib/ctrl/review.php</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/lib/js/adm/review-rating.js</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/lib/js/rating.js</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/lib/js/review-tags.js</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/lib/js/review.js</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/lib/models/review.php</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/usr/templates/default2/common/review.xsl</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/usr/templates/default2/listing/most-rated.xsl</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/usr/templates/default2/listing/top-rated.xsl</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/usr/templates/default2/entry/ajax-review.xsl</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/opt/plugins/review_rating/</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/opt/plugins/review_rating/init.php</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/opt/plugins/review_rating/notifications.php</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/opt/plugins/review_rating/changelog.txt</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/opt/plugins/review_rating/gplv3.txt</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/opt/plugins/review_rating/gplv3addterms.txt</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/etc/napp_cfg/review.ini</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/etc/rra_msg.ini</file>
+      <file>/Users/RichardClark/Sites/E/components/com_sobipro/opt/listing/rating.php</file>
+      <file>/Users/RichardClark/Sites/E/language/en-GB/en-GB.SpApp.review_rating.ini</file>
+      <file>/Users/RichardClark/Sites/E/language/en-GB/en-GB.SpApp.review_rating_notifications.ini</file>
+    </files>
+    <sql>
+      <tables>
+        <table>spdb_sprr_fields</table>
+        <table>spdb_sprr_rating</table>
+        <table>spdb_sprr_review</table>
+      </tables>
+    </sql>
+  </installLog>
+</SobiProApp>

@@ -1,0 +1,77 @@
+Changelog for SobiPro Review & Rating Application
+===================================================
+@version: $Id: changelog.txt 3584 2013-07-23 15:45:06Z Sigrid Suski $
+
+@author
+Name: Sigrid Suski & Radek Suski, Sigsiu.NET GmbH
+Email: sobi[at]sigsiu.net
+Url: http://www.Sigsiu.NET
+
+@copyright Copyright (C) 2006 - 2013 Sigsiu.NET GmbH (http://www.sigsiu.net). All rights reserved.
+@license GNU/GPL Version 3
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3
+as published by the Free Software Foundation, and under the additional terms according section 7 of GPL v3.
+See http://www.gnu.org/licenses/gpl.html and http://sobipro.sigsiu.net/licenses.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+$Date: 2013-07-23 17:45:06 +0200 (Di, 23 Jul 2013) $
+
+Legend:
+ (*) - Security Fix
+ (#) - Bug Fix
+ (+) - Addition
+ (-) - Removed
+ (!) - Change
+
+
+-------------------
+  2.0 (30 July 2013)
+-------------------
+
+   (+) SobiPro 1.1 compatibility
+   (+) Arabic, Czech, Danish, Greek, Hungarian, Italian, Japanese, Dutch, Romanian, Russian, Thai, Turkish, Vietnamese and Chinese languages added (thanks to our translation teams)
+       (some languages are only translated partially)
+   (+) Ordering of reviews in administrator area
+   (+) "bad words" filter
+   (+) Review content parser to parse e.g. urls within a review
+   (+) Added "most rated" listings
+   (+) Added "top rated" listings
+   (+) IP of review author shown in administration area
+   (+) Only reviews possible
+   (+) Ajax navigation among the standard navigation
+   (+) Different star colors available
+
+   (!) jQuery Star Rating Plugin updated
+   (!) Standard Review notification messages revised
+   (!) Default Review template revised
+   (!) Rich snippets adapted to Schema.org markup (issue 710)
+   (!) Review author can be reassigned in administration area
+   (!) Separate CSS file for backend
+
+   (#) & in review texts (issue 916)
+   (#) Positive/negative points wrong if not given (issue 709)
+   (#) A rating value of 0 is not longer accepted (issue 913)
+   (#) Abuse texts from language file may now contain single quotation marks (apostrophes) preceded by a backslash
+   (#) Ratings without reviews works now
+
+
+-------------------
+  0.6.0 (24 January 2012)
+-------------------
+
+   (+) Swedish, Spanish, Croatian, French, Bulgarian and Finnish languages added (thanks to our translation teams)
+       (some languages are only translated partially)
+   (+) Notifications Support
+   (+) 'Report Review' function
+
+   (!) Use of PHP short text removed
+
+   (#) Polish Language fixed
+   (#) All reviews always visible in each section in the administrator area
+
+
+-------------------
+  0.5.0 (06 July 2011) - first public release
+-------------------

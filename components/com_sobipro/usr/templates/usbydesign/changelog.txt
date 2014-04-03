@@ -1,0 +1,47 @@
+===================================================
+  Changelog for SobiPro Template SobiRestara
+===================================================
+ * @version: $Id: changelog.txt 2338 2012-04-02 14:51:39Z Sigrid Suski $
+ * @author
+ * Name: Sigrid Suski & Radek Suski, Sigsiu.NET GmbH
+ * Email: sobi[at]sigsiu.net
+ * Url: http://www.Sigsiu.NET
+ * ===================================================
+ * @copyright Copyright (C) 2012 Sigsiu.NET GmbH (http://www.sigsiu.net). All rights reserved.
+ * @license Sigsiu.NET Template License V1.
+ * ===================================================
+ * $Date: 2012-04-02 16:51:39 +0200 (Mo, 02 Apr 2012) $
+===================================================
+
+===================================================
+ * Legend
+===================================================
+   (*) - Security Fix
+   (#) - Bug Fix
+   (+) - Addition
+   (-) - Removed
+   (!) - Change
+===================================================
+
+-------------------
+1.1 (09 May 2012)
+-------------------
+(+) Templates prepared for Review and Rating App
+(+) CSS class for container clear
+(+) Category button added to category view (for sub categories)
+
+(-) Google Friend Connect removed because not longer supported by Google
+(-) componentheading container removed
+
+(!) Name of the tabs in Details View
+(!) Using CSS class for container clear
+(!) No map error in details view if map is not installed or enabled
+
+(#) Display of Google Map in a tabbed template
+(#) Typo in Details View Template
+(#) Search text will be translated now
+(#) Missing Aggregation field settings
+
+-------------------
+1.0 (24 May 2011) - first public release
+-------------------

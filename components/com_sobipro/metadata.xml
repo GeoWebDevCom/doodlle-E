@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ @version: $Id: metadata.xml 3301 2013-03-15 17:50:06Z Sigrid Suski $
+ @package: SobiPro Component for Joomla!
+
+ @author
+ Name: Sigrid Suski & Radek Suski, Sigsiu.NET GmbH
+ Email: sobi[at]sigsiu.net
+ Url: http://www.Sigsiu.NET
+
+ @copyright Copyright (C) 2006 - 2013 Sigsiu.NET GmbH (http://www.sigsiu.net). All rights reserved.
+ @license GNU/GPL Version 3
+ This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3
+ as published by the Free Software Foundation, and under the additional terms according section 7 of GPL v3.
+ See http://www.gnu.org/licenses/gpl.html and http://sobipro.sigsiu.net/licenses.
+
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+ $Date: 2013-03-15 18:50:06 +0100 (Fri, 15 Mar 2013) $
+ $Revision: 3301 $
+ $Author: Sigrid Suski $
+ File location: components/com_sobipro/metadata.xml $
+-->
+<metadata>
+    <menu>
+        <options var="task">
+            <default name="SP.SOBI_SECTION" msg="SP.SOBI_SECTION_EXPL"/>
+            <option value="search" name="SP.SOBI_SEARCH" msg="SP.SOBI_SEARCH_EXPL"/>
+            <option value="entry.add" name="SP.SOBI_ADD_FORM" msg="SP.SOBI_ADD_FORM_EXPL"/>
+	        <option value="list.user" name="SP.SOBI_USER_LISTING" msg="SP.SOBI_USER_LISTING_EXPL"/>
+	        <option value="list.date" name="SP.SOBI_DATE_LISTING" msg="SP.SOBI_DATE_LISTING_EXPL"/>
+        <option value="list.rating.top" name="SP.SPRRA.LIST_TOP_RATED" msg="SP.SPRRA.LIST_TOP_RATED_EXPL"/><option value="list.rating.most" name="SP.SPRRA.LIST_MOST_RATED" msg="SP.SPRRA.LIST_MOST_RATED_EXPL"/></options>
+        <fields name="request">
+            <fieldset name="request" label="COM_MENUS_BASIC_FIELDSET_LABEL" addfieldpath="/components/com_sobipro/lib/cms/joomla16/elements">
+                <field name="SP.SOBI_SELECT_SECTION" type="spsection" description="SP.SOBI_SELECT_SECTION_EXPL"/>
+	            <field name="date" type="spdid" label="SP.SOBI_SELECT_DATE"/>
+                <field name="cid" type="spcid" label="SP.SOBI_SELECT_CATEGORY" description="SP.SOBI_SELECT_CATEGORY_EXPL"/>
+                <field name="eid" type="speid" label="SP.SOBI_SELECT_ENTRY" description="SP.SOBI_SELECT_ENTRY_EXPL"/>
+                <field name="sid" type="spsid" label="SP.SOBI_SELECTED_OBJECT"/>
+                <field name="sptpl" type="sptpl" label="SP.SOBI_TPL_OVERRIDE" description="SP.SOBI_TPL_OVERRIDE_EXPL"/>
+            </fieldset>
+        </fields>
+    </menu>
+    <state>
+        <url addpath="/components/com_sobipro/lib/cms/joomla_common/elements">
+            <param name="SP.SOBI_SELECT_SECTION" type="spsection" msg="SP.SOBI_SELECT_SECTION_EXPL"/>
+	        <param name="date" type="spsection" label="SP.SOBI_SELECT_DATE"/>
+            <param name="cid" type="spsection" msg="SP.SOBI_SELECT_CATEGORY_EXPL"/>
+            <param name="eid" type="spsection" label="SP.SOBI_SELECT_ENTRY"/>
+            <param name="sid" type="spsection"/>
+	        <param name="sptpl" type="spsection" label="SP.SOBI_TPL_OVERRIDE" description="SP.SOBI_TPL_OVERRIDE_EXPL"/>
+        </url>
+    </state>
+</metadata>

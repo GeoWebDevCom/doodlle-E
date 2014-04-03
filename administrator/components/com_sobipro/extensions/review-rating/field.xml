@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ @version: $Id: field.xml 3582 2013-07-23 09:02:08Z Sigrid Suski $
+ @package: SobiPro Review & Rating Application
+
+ @author
+ Name: Sigrid Suski & Radek Suski, Sigsiu.NET GmbH
+ Email: sobi[at]sigsiu.net
+ Url: http://www.Sigsiu.NET
+
+ @copyright Copyright (C) 2006 - 2013 Sigsiu.NET GmbH (http://www.sigsiu.net). All rights reserved.
+ @license GNU/GPL Version 3
+ This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3
+ as published by the Free Software Foundation, and under the additional terms according section 7 of GPL v3.
+ See http://www.gnu.org/licenses/gpl.html and http://sobipro.sigsiu.net/licenses.
+
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+ $Date: 2013-07-23 11:02:08 +0200 (Di, 23 Jul 2013) $
+ $Revision: 3582 $
+ $Author: Sigrid Suski $
+-->
+<definition>
+	<header>
+		<title value="SPRRA" />
+		<script>
+			function clickHandler( task ) {
+				if( task == 'deleteField' ) {
+					SobiPro.jQuery( '#SPAdminForm' ).on( 'AfterAjaxSubmit', function () {
+						parent.location.reload();
+					} );
+				}
+				SobiPro.jQuery( '[rel="review.' + task + '"]' ).click()
+			}
+		</script>
+		<style>
+			.breadcrumb { display: none; }
+			#field-enabled { float: inherit; margin-bottom: 10px; }
+			#field-importance {float: none; }
+		</style>
+	</header>
+	<toolbar title="SPRRA" icon="SobiApplication">
+		<button type="save" task="review.saveField" class="field-edit" />
+		<button type="delete" task="review.deleteField" class="field-edit" confirm="SPRRA.SETTINGS_FDEL_CONFIRM" />
+	</toolbar>
+	<body>
+		<message id="spMessage" />
+		<div class="spFilterModal">
+			<fieldset type="vertical">
+				<field type="text" name="field.label" label="SPRRA.SETTINGS_FHEAD_LABEL" required="true" />
+				<field type="textarea" name="field.explanation" label="SPRRA.SETTINGS_FHEAD_DESC" editor="false" class="input-splarge" rows="4" style="" />
+				<field type="select" label="SPRRA.SETTINGS_FHEAD_PRIO" name="field.importance" selected="field.importance" class="input-small">
+					<values>
+						<option value="1" />
+						<option value="2" />
+						<option value="3" />
+						<option value="4" />
+						<option value="5" />
+						<option value="6" />
+						<option value="7" />
+						<option value="8" />
+						<option value="9" />
+						<option value="10" />
+					</values>
+				</field>
+				<field type="toggle" name="field.enabled" label="SPRRA.FIELD_STATE" prefix="yes_no" />
+				<field type="text" name="field.position" label="SPRRA.SETTINGS_FHEAD_POSITION" required="true" class="input-mini" />
+			</fieldset>
+		</div>
+	</body>
+	<config>
+		<action value="index.php" />
+		<hidden>
+			<field name="option" default="com_sobipro" />
+			<field name="task" default="review.saveField" />
+			<field name="method" default="xhr" />
+			<field name="fid" value="field.fid" />
+		</hidden>
+	</config>
+</definition>

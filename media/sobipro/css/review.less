@@ -1,0 +1,255 @@
+/**
+ * @version: $Id: review.less 3580 2013-07-22 15:42:24Z Sigrid Suski $
+ * @package: SobiPro Review & Rating Application
+
+ * @author
+ * Name: Sigrid Suski & Radek Suski, Sigsiu.NET GmbH
+ * Email: sobi[at]sigsiu.net
+ * Url: http://www.Sigsiu.NET
+
+ * @copyright Copyright (C) 2006 - 2013 Sigsiu.NET GmbH (http://www.sigsiu.net). All rights reserved.
+ * @license GNU/GPL Version 3
+ * This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3
+ * as published by the Free Software Foundation, and under the additional terms according section 7 of GPL v3.
+ * See http://www.gnu.org/licenses/gpl.html and http://sobipro.sigsiu.net/licenses.
+
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+ * $Date: 2013-07-22 17:42:24 +0200 (Mo, 22 Jul 2013) $
+ * $Revision: 3580 $
+ * $Author: Sigrid Suski $
+ */
+
+@import "star-color.less";
+
+.SobiPro .modal.fade.in {
+    top: 50%;
+}
+
+.SobiPro .pulll-left {
+  float: left;
+}
+.SobiPro .form-horizontal .control-group {
+  margin-bottom: 10px;
+}
+
+.SobiPro .review-rating-stars {
+  float: left;
+  height: 40px;
+  padding-left: 0;
+  padding-right: 10px;
+  padding-top: 18px;
+}
+
+.SobiPro .review-ajax-navigation {
+    width: 100%;
+    margin-top: 10px!important;
+    margin-bottom: 10px!important;
+    font-weight: bold;
+}
+.SobiPro .review-ajax-navigation:hover,
+.SobiPro .review-ajax-navigation,
+.SobiPro .review-ajax-navigation .icon-chevron-down {
+  color: #0088CC;
+}
+
+// Container for reviews in DV
+.SobiPro .review-container {
+  margin-top: 10px;
+}
+
+// for Ratings
+.SobiPro .criteria-controls {
+  height: 15px;
+  margin-top: 5px;
+}
+.SobiPro .criteria-control-label {
+    padding-top: 3px !important;
+}
+.SobiPro .summary-header {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+.SobiPro .criteria-label,
+.SobiPro .summary-criteria-label {
+}
+.SobiPro .criteria-value {
+  margin-left: 96px;
+  font-size: 11px;
+  padding-top: 2px;
+  line-height: 18px;
+}
+.SobiPro .summary-criteria-value {
+  margin-left: 96px;
+  padding-top: 2px;
+  font-size: 14px;
+}
+.SobiPro .criteria [class*="span"] {
+  min-height: 20px;
+}
+.SobiPro .rating-criteria,
+.SobiPro .rating-summary {
+  max-width: 500px;
+}
+.SobiPro [class^="rating-stars-"] {
+  width: 90px;
+  height: 20px;
+  margin-right: 10px;
+  /*border-style: dashed;*/
+}
+.SobiPro .rating-stars-NaN { background: url("../icons/rating/stars-@{stars}.png") no-repeat 0 -0px }
+.SobiPro .rating-stars-0 { background: url("../icons/rating/stars-@{stars}.png") no-repeat 0 -0px }
+.SobiPro .rating-stars-1 { background: url("../icons/rating/stars-@{stars}.png") no-repeat 0 -20px }
+.SobiPro .rating-stars-2 { background: url("../icons/rating/stars-@{stars}.png") no-repeat 0 -40px }
+.SobiPro .rating-stars-3 { background: url("../icons/rating/stars-@{stars}.png") no-repeat 0 -60px }
+.SobiPro .rating-stars-4 { background: url("../icons/rating/stars-@{stars}.png") no-repeat 0 -80px }
+.SobiPro .rating-stars-5 { background: url("../icons/rating/stars-@{stars}.png") no-repeat 0 -100px }
+.SobiPro .rating-stars-6 { background: url("../icons/rating/stars-@{stars}.png") no-repeat 0 -120px }
+.SobiPro .rating-stars-7 { background: url("../icons/rating/stars-@{stars}.png") no-repeat 0 -140px }
+.SobiPro .rating-stars-8 { background: url("../icons/rating/stars-@{stars}.png") no-repeat 0 -160px }
+.SobiPro .rating-stars-9 { background: url("../icons/rating/stars-@{stars}.png") no-repeat 0 -180px }
+.SobiPro .rating-stars-10 { background: url("../icons/rating/stars-@{stars}.png") no-repeat 0 -200px }
+
+
+// for Reviews List Template in details view
+.SobiPro .review-header,
+.SobiPro .review-body {
+  margin-bottom: 5px;
+}
+.SobiPro .review-stars {
+  float: left;
+}
+.SobiPro .review-title,
+.SobiPro .review-rating {
+  float: left;
+  line-height: 22px;
+}
+.SobiPro .review-title {
+  font-size: 16px;
+}
+.SobiPro .review-header hr {
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+.SobiPro .review-text {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.SobiPro .review-censored-word {
+  text-decoration: line-through;
+}
+
+.SobiPro .report-review .icon-warning-sign {
+  color: orange;
+}
+
+
+/* for Likes and Dislikes in Input Form */
+.SobiPro div#review-negatives_tagsinput span.tag {
+    border: 1px solid #840000;
+    background: #c60000;
+    color: #f5f5f5;
+}
+.SobiPro div#review-negatives_tagsinput span.tag a {
+    color: #f5f5f5;
+}
+.SobiPro input#review-positives_tag,
+.SobiPro input#review-negatives_tag,
+.SobiPro div.tagsinput {
+    border: 1px solid #cccccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+    border-radius: 3px;
+    padding: 3px;
+    overflow-y: auto;
+}
+
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+.SobiPro div.tagsinput input {
+  width: 90px;
+  border: 1px solid transparent;
+  padding: 3px;
+  background: transparent;
+  color: #000;
+  outline: 0px;
+  margin: 1px 0 2px 0;
+  font-size: 13px;
+  line-height: 18px;
+  height: 18px;
+}
+.SobiPro div.tagsinput div {
+  display: block;
+  float: left;
+}
+.SobiPro .tags_clear {
+  clear: both;
+  width: 100%;
+  height: 0px;
+}
+.SobiPro div.tagsinput span.tag {
+  border: 1px solid #a5d24a;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  float: left;
+  padding: 3px 8px 3px 8px;
+  text-decoration: none;
+  background: #cde69c;
+  color: #336600;
+  margin: 1px 3px 2px 1px;
+}
+.SobiPro div.tagsinput span.tag a {
+  font-weight: bold;
+  color: #336633;
+  text-decoration: none;
+  margin-top: 3px;
+}
+
+.SobiPro div.rating-cancel, div.star-rating {
+    float: left;
+    width: 18px;
+    height: 20px;
+    text-indent: -999em;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    overflow: hidden
+}
+.SobiPro div.rating-cancel {
+  width: 28px;
+}
+.SobiPro div.rating-cancel, div.rating-cancel a {
+    background: url("../icons/rating/delete.gif") no-repeat 0 -20px
+}
+.SobiPro div.star-rating, div.star-rating a {
+    background: url("../icons/rating/star-@{stars}.gif") no-repeat 0 0px
+}
+.SobiPro div.rating-cancel a, div.star-rating a {
+    display: block;
+    width: 18px;
+    height: 100%;
+    background-position: 0 0px;
+    border: 0
+}
+.SobiPro div.star-rating-on a {
+    background-position: 0 -20px !important
+}
+.SobiPro div.star-rating-hover a {
+    background-position: 0 -40px
+}
+/* Read Only CSS */
+.SobiPro div.star-rating-readonly a {
+    cursor: default !important
+}
+/* Partial Star CSS */
+.SobiPro div.star-rating {
+    background: transparent !important;
+    overflow: hidden !important
+}
+.SobiPro .review-rating-star {
+    height: 18px !important;
+}
+/* END jQuery.Rating Plugin CSS */

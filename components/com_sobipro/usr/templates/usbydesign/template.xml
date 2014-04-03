@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://xml.sigsiu.net/SobiPro/template.xsd">
+	<name>UsByDesign</name>
+	<id>usbydesign</id>
+	<authorName>Sigrid Suski and Radek Suski</authorName>
+	<authorEmail>sobi[at]sigsiu.net</authorEmail>
+	<authorUrl>http://www.Sigsiu.NET</authorUrl>
+	<copyright>Copyright (C) 2009-2012 Sigsiu.NET GmbH</copyright>
+	<license>Sigsiu.NET Template License V1</license>
+	<creationDate>2012-05-09</creationDate>
+	<version>1.1</version>
+	<description>
+		Design Directory Template for SobiPro
+	</description>
+	<previewImage>SobiRestara.jpg</previewImage>
+	<files>	
+		<file path="category/">
+			Default category view template.
+		</file>
+		<file path="common/">
+			Commonly used sub-templates.
+		</file>
+		<file path="css/">
+			Directory for CSS files
+		</file>
+		<file path="entry/">
+			Templates for entries. Details, edit and print view
+		</file>
+		<file path="feeds/">
+			Template for Atom/RSS feeds.
+		</file>
+		<file path="images/">
+			Images and icons used in the template 
+		</file>		
+		<file path="js/">
+			JavaScript functions
+		</file>	
+		<file path="listing/">
+			Optional listings templates
+		</file>
+		<file path="payment/">
+			Payments and payments preview templates
+		</file>
+		<file path="search/">
+			Template for the search function.
+		</file>
+		<file path="section/">
+			Template for the section main view.
+		</file>
+		<file path="config.ini">
+			Main configuration file
+		</file>
+		<file path="template.php">
+			PHP file with additional functions to use within templates.
+		</file>
+		<file path="translation.xml">
+			Language overrides for the current template
+		</file>
+	</files>
+	<install>
+		<section>
+			<name>Creative Directory</name>
+			<description></description>
+			<nameField>field_name</nameField>
+			<showTopMenu>true</showTopMenu>
+			<catsInLine>3</catsInLine>			
+			<showCategoryDesc>true</showCategoryDesc>
+			<showCategoryMeta>true</showCategoryMeta>
+			<showCategorySubcats>true</showCategorySubcats>
+			<entriesInLine>5</entriesInLine>
+			<entriesOnPage>5</entriesOnPage>
+			<showEntryMeta>true</showEntryMeta>
+			<showEntryCategories>true</showEntryCategories>
+			<fields>
+				<field>
+					<name>field_name</name>
+					<label>Name</label>
+					<type>inbox</type>
+					<required>true</required>
+					<showIn>both</showIn>
+					<options>
+						<option attribute="addToMetaKeys">true</option>
+						<option attribute="addToMetaDesc">true</option>
+						<option attribute="inSearch">true</option>
+						<option attribute="searchMethod">general</option>
+						<option attribute="priority">1</option>
+						<option attribute="withLabel">false</option>
+						<option attribute="width">350</option>
+						<option attribute="maxLength">150</option>	
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="isFree">true</option>
+					</options>
+				</field>
+				<field>
+					<name>field_street</name>
+					<label>Street</label>
+					<type>inbox</type>
+					<required>true</required>
+					<showIn>both</showIn>
+					<options>
+						<option attribute="addToMetaKeys">true</option>
+						<option attribute="addToMetaDesc">true</option>
+						<option attribute="inSearch">true</option>
+						<option attribute="searchMethod">general</option>
+						<option attribute="priority">4</option>
+						<option attribute="withLabel">true</option>
+						<option attribute="width">350</option>
+						<option attribute="maxLength">150</option>	
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="isFree">true</option>
+					</options>
+				</field>
+				<field>
+					<name>field_postcode</name>
+					<label>Postcode</label>
+					<type>inbox</type>
+					<required>true</required>
+					<showIn>both</showIn>
+					<options>
+						<option attribute="inSearch">true</option>
+						<option attribute="searchMethod">general</option>
+						<option attribute="priority">5</option>
+						<option attribute="withLabel">true</option>
+						<option attribute="filter">alphanum</option>
+						<option attribute="width">350</option>
+						<option attribute="maxLength">150</option>
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="isFree">true</option>
+					</options>
+				</field>
+				<field>
+					<name>field_city</name>
+					<label>City</label>
+					<type>inbox</type>
+					<required>true</required>
+					<showIn>both</showIn>
+					<options>
+						<option attribute="inSearch">true</option>
+						<option attribute="searchMethod">select</option>
+						<option attribute="priority">5</option>
+						<option attribute="withLabel">true</option>
+						<option attribute="filter">title</option>
+						<option attribute="width">350</option>
+						<option attribute="maxLength">150</option>
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="isFree">true</option>
+					</options>
+				</field>
+				<field>
+					<name>field_state</name>
+					<label>State</label>
+					<type>inbox</type>
+					<required>true</required>
+					<showIn>both</showIn>
+					<options>
+						<option attribute="inSearch">true</option>
+						<option attribute="searchMethod">select</option>
+						<option attribute="priority">5</option>
+						<option attribute="withLabel">true</option>
+						<option attribute="filter">title</option>
+						<option attribute="width">350</option>
+						<option attribute="maxLength">150</option>
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="isFree">true</option>
+					</options>
+				</field>
+				<field>
+					<name>field_map</name>
+					<label>Map</label>
+					<type>geomap</type>
+					<required>false</required>
+					<showIn>details</showIn>
+					<options>
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="withLabel">false</option>
+						<option attribute="width">650</option>
+						<option attribute="height">300</option>
+						<option attribute="formWidth">500</option>
+						<option attribute="formHeight">300</option>
+						<option attribute="addrFields">field_street,field_postcode,field_city,field_country</option>
+						<option attribute="defView">ROADMAP</option>
+						<values attribute="mapViews">
+							<value name="0">ROADMAP</value>
+							<value name="1">SATELLITE</value>
+						</values>
+						<values attribute="formMapViews">
+							<value name="0">ROADMAP</value>
+							<value name="1">SATELLITE</value>
+						</values>
+						<option attribute="defFormView">ROADMAP</option>
+						<option attribute="zoomLevel">12</option>
+						<option attribute="formZoomLevel">10</option>
+						<option attribute="fee">10</option>
+						<option attribute="determineLocation">true</option>
+						<option attribute="startPoint">50,10</option>
+						<values attribute="mapOpt">
+							<value name="0">zoomControl</value>
+							<value name="1">mapTypeControl</value>
+						</values>
+						<values attribute="mapFormOpt">
+							<value name="0">zoomControl</value>
+							<value name="1">mapTypeControl</value>
+						</values>
+						<option attribute="isFree">false</option>
+					</options>
+				</field>
+				<field>
+					<name>field_phone_number</name>
+					<label>Phone Number</label>
+					<type>inbox</type>
+					<required>true</required>
+					<showIn>both</showIn>
+					<options>
+						<option attribute="filter">phone</option>
+						<option attribute="width">350</option>
+						<option attribute="maxLength">150</option>
+						<option attribute="withLabel">true</option>
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>	
+						<option attribute="isFree">true</option>					
+					</options>
+				</field>
+				<field>
+					<name>field_mobile</name>
+					<label>Mobile</label>
+					<type>inbox</type>
+					<required>true</required>
+					<showIn>both</showIn>
+					<options>
+						<option attribute="filter">phone</option>
+						<option attribute="width">350</option>
+						<option attribute="maxLength">150</option>
+						<option attribute="withLabel">true</option>
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="isFree">true</option>
+					</options>
+				</field>
+				<field>
+					<name>field_email</name>
+					<label>Email</label>
+					<type>inbox</type>
+					<required>true</required>
+					<showIn>hidden</showIn>
+					<options>
+						<option attribute="filter">email</option>
+						<option attribute="description">This email address will be used for internal purposes only and will not be displayed within the listing.</option>
+						<option attribute="width">350</option>
+						<option attribute="maxLength">150</option>
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="isFree">true</option>
+					</options>
+				</field>
+				<field>
+					<name>field_description</name>
+					<label>Description</label>
+					<type>textarea</type>
+					<required>false</required>
+					<showIn>both</showIn>
+					<options>
+						<option attribute="editor">true</option>
+						<option attribute="inSearch">true</option>
+						<option attribute="priority">4</option>		
+						<option attribute="width">550</option>				
+						<option attribute="height">100</option>
+						<option attribute="withLabel">false</option>
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="isFree">true</option>
+					</options>
+				</field>
+				<field>
+					<name>field_website</name>
+					<label>Website</label>
+					<type>url</type>
+					<required>false</required>
+					<showIn>both</showIn>
+					<options>
+						<option attribute="fee">10</option>	
+						<option attribute="filter">title</option>
+						<option attribute="allowedProtocols">http|https</option>
+						<option attribute="ownLabel">false</option>
+						<option attribute="labelsLabel">Website Title</option>
+						<option attribute="labelWidth">350</option>
+						<option attribute="labelMaxLength">150</option>
+						<option attribute="width">350</option>
+						<option attribute="maxLength">150</option>
+						<option attribute="uniqueData">false</option>
+						<option attribute="validateUrl">false</option>
+						<option attribute="newWindow">true</option>
+						<option attribute="withLabel">true</option>
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="isFree">false</option>
+					</options>
+				</field>
+				<field>
+					<name>field_payment_methods</name>
+					<label>Payment Methods</label>
+					<type>chbxgroup</type>
+					<required>true</required>
+					<showIn>details</showIn>
+					<options>
+						<option attribute="optInLine">3</option>
+						<option attribute="optWidth">150</option>
+						<option attribute="labelSite">right</option>
+						<option attribute="inSearch">true</option>
+						<option attribute="searchMethod">chbx</option>
+						<option attribute="withLabel">true</option>
+						<values attribute="fieldOptions">
+							<value name="cash">Cash</value>
+							<value name="american_express">American Express</value>
+							<value name="maestro_atm">Maestro ATM</value>
+							<value name="mastercard">Mastercard</value>
+							<value name="visa">Visa</value>
+							<value name="visa_electron">Visa Electron</value>
+							<value name="google_checkout">Google Checkout</value>
+							<value name="paypal">PayPal</value>
+						</values>
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="isFree">true</option>
+					</options>
+				</field>
+				<field>
+					<name>field_gallery</name>
+					<label>Picture</label>
+					<type>image</type>
+					<required>false</required>
+					<showIn>both</showIn>
+					<options>
+						<option attribute="maxSize">1048576</option>
+						<option attribute="width">350</option>
+						<option attribute="keepOrg">true</option>
+						<option attribute="resize">true</option>
+						<option attribute="resizeWidth">500</option>
+						<option attribute="resizeHeight">500</option>
+						<option attribute="imageName">img_{orgname}</option>
+						<option attribute="generateThumb">true</option>
+						<option attribute="thumbWidth">200</option>
+						<option attribute="thumbHeight">50</option>
+						<option attribute="thumbName">thumb_{orgname}</option>
+						<option attribute="inVcard">thumbail</option>
+						<option attribute="inDetails">thumbail</option>
+						<option attribute="savePath">images/sobipro/entries/{id}/</option>
+						<option attribute="editable">true</option>
+						<option attribute="adminField">false</option>
+						<option attribute="withLabel">false</option>
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="isFree">true</option>
+					</options>
+				</field>
+				<field>
+					<name>field_gallery_2</name>
+					<label>Picture</label>
+					<type>image</type>
+					<required>false</required>
+					<showIn>both</showIn>
+					<options>
+						<option attribute="maxSize">1048576</option>
+						<option attribute="width">350</option>
+						<option attribute="keepOrg">true</option>
+						<option attribute="resize">true</option>
+						<option attribute="resizeWidth">500</option>
+						<option attribute="resizeHeight">500</option>
+						<option attribute="imageName">img_{orgname}</option>
+						<option attribute="generateThumb">true</option>
+						<option attribute="thumbWidth">200</option>
+						<option attribute="thumbHeight">50</option>
+						<option attribute="thumbName">thumb_{orgname}</option>
+						<option attribute="inVcard">thumbail</option>
+						<option attribute="inDetails">thumbail</option>
+						<option attribute="savePath">images/sobipro/entries/{id}/</option>
+						<option attribute="editable">true</option>
+						<option attribute="adminField">false</option>
+						<option attribute="withLabel">false</option>
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="isFree">true</option>
+					</options>
+				</field>
+				<field>
+					<name>field_gallery_3</name>
+					<label>Picture</label>
+					<type>image</type>
+					<required>false</required>
+					<showIn>both</showIn>
+					<options>
+						<option attribute="maxSize">1048576</option>
+						<option attribute="width">350</option>
+						<option attribute="keepOrg">true</option>
+						<option attribute="resize">true</option>
+						<option attribute="resizeWidth">500</option>
+						<option attribute="resizeHeight">500</option>
+						<option attribute="imageName">img_{orgname}</option>
+						<option attribute="generateThumb">true</option>
+						<option attribute="thumbWidth">200</option>
+						<option attribute="thumbHeight">50</option>
+						<option attribute="thumbName">thumb_{orgname}</option>
+						<option attribute="inVcard">thumbail</option>
+						<option attribute="inDetails">thumbail</option>
+						<option attribute="savePath">images/sobipro/entries/{id}/</option>
+						<option attribute="editable">true</option>
+						<option attribute="adminField">false</option>
+						<option attribute="withLabel">false</option>
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="isFree">true</option>
+					</options>
+				</field>
+				<field>
+					<name>field_gallery_4</name>
+					<label>Picture</label>
+					<type>image</type>
+					<required>false</required>
+					<showIn>both</showIn>
+					<options>
+						<option attribute="maxSize">1048576</option>
+						<option attribute="width">350</option>
+						<option attribute="keepOrg">true</option>
+						<option attribute="resize">true</option>
+						<option attribute="resizeWidth">500</option>
+						<option attribute="resizeHeight">500</option>
+						<option attribute="imageName">img_{orgname}</option>
+						<option attribute="generateThumb">true</option>
+						<option attribute="thumbWidth">200</option>
+						<option attribute="thumbHeight">50</option>
+						<option attribute="thumbName">thumb_{orgname}</option>
+						<option attribute="inVcard">thumbail</option>
+						<option attribute="inDetails">thumbail</option>
+						<option attribute="savePath">images/sobipro/entries/{id}/</option>
+						<option attribute="editable">true</option>
+						<option attribute="adminField">false</option>
+						<option attribute="withLabel">false</option>
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="isFree">true</option>
+					</options>
+				</field>
+				<field>
+					<name>field_gallery_5</name>
+					<label>Picture</label>
+					<type>image</type>
+					<required>false</required>
+					<showIn>both</showIn>
+					<options>
+						<option attribute="maxSize">1048576</option>
+						<option attribute="width">350</option>
+						<option attribute="keepOrg">true</option>
+						<option attribute="resize">true</option>
+						<option attribute="resizeWidth">500</option>
+						<option attribute="resizeHeight">500</option>
+						<option attribute="imageName">img_{orgname}</option>
+						<option attribute="generateThumb">true</option>
+						<option attribute="thumbWidth">200</option>
+						<option attribute="thumbHeight">50</option>
+						<option attribute="thumbName">thumb_{orgname}</option>
+						<option attribute="inVcard">thumbail</option>
+						<option attribute="inDetails">thumbail</option>
+						<option attribute="savePath">images/sobipro/entries/{id}/</option>
+						<option attribute="editable">true</option>
+						<option attribute="adminField">false</option>
+						<option attribute="withLabel">false</option>
+						<option attribute="adminField">false</option>
+						<option attribute="editLimit">none</option>
+						<option attribute="isFree">true</option>
+					</options>
+				</field>
+			</fields>
+			<categories>
+				<category>
+					<name>Architecture</name>
+				</category>
+				<category>
+					<name>Retail Interior Design</name>
+				</category>
+				<category>
+					<name>Graphic Design</name>
+				</category>
+				<category>
+					<name>Photography</name>
+				</category>
+				<category>
+					<name>Web design</name>
+				</category>
+				<category>
+					<name>Web development</name>
+				</category>
+				<category>
+					<name>Publishing</name>
+				</category>
+			</categories>
+		</section>	
+	</install>	
+</template>

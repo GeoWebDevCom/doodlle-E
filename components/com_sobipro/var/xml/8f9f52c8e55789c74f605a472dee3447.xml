@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section>
+  <id>40</id>
+  <counter>1</counter>
+  <section id="40" lang="en-GB">Creative Directory</section>
+  <name lang="en-GB">Creative Directory</name>
+  <description lang="en-GB"><![CDATA[]]></description>
+  <meta>
+    <description></description>
+    <keys>
+      <key></key>
+    </keys>
+    <author></author>
+    <robots></robots>
+  </meta>
+  <entries_in_line>3</entries_in_line>
+  <categories_in_line>2</categories_in_line>
+  <number_of_subcats>6</number_of_subcats>
+  <categories>
+    <category id="46" nid="web-development">
+      <id>46</id>
+      <nid>web-development</nid>
+      <name lang="en-GB">Web Development</name>
+      <introtext lang="en-GB"><![CDATA[]]></introtext>
+      <icon>http://localhost:8888/media/sobipro/images/icons/web_development.png</icon>
+      <url>/index.php/directory?sid=46:web-development</url>
+      <position>6</position>
+      <author>992</author>
+      <state>published</state>
+      <subcategories/>
+      <counter></counter>
+    </category>
+    <category id="45" nid="web-design">
+      <id>45</id>
+      <nid>web-design</nid>
+      <name lang="en-GB">Web Design</name>
+      <introtext lang="en-GB"><![CDATA[]]></introtext>
+      <icon>http://localhost:8888/media/sobipro/images/icons/web_design.png</icon>
+      <url>/index.php/directory?sid=45:web-design</url>
+      <position>5</position>
+      <author>992</author>
+      <state>published</state>
+      <subcategories/>
+      <counter></counter>
+    </category>
+    <category id="42" nid="retail-interior-design">
+      <id>42</id>
+      <nid>retail-interior-design</nid>
+      <name lang="en-GB">Retail Interior Design</name>
+      <introtext lang="en-GB"><![CDATA[]]></introtext>
+      <icon>http://localhost:8888/media/sobipro/images/icons/retail_interior_design.png</icon>
+      <url>/index.php/directory?sid=42:retail-interior-design</url>
+      <position>2</position>
+      <author>992</author>
+      <state>published</state>
+      <subcategories/>
+      <counter></counter>
+    </category>
+    <category id="49" nid="product-design">
+      <id>49</id>
+      <nid>product-design</nid>
+      <name lang="en-GB">Product Design</name>
+      <introtext lang="en-GB"><![CDATA[]]></introtext>
+      <icon>http://localhost:8888/media/sobipro/images/icons/product_design.png</icon>
+      <url>/index.php/directory?sid=49:product-design</url>
+      <position>9</position>
+      <author>992</author>
+      <state>published</state>
+      <subcategories/>
+      <counter></counter>
+    </category>
+    <category id="47" nid="photography">
+      <id>47</id>
+      <nid>photography</nid>
+      <name lang="en-GB">Photography</name>
+      <introtext lang="en-GB"><![CDATA[]]></introtext>
+      <icon>http://localhost:8888/media/sobipro/images/icons/photography.png</icon>
+      <url>/index.php/directory?sid=47:photography</url>
+      <position>7</position>
+      <author>992</author>
+      <state>published</state>
+      <subcategories/>
+      <counter></counter>
+    </category>
+    <category id="43" nid="graphic-design">
+      <id>43</id>
+      <nid>graphic-design</nid>
+      <name lang="en-GB">Graphic Design</name>
+      <introtext lang="en-GB"><![CDATA[]]></introtext>
+      <icon>http://localhost:8888/media/sobipro/images/icons/graphic_design.png</icon>
+      <url>/index.php/directory?sid=43:graphic-design</url>
+      <position>3</position>
+      <author>992</author>
+      <state>published</state>
+      <subcategories/>
+      <counter></counter>
+    </category>
+    <category id="48" nid="furniture-design">
+      <id>48</id>
+      <nid>furniture-design</nid>
+      <name lang="en-GB">Furniture Design</name>
+      <introtext lang="en-GB"><![CDATA[]]></introtext>
+      <icon>http://localhost:8888/media/sobipro/images/icons/furniture_design.png</icon>
+      <url>/index.php/directory?sid=48:furniture-design</url>
+      <position>8</position>
+      <author>992</author>
+      <state>published</state>
+      <subcategories/>
+      <counter></counter>
+    </category>
+    <category id="41" nid="architecture">
+      <id>41</id>
+      <nid>architecture</nid>
+      <name lang="en-GB">Architecture</name>
+      <introtext lang="en-GB"><![CDATA[]]></introtext>
+      <icon>http://localhost:8888/media/sobipro/images/icons/architecture.png</icon>
+      <url>/index.php/directory?sid=41:architecture</url>
+      <position>1</position>
+      <author>992</author>
+      <state>published</state>
+      <subcategories/>
+      <counter></counter>
+    </category>
+    <category id="44" nid="advertising">
+      <id>44</id>
+      <nid>advertising</nid>
+      <name lang="en-GB">Advertising</name>
+      <introtext lang="en-GB"><![CDATA[]]></introtext>
+      <icon>http://localhost:8888/media/sobipro/images/icons/advertising.png</icon>
+      <url>/index.php/directory?sid=44:advertising</url>
+      <position>4</position>
+      <author>992</author>
+      <state>published</state>
+      <subcategories/>
+      <counter></counter>
+    </category>
+  </categories>
+  <entries>
+    <entry id="50" nid="xcxcx">
+      <id>50</id>
+      <nid>xcxcx</nid>
+      <name lang="en-GB">itinary architecture</name>
+      <url>/index.php/directory?pid=40&amp;sid=50:xcxcx</url>
+      <created_time>2013-12-30 23:16:34</created_time>
+      <updated_time>2014-02-25 20:56:25</updated_time>
+      <valid_since>2013-12-30 23:16:34</valid_since>
+      <valid_until></valid_until>
+      <state>published</state>
+      <author>993</author>
+      <counter>3596</counter>
+      <approved>1</approved>
+      <categories>
+        <category lang="en-GB" id="42" position="1" url="/index.php/directory?sid=42:retail-interior-design">Retail Interior Design</category>
+        <category lang="en-GB" id="43" position="1" url="/index.php/directory?sid=43:graphic-design">Graphic Design</category>
+      </categories>
+      <fields>
+        <field_company_description id="26" type="textarea" suffix="" position="4" css_class="spField" css-class="spField">
+          <label lang="en-GB" show="1">Company Description</label>
+          <data lang="en-GB" class="spField field_company_description">The standard Lorem Ipsum passage, used since the 1500s&lt;br /&gt;&#13;
+&lt;br /&gt;&#13;
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est </data>
+        </field_company_description>
+        <field_cover_image id="25" type="image" suffix="340px high x 240px wide" position="5" css_class="spField cover" css-class="spField cover">
+          <label lang="en-GB" show="1">Cover image</label>
+          <data icon="images/sobipro/entries/50/ico_currys-digital-uk3.jpg.jpg" image="images/sobipro/entries/50/img_Currys-Digital-UK3.jpg.jpg" thumbnail="" original="" class="spField cover field_cover_image">
+            <img class="spField cover field_cover_image" src="http://localhost:8888/images/sobipro/entries/50/img_Currys-Digital-UK3.jpg.jpg" alt=""/>
+          </data>
+        </field_cover_image>
+      </fields>
+      <reviews>
+        <summary_rating>
+          <overall count="0" value="">0</overall>
+        </summary_rating>
+      </reviews>
+    </entry>
+    <entry id="51" nid="kubik-design">
+      <id>51</id>
+      <nid>kubik-design</nid>
+      <name lang="en-GB">kubik design</name>
+      <url>/index.php/directory?pid=40&amp;sid=51:kubik-design</url>
+      <created_time>2013-12-30 23:33:39</created_time>
+      <updated_time>2013-12-30 23:33:39</updated_time>
+      <valid_since>2013-12-30 23:33:38</valid_since>
+      <valid_until></valid_until>
+      <state>published</state>
+      <author>993</author>
+      <counter>519</counter>
+      <approved>1</approved>
+      <categories>
+        <category lang="en-GB" id="46" position="1" url="/index.php/directory?sid=46:web-development">Web Development</category>
+        <category lang="en-GB" id="47" position="1" url="/index.php/directory?sid=47:photography">Photography</category>
+        <category lang="en-GB" id="48" position="1" url="/index.php/directory?sid=48:furniture-design">Furniture Design</category>
+      </categories>
+      <fields>
+        <field_company_description id="26" type="textarea" suffix="" position="4" css_class="spField" css-class="spField">
+          <label lang="en-GB" show="1">Company Description</label>
+          <data lang="en-GB" class="spField field_company_description">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</data>
+        </field_company_description>
+        <field_cover_image id="25" type="image" suffix="340px high x 240px wide" position="5" css_class="spField cover" css-class="spField cover">
+          <label lang="en-GB" show="1">Cover image</label>
+          <data icon="images/sobipro/entries/51/ico_ground floor accessories02.jpg" image="images/sobipro/entries/51/img_ground floor accessories02.jpg" thumbnail="" original="" class="spField cover field_cover_image">
+            <img class="spField cover field_cover_image" src="http://localhost:8888/images/sobipro/entries/51/img_ground floor accessories02.jpg" alt=""/>
+          </data>
+        </field_cover_image>
+      </fields>
+      <reviews>
+        <summary_rating>
+          <overall count="0" value="">0</overall>
+        </summary_rating>
+      </reviews>
+    </entry>
+  </entries>
+  <navigation lang="en-GB">
+    <current_site_txt>Page 1 of 1</current_site_txt>
+    <current_site>1</current_site>
+    <all_sites>1</all_sites>
+    <entries>2</entries>
+    <sites/>
+  </navigation>
+  <template_path>http://localhost:8888/components/com_sobipro/usr/templates/usbydesign/</template_path>
+  <header>
+    <addcssfile>
+      <value>
+        <file>sobipro</file>
+        <adm></adm>
+        <media></media>
+        <force></force>
+        <ext>css</ext>
+        <params></params>
+        <checksum>5527bdcd5b30f40400c44a1fcc7d21a3</checksum>
+      </value>
+      <value>
+        <file>absolute./Users/RichardClark/Sites/E/components/com_sobipro/usr/templates/usbydesign/.css.default</file>
+        <adm></adm>
+        <media></media>
+        <force></force>
+        <ext>css</ext>
+        <params></params>
+        <checksum>b4c1507bc9ab8dd61661d76c0be0412f</checksum>
+      </value>
+      <value>
+        <file>review</file>
+        <adm></adm>
+        <media></media>
+        <force></force>
+        <ext>css</ext>
+        <params></params>
+        <checksum>8379c7aa45f5ea8e5559a984b3ec82a3</checksum>
+      </value>
+    </addcssfile>
+    <addjsfile>
+      <value>
+        <script>sobipro</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>e4448795ea9ccd83606ddf4fa617caa0</checksum>
+      </value>
+      <value>
+        <script>jquery</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>67ca7d0e84c2e42c686014dc81144f13</checksum>
+      </value>
+      <value>
+        <script>jqnc</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>53f5392ca25fec759c622104cb8dd312</checksum>
+      </value>
+      <value>
+        <script>absolute./Users/RichardClark/Sites/E/components/com_sobipro/usr/templates/usbydesign/.js.alpha</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>8e1878d155616f9a6c3d9f8d76ce70c2</checksum>
+      </value>
+      <value>
+        <script>pagination</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>5e459c32faa99412489721564408113c</checksum>
+      </value>
+      <value>
+        <script>absolute./Users/RichardClark/Sites/E/components/com_sobipro/usr/templates/usbydesign/.js.v-card_custom</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>0a12be8db222deed585ec7d484ab788f</checksum>
+      </value>
+    </addjsfile>
+    <addtitle>
+      <value>
+        <title>Directory</title>
+        <checksum>e73cda510e8bb947f7e61089e5581494</checksum>
+      </value>
+    </addtitle>
+    <addcanonical>
+      <value>
+        <url>http://localhost:8888/index.php/directory?sid=40:creative-directory</url>
+        <checksum>cb92fcda599e8d852e06e0578b3a4cdc</checksum>
+      </value>
+    </addcanonical>
+    <addheadlink>
+      <value>
+        <href>http://localhost:8888/index.php/directory?sid=40:creative-directory</href>
+        <type></type>
+        <title></title>
+        <rel>canonical</rel>
+        <reltype>rel</reltype>
+        <params></params>
+        <checksum>7068dee3e4a6c2c3af9e856b61fcf766</checksum>
+      </value>
+      <value>
+        <href>/index.php/directory?sid=40&amp;sptpl=feeds.rss&amp;out=raw&amp;tmpl=component&amp;format=raw</href>
+        <type>application/atom+xml</type>
+        <title>Creative Directory</title>
+        <rel>alternate</rel>
+        <reltype>rel</reltype>
+        <params></params>
+        <checksum>bf01abc4f8917f8f7adb525c21588db9</checksum>
+      </value>
+    </addheadlink>
+  </header>
+  <cache-data>
+    <hidden/>
+    <pathway/>
+  </cache-data>
+</section>

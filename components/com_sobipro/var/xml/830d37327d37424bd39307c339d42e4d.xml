@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry_details>
+  <section id="40" lang="en-GB">Creative Directory</section>
+  <entry id="51" nid="kubik-design" version="1">
+    <name lang="en-GB">kubik design</name>
+    <created_time>2013-12-30 23:33:39</created_time>
+    <updated_time>2013-12-30 23:33:39</updated_time>
+    <valid_since>2013-12-30 23:33:38</valid_since>
+    <valid_until></valid_until>
+    <author>993</author>
+    <counter>522</counter>
+    <approved>1</approved>
+    <state>published</state>
+    <url>http://localhost:8888/index.php/directory?pid=46&amp;sid=51:kubik-design</url>
+    <categories>
+      <category lang="en-GB" id="46" position="1" url="/index.php/directory?sid=46:web-development" primary="true">Web Development</category>
+      <category lang="en-GB" id="47" position="1" url="/index.php/directory?sid=47:photography">Photography</category>
+      <category lang="en-GB" id="48" position="1" url="/index.php/directory?sid=48:furniture-design">Furniture Design</category>
+    </categories>
+    <meta>
+      <description></description>
+      <keys>
+        <key></key>
+      </keys>
+      <author></author>
+      <robots></robots>
+    </meta>
+    <fields>
+      <field_logo id="24" type="image" suffix="" position="3" css_class="spField" css-class="spField">
+        <label lang="en-GB" show="1">Logo</label>
+        <data icon="images/sobipro/entries/51/ico_(inc. name generation)01.jpg" image="" thumbnail="images/sobipro/entries/51/thumb_(inc. name generation)01.jpg" original="" class="spField field_logo">
+          <img class="spField field_logo" src="http://localhost:8888/images/sobipro/entries/51/thumb_(inc. name generation)01.jpg" alt=""/>
+        </data>
+      </field_logo>
+      <field_company_description id="26" type="textarea" suffix="" position="4" css_class="spField" css-class="spField">
+        <label lang="en-GB" show="1">Company Description</label>
+        <data lang="en-GB" class="spField field_company_description">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</data>
+      </field_company_description>
+      <field_telephone_direct id="20" type="inbox" suffix="" position="6" css_class="spField field_telephone_direct" css-class="spField field_telephone_direct">
+        <label lang="en-GB" show="1">Telephone direct</label>
+        <data lang="en-GB" class="spField field_telephone_direct">0243214321</data>
+      </field_telephone_direct>
+      <field_mobile id="21" type="inbox" suffix="" position="7" css_class="spField field_mobile" css-class="spField field_mobile">
+        <label lang="en-GB" show="1">Mobile </label>
+        <data lang="en-GB" class="spField field_mobile">0412345678</data>
+      </field_mobile>
+      <field_email_address id="22" type="email" suffix="" position="8" css_class="spField" css-class="spField">
+        <label lang="en-GB" show="1">Email address</label>
+        <data lang="en-GB" class="spField field_email_address">
+          <a href="mailto:us@ubs.com.au" class="spField field_email_address">us@ubs.com.au</a>
+        </data>
+      </field_email_address>
+      <field_website id="23" type="url" suffix="" position="9" css_class="spField" css-class="spField">
+        <label lang="en-GB" show="1">Website</label>
+        <data lang="en-GB" class="spField field_website" counter="-1">
+          <a href="http://www.mylittlecloset.com.au" class="spField field_website" target="_blank">http://www.mylittlecloset.com.au</a>
+        </data>
+      </field_website>
+      <field_street id="18" type="inbox" suffix="" position="10" css_class="spField field_street" css-class="spField field_street">
+        <label lang="en-GB" show="1">Street</label>
+        <data lang="en-GB" class="spField field_street">123 george st</data>
+      </field_street>
+      <field_town id="19" type="inbox" suffix="" position="11" css_class="spField field_town" css-class="spField field_town">
+        <label lang="en-GB" show="1">Town</label>
+        <data lang="en-GB" class="spField field_town">Sydney</data>
+      </field_town>
+      <field_postcode id="31" type="inbox" suffix="" position="12" css_class="spField" css-class="spField">
+        <label lang="en-GB" show="1">Postcode</label>
+        <data/>
+      </field_postcode>
+      <field_state id="30" type="multiselect" suffix="" position="13" css_class="spField" css-class="spField">
+        <label lang="en-GB" show="1">State</label>
+        <data lang="en-GB" class="spFieldsData field_state">
+          <ul class="spFieldsData field_state">
+            <li class="act">ACT</li>
+          </ul>
+        </data>
+        <options>
+          <option selected="true" id="act" position="1">ACT</option>
+          <option selected="false" id="new-south-wales" position="2">New South Wales</option>
+          <option selected="false" id="northern-territory" position="3">Northern Territory</option>
+          <option selected="false" id="queensland" position="4">Queensland</option>
+          <option selected="false" id="south-australia" position="5">South Australia</option>
+          <option selected="false" id="tasmania" position="6">Tasmania</option>
+          <option selected="false" id="victoria" position="7">Victoria</option>
+          <option selected="false" id="western-australia" position="8">Western Australia</option>
+        </options>
+      </field_state>
+      <field_map id="29" type="geomap" suffix="" position="14" css_class="spField" css-class="spField">
+        <label lang="en-GB" show="1">Map</label>
+        <data></data>
+      </field_map>
+      <field_p1_title id="32" type="inbox" suffix="" position="15" css_class="spField" css-class="spField">
+        <label lang="en-GB" show="1">Project 1, title</label>
+        <data/>
+      </field_p1_title>
+      <field_p1_description id="33" type="textarea" suffix="" position="16" css_class="spField" css-class="spField">
+        <label lang="en-GB" show="1">Project 1, description</label>
+        <data></data>
+      </field_p1_description>
+      <field_p1_image_1 id="27" type="image" suffix="700px high x 860px wide" position="17" css_class="spField project1" css-class="spField project1">
+        <label lang="en-GB" show="1">Project 1, image 1</label>
+        <data icon="images/sobipro/entries/51/ico_h picture 1.png" image="images/sobipro/entries/51/img_H Picture 1.png" thumbnail="images/sobipro/entries/51/thumb_H Picture 1.png" original="images/sobipro/entries/51/H Picture 1.png" class="spField project1 field_p1_image_1">
+          <img class="spField project1 field_p1_image_1" src="http://localhost:8888/images/sobipro/entries/51/img_H Picture 1.png" alt=""/>
+        </data>
+      </field_p1_image_1>
+      <field_p1_image_2 id="28" type="image" suffix="700px high x 860px wide" position="18" css_class="spField project1" css-class="spField project1">
+        <label lang="en-GB" show="1">Project 1, image 2</label>
+        <data icon="images/sobipro/entries/51/ico_h picture 2.png" image="images/sobipro/entries/51/img_H Picture 2.png" thumbnail="images/sobipro/entries/51/thumb_H Picture 2.png" original="images/sobipro/entries/51/H Picture 2.png" class="spField project1 field_p1_image_2">
+          <img class="spField project1 field_p1_image_2" src="http://localhost:8888/images/sobipro/entries/51/img_H Picture 2.png" alt=""/>
+        </data>
+      </field_p1_image_2>
+      <field_p1_image_3 id="34" type="image" suffix="700px high x 860px wide" position="19" css_class="spField" css-class="spField">
+        <label lang="en-GB" show="1">Project 1, image 3</label>
+        <data></data>
+      </field_p1_image_3>
+      <field_p1_image_4 id="35" type="image" suffix="700px high x 860px wide" position="20" css_class="spField" css-class="spField">
+        <label lang="en-GB" show="1">Project 1, image 4</label>
+        <data></data>
+      </field_p1_image_4>
+      <field_p1_image_5 id="36" type="image" suffix="700px high x 860px wide" position="21" css_class="spField" css-class="spField">
+        <label lang="en-GB" show="1">Project 1, image 5</label>
+        <data></data>
+      </field_p1_image_5>
+      <field_p1_image_6 id="37" type="image" suffix="700px high x 860px wide" position="22" css_class="spField" css-class="spField">
+        <label lang="en-GB" show="1">Project 1, image 6</label>
+        <data></data>
+      </field_p1_image_6>
+      <field_p1_image_7 id="54" type="image" suffix="700px high x 860px wide" position="23" css_class="spField" css-class="spField">
+        <label lang="en-GB" show="1">Project 1, image 7</label>
+        <data></data>
+      </field_p1_image_7>
+    </fields>
+  </entry>
+  <reviews>
+    <settings>
+      <review_enabled>0</review_enabled>
+      <rating_enabled>1</rating_enabled>
+      <multi_rating>0</multi_rating>
+      <positive_negative>1</positive_negative>
+    </settings>
+  </reviews>
+  <template_path>http://localhost:8888/components/com_sobipro/usr/templates/usbydesign/</template_path>
+  <header>
+    <addcssfile>
+      <value>
+        <file>sobipro</file>
+        <adm></adm>
+        <media></media>
+        <force></force>
+        <ext>css</ext>
+        <params></params>
+        <checksum>5527bdcd5b30f40400c44a1fcc7d21a3</checksum>
+      </value>
+      <value>
+        <file>absolute./Users/RichardClark/Sites/E/components/com_sobipro/usr/templates/usbydesign/.css.default</file>
+        <adm></adm>
+        <media></media>
+        <force></force>
+        <ext>css</ext>
+        <params></params>
+        <checksum>b4c1507bc9ab8dd61661d76c0be0412f</checksum>
+      </value>
+      <value>
+        <file>jquery-ui.smoothness.smoothness</file>
+        <adm></adm>
+        <media></media>
+        <force></force>
+        <ext>css</ext>
+        <params></params>
+        <checksum>3497069a9b8c30817a93c420608a62bc</checksum>
+      </value>
+      <value>
+        <file>absolute./Users/RichardClark/Sites/E/components/com_sobipro/usr/templates/usbydesign/.css.box</file>
+        <adm></adm>
+        <media></media>
+        <force></force>
+        <ext>css</ext>
+        <params></params>
+        <checksum>faa5f7b70d1a5c6909f10ad487f03017</checksum>
+      </value>
+      <value>
+        <file>fancyBox/source/jquery-fancybox</file>
+        <adm></adm>
+        <media></media>
+        <force></force>
+        <ext>css</ext>
+        <params></params>
+        <checksum>20a8ab6f4014faaf67ee40d129f8a75c</checksum>
+      </value>
+      <value>
+        <file>review</file>
+        <adm></adm>
+        <media></media>
+        <force></force>
+        <ext>css</ext>
+        <params></params>
+        <checksum>8379c7aa45f5ea8e5559a984b3ec82a3</checksum>
+      </value>
+      <value>
+        <file>bootstrap.bootstrap</file>
+        <adm></adm>
+        <media></media>
+        <force></force>
+        <ext>css</ext>
+        <params></params>
+        <checksum>bbf887b95092040afa39cd2eb3e90265</checksum>
+      </value>
+    </addcssfile>
+    <addjsfile>
+      <value>
+        <script>sobipro</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>e4448795ea9ccd83606ddf4fa617caa0</checksum>
+      </value>
+      <value>
+        <script>jquery</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>67ca7d0e84c2e42c686014dc81144f13</checksum>
+      </value>
+      <value>
+        <script>jqnc</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>53f5392ca25fec759c622104cb8dd312</checksum>
+      </value>
+      <value>
+        <script>jquery-ui</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>858e336c4302f70ba4a7d4e9e56600c5</checksum>
+      </value>
+      <value>
+        <script>absolute./Users/RichardClark/Sites/E/components/com_sobipro/usr/templates/usbydesign/.js.details</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>ea018866eba35f380aac44e4bd3ec027</checksum>
+      </value>
+      <value>
+        <script>absolute./Users/RichardClark/Sites/E/components/com_sobipro/usr/templates/usbydesign/.js.box</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>33c8e7dc5a723b516d027fcac4e248d8</checksum>
+      </value>
+      <value>
+        <script>absolute./Users/RichardClark/Sites/E/components/com_sobipro/usr/templates/usbydesign/.js.alpha</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>8e1878d155616f9a6c3d9f8d76ce70c2</checksum>
+      </value>
+      <value>
+        <script>absolute./Users/RichardClark/Sites/E/components/com_sobipro/usr/templates/usbydesign/.js.fancyBox/source/jquery-fancybox</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>87d2cd46873917bbce78d4bca7db7795</checksum>
+      </value>
+      <value>
+        <script>rating</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>118df116162807fd39e93f6fc61ccf15</checksum>
+      </value>
+      <value>
+        <script>review</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>1a0a689525f169f4757530f85feb06f2</checksum>
+      </value>
+      <value>
+        <script>bootstrap</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>91420d06f73e6a147852b47164e21765</checksum>
+      </value>
+      <value>
+        <script>bootstrap.bootbox</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>007e358b0e29798286254c01eab4d377</checksum>
+      </value>
+      <value>
+        <script>bootstrap.tooltips</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>f06aa0f56d24569a2294f7c30b645a60</checksum>
+      </value>
+      <value>
+        <script>bootstrap.popover</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>a261c2392630986e909581743b86239a</checksum>
+      </value>
+      <value>
+        <script>review-tags</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>bf8c37d872f957ef3d883efec3583103</checksum>
+      </value>
+    </addjsfile>
+    <addtitle>
+      <value>
+        <title>Directory</title>
+        <checksum>e73cda510e8bb947f7e61089e5581494</checksum>
+      </value>
+      <value>
+        <title>Web Development</title>
+        <checksum>e9f65fa4000d038efa0cdff8bb824632</checksum>
+      </value>
+      <value>
+        <title>kubik design</title>
+        <checksum>96015122173df9063106f717571836b3</checksum>
+      </value>
+    </addtitle>
+    <adddescription>
+      <value>
+        <desc></desc>
+        <checksum>d41d8cd98f00b204e9800998ecf8427e</checksum>
+      </value>
+    </adddescription>
+    <addkeyword>
+      <value>
+        <keys></keys>
+        <checksum>d41d8cd98f00b204e9800998ecf8427e</checksum>
+      </value>
+    </addkeyword>
+    <add>
+      <value>
+        <html>&lt;meta name="ICBM" content="0, 0" /&gt;</html>
+        <checksum>0333aa9053cff5b27ace4d466857b7ec</checksum>
+      </value>
+      <value>
+        <html>&lt;meta name="geo.position" content="0;0" /&gt;</html>
+        <checksum>c7e79b66e9d44dd435264aaf74e8f2fa</checksum>
+      </value>
+    </add>
+    <addcanonical>
+      <value>
+        <url>http://localhost:8888/index.php/directory?pid=46&amp;sid=51:kubik-design</url>
+        <checksum>427f29671f5aef8d2b30471533f80948</checksum>
+      </value>
+    </addcanonical>
+    <addheadlink>
+      <value>
+        <href>http://localhost:8888/index.php/directory?pid=46&amp;sid=51:kubik-design</href>
+        <type></type>
+        <title></title>
+        <rel>canonical</rel>
+        <reltype>rel</reltype>
+        <params></params>
+        <checksum>1698b6ba08c9cad680f96e1f804bff4b</checksum>
+      </value>
+    </addheadlink>
+  </header>
+  <cache-data>
+    <hidden/>
+    <pathway>
+      <value>
+        <name>Web Development</name>
+        <url>/index.php/directory?sid=46:web-development</url>
+      </value>
+      <value>
+        <name>kubik design</name>
+        <url>/index.php/directory?task=entry.details&amp;sid=51:kubik-design</url>
+      </value>
+    </pathway>
+  </cache-data>
+</entry_details>

@@ -1,0 +1,569 @@
+
+/* Created at: Sun Mar 30 19:25:13 UTC 2014 */
+
+/**  
+========
+File: /media/sobipro/css/sobipro.css
+========
+*/
+.SobiPro div.modal{width:520px;margin:-250px 0 0 -280px;top:50%}.SobiPro .modal.fade.in{top:50%}.SobiPro .popover-inner .spclose{padding-right:8px;padding-top:5px;font-size:15px}.SobiPro .thumbnail{margin-bottom:9px}.SobiPro div.thumbcat{border:0;box-shadow:0;display:block;line-height:20px;padding:4px}.SobiPro p.thumbcat{margin:0}.SobiPro .category-container,.SobiPro .entry-container{margin-bottom:15px;margin-top:5px}.SobiPro .btn .caret{margin-bottom:9px}.SobiPro .SPEntryEdit .required{border-color:#7ac6ff}.SobiPro .SPDetailEntry .pull-left{margin-right:10px;margin-top:17px}.SobiPro .SPEntryEdit .alert{margin-bottom:0;margin-top:10px}.SobiPro .SPEntryEdit .progress{min-width:100px;width:50%}.SobiPro .SPEntryEdit .message-lightbulb{margin-left:15px}.SobiPro #alpha-index .pagination{margin-top:5px}.SobiPro .alphalist{text-align:right}.SobiPro .alphalist .dropdown-menu{text-align:left}.SobiPro div#sobiProFooter,.SobiPro div#sobiProFooter a{color:#999;font-size:9px;padding-top:10px;text-decoration:none}.SobiPro table.payment td{line-height:10px}.SobiPro table tr.summary td{background-color:#fff;padding-top:25px}.SobiPro table tr.sum td{font-weight:bold}.SPSearchSelectRangeTo,.SPSearchSelectRangeFrom{padding-bottom:3px;padding-top:3px}.SobiPro .hide{display:none}
+/**  
+========
+File: /media/sobipro/css/review.css
+========
+*/
+/**
+ * @version: $Id: review.less 3580 2013-07-22 15:42:24Z Sigrid Suski $
+ * @package: SobiPro Review & Rating Application
+
+ * @author
+ * Name: Sigrid Suski & Radek Suski, Sigsiu.NET GmbH
+ * Email: sobi[at]sigsiu.net
+ * Url: http://www.Sigsiu.NET
+
+ * @copyright Copyright (C) 2006 - 2013 Sigsiu.NET GmbH (http://www.sigsiu.net). All rights reserved.
+ * @license GNU/GPL Version 3
+ * This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3
+ * as published by the Free Software Foundation, and under the additional terms according section 7 of GPL v3.
+ * See http://www.gnu.org/licenses/gpl.html and http://sobipro.sigsiu.net/licenses.
+
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+ * $Date: 2013-07-22 17:42:24 +0200 (Mo, 22 Jul 2013) $
+ * $Revision: 3580 $
+ * $Author: Sigrid Suski $
+ */
+.SobiPro .modal.fade.in {
+  top: 50%;
+}
+.SobiPro .pulll-left {
+  float: left;
+}
+.SobiPro .form-horizontal .control-group {
+  margin-bottom: 10px;
+}
+.SobiPro .review-rating-stars {
+  float: left;
+  height: 40px;
+  padding-left: 0;
+  padding-right: 10px;
+  padding-top: 18px;
+}
+.SobiPro .review-ajax-navigation {
+  width: 100%;
+  margin-top: 10px!important;
+  margin-bottom: 10px!important;
+  font-weight: bold;
+}
+.SobiPro .review-ajax-navigation:hover,
+.SobiPro .review-ajax-navigation,
+.SobiPro .review-ajax-navigation .icon-chevron-down {
+  color: #0088CC;
+}
+.SobiPro .review-container {
+  margin-top: 10px;
+}
+.SobiPro .criteria-controls {
+  height: 15px;
+  margin-top: 5px;
+}
+.SobiPro .criteria-control-label {
+  padding-top: 3px !important;
+}
+.SobiPro .summary-header {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+.SobiPro .criteria-value {
+  margin-left: 96px;
+  font-size: 11px;
+  padding-top: 2px;
+  line-height: 18px;
+}
+.SobiPro .summary-criteria-value {
+  margin-left: 96px;
+  padding-top: 2px;
+  font-size: 14px;
+}
+.SobiPro .criteria [class*="span"] {
+  min-height: 20px;
+}
+.SobiPro .rating-criteria,
+.SobiPro .rating-summary {
+  max-width: 500px;
+}
+.SobiPro [class^="rating-stars-"] {
+  width: 90px;
+  height: 20px;
+  margin-right: 10px;
+  /*border-style: dashed;*/
+
+}
+.SobiPro .rating-stars-NaN {
+  background: url(http://localhost:8888/media/sobipro/icons/rating/stars-orange-grey.png) no-repeat 0 0px;
+}
+.SobiPro .rating-stars-0 {
+  background: url(http://localhost:8888/media/sobipro/icons/rating/stars-orange-grey.png) no-repeat 0 0px;
+}
+.SobiPro .rating-stars-1 {
+  background: url(http://localhost:8888/media/sobipro/icons/rating/stars-orange-grey.png) no-repeat 0 -20px;
+}
+.SobiPro .rating-stars-2 {
+  background: url(http://localhost:8888/media/sobipro/icons/rating/stars-orange-grey.png) no-repeat 0 -40px;
+}
+.SobiPro .rating-stars-3 {
+  background: url(http://localhost:8888/media/sobipro/icons/rating/stars-orange-grey.png) no-repeat 0 -60px;
+}
+.SobiPro .rating-stars-4 {
+  background: url(http://localhost:8888/media/sobipro/icons/rating/stars-orange-grey.png) no-repeat 0 -80px;
+}
+.SobiPro .rating-stars-5 {
+  background: url(http://localhost:8888/media/sobipro/icons/rating/stars-orange-grey.png) no-repeat 0 -100px;
+}
+.SobiPro .rating-stars-6 {
+  background: url(http://localhost:8888/media/sobipro/icons/rating/stars-orange-grey.png) no-repeat 0 -120px;
+}
+.SobiPro .rating-stars-7 {
+  background: url(http://localhost:8888/media/sobipro/icons/rating/stars-orange-grey.png) no-repeat 0 -140px;
+}
+.SobiPro .rating-stars-8 {
+  background: url(http://localhost:8888/media/sobipro/icons/rating/stars-orange-grey.png) no-repeat 0 -160px;
+}
+.SobiPro .rating-stars-9 {
+  background: url(http://localhost:8888/media/sobipro/icons/rating/stars-orange-grey.png) no-repeat 0 -180px;
+}
+.SobiPro .rating-stars-10 {
+  background: url(http://localhost:8888/media/sobipro/icons/rating/stars-orange-grey.png) no-repeat 0 -200px;
+}
+.SobiPro .review-header,
+.SobiPro .review-body {
+  margin-bottom: 5px;
+}
+.SobiPro .review-stars {
+  float: left;
+}
+.SobiPro .review-title,
+.SobiPro .review-rating {
+  float: left;
+  line-height: 22px;
+}
+.SobiPro .review-title {
+  font-size: 16px;
+}
+.SobiPro .review-header hr {
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+.SobiPro .review-text {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.SobiPro .review-censored-word {
+  text-decoration: line-through;
+}
+.SobiPro .report-review .icon-warning-sign {
+  color: orange;
+}
+/* for Likes and Dislikes in Input Form */
+.SobiPro div#review-negatives_tagsinput span.tag {
+  border: 1px solid #840000;
+  background: #c60000;
+  color: #f5f5f5;
+}
+.SobiPro div#review-negatives_tagsinput span.tag a {
+  color: #f5f5f5;
+}
+.SobiPro input#review-positives_tag,
+.SobiPro input#review-negatives_tag,
+.SobiPro div.tagsinput {
+  border: 1px solid #cccccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  border-radius: 3px;
+  padding: 3px;
+  overflow-y: auto;
+}
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+.SobiPro div.tagsinput input {
+  width: 90px;
+  border: 1px solid transparent;
+  padding: 3px;
+  background: transparent;
+  color: #000;
+  outline: 0px;
+  margin: 1px 0 2px 0;
+  font-size: 13px;
+  line-height: 18px;
+  height: 18px;
+}
+.SobiPro div.tagsinput div {
+  display: block;
+  float: left;
+}
+.SobiPro .tags_clear {
+  clear: both;
+  width: 100%;
+  height: 0px;
+}
+.SobiPro div.tagsinput span.tag {
+  border: 1px solid #a5d24a;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  float: left;
+  padding: 3px 8px 3px 8px;
+  text-decoration: none;
+  background: #cde69c;
+  color: #336600;
+  margin: 1px 3px 2px 1px;
+}
+.SobiPro div.tagsinput span.tag a {
+  font-weight: bold;
+  color: #336633;
+  text-decoration: none;
+  margin-top: 3px;
+}
+.SobiPro div.rating-cancel,
+div.star-rating {
+  float: left;
+  width: 18px;
+  height: 20px;
+  text-indent: -999em;
+  cursor: pointer;
+  display: block;
+  background: transparent;
+  overflow: hidden;
+}
+.SobiPro div.rating-cancel {
+  width: 28px;
+}
+.SobiPro div.rating-cancel,
+div.rating-cancel a {
+  background: url(http://localhost:8888/media/sobipro/icons/rating/delete.gif) no-repeat 0 -20px;
+}
+.SobiPro div.star-rating,
+div.star-rating a {
+  background: url(http://localhost:8888/media/sobipro/icons/rating/star-orange-grey.gif) no-repeat 0 0px;
+}
+.SobiPro div.rating-cancel a,
+div.star-rating a {
+  display: block;
+  width: 18px;
+  height: 100%;
+  background-position: 0 0px;
+  border: 0;
+}
+.SobiPro div.star-rating-on a {
+  background-position: 0 -20px !important;
+}
+.SobiPro div.star-rating-hover a {
+  background-position: 0 -40px;
+}
+/* Read Only CSS */
+.SobiPro div.star-rating-readonly a {
+  cursor: default !important;
+}
+/* Partial Star CSS */
+.SobiPro div.star-rating {
+  background: transparent !important;
+  overflow: hidden !important;
+}
+.SobiPro .review-rating-star {
+  height: 18px !important;
+}
+/* END jQuery.Rating Plugin CSS */
+
+/**  
+========
+File: /components/com_sobipro/usr/templates/usbydesign/css/default.css
+========
+*/
+/**
+ * @version: $Id: default.css 2342 2012-04-05 17:34:59Z Sigrid Suski $
+ * @package: SobiPro Template SobiRestara
+ * ===================================================
+ * @author
+ * Name: Sigrid Suski & Radek Suski, Sigsiu.NET GmbH
+ * Email: sobi[at]sigsiu.net
+ * Url: http://www.Sigsiu.NET
+ * ===================================================
+ * @copyright Copyright (C) 2012 Sigsiu.NET GmbH (http://www.sigsiu.net). All rights reserved.
+ * @license Sigsiu.NET Template License V1.
+ * ===================================================
+ * $Date: 2012-04-05 19:34:59 +0200 (Do, 05 Apr 2012) $
+ * $Revision: 2342 $
+ * $Author: Sigrid Suski $
+ */
+span.spEntriesListEditLink a,
+span.spEntryEditLink a {
+  display:block;
+  float: right;
+  width: 80px;
+  border-style:solid;
+  text-align: center;
+  padding: 4px;
+  font-size: 12px;  
+  border: 1px solid silver;
+}
+
+#field_cuisine {
+	text-transform: capitalize;
+}
+
+span.spEntryEditLink a:active, 
+span.spEntryEditLink a:focus, 
+span.spEntryEditLink a:hover,
+span.spEntryEditLink a,
+span.spEntriesListEditLink a:active, 
+span.spEntriesListEditLink a:focus, 
+span.spEntriesListEditLink a:hover,
+span.spEntriesListEditLink a {
+  text-decoration: none!important;
+  background: none!important;
+}
+
+select.spAlphaMenuSwitch {
+  border: 1px solid #ccc
+}
+
+div#SobiPro {
+  width: 95%; 
+  /* float:left; */
+}
+
+div.sigsiuTree {
+  text-align: left!important;
+}
+
+div.spCatListCell {
+  padding: 5px;
+  float: left;
+  margin: 2px;
+}
+
+img.spFieldsData {
+  margin: 5px;
+}
+
+div.spEntriesListContainer {
+  height: 100%;
+}
+
+div.spEntriesListCell {
+  margin: 2px 0 0 3px;
+  padding: 10px;
+    border: solid #FFFFFF;
+  border-width: 5px 0px 0px 0px;
+  float: left;
+  position: relative;
+  background-color: #FBFBFB;
+}
+
+span.spEntriesListTitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  display: block;
+  font-weight: bold;
+  border: solid #CCCCCC;
+  padding-bottom: 8px;
+  padding-left: 3px;
+  border-width: 0px 0px 1px 0px;
+}
+
+div.spEntriesListRow {
+  clear:both;
+  margin-top: 1px;
+}
+
+div.spEntryCats {
+  font-size: 10px;
+  overflow: hidden;
+  height: 20px;
+  margin-top: 5px;
+}
+
+div.spSectionDesc {
+  padding: 5px;
+}
+
+/**
+ * Style of the submenu toolbar from khepri admin template
+ * Author: Andy Miller
+ */
+ 
+div.spTopMenu {
+  background:none repeat scroll 0 0 #F6F6F6;
+  margin-bottom:10px;
+}
+
+div.SPt, div.SPb {
+  height:6px;
+  margin:0;
+  overflow:hidden; 
+  padding:0;
+}
+
+div.SPm {
+  border-left:1px solid #CCCCCC;
+  border-right:1px solid #CCCCCC;
+  padding:0 8px;
+}
+
+ul.spTopMenu {
+  list-style:none outside none;
+  margin:0!important;
+  padding:0;
+}
+
+ul.spTopMenu li {
+  float:left;
+  padding:0;
+  font-size: 12px;
+  border-right:1px solid #CCCCCC;
+  color:#0B55C4;
+  font-weight:bold;
+  height:12px;
+  line-height:12px;
+  padding:0 15px!important;
+  list-style-type: none;
+  line-height: 12px!important;
+    background-image: none; /*because often defined :-(*/
+}
+ul.spTopMenu li a:link,
+ul.spTopMenu li a:visited,
+ul.spTopMenu li a:hover,
+ul.spTopMenu li a:focus,
+ul.spTopMenu li a:active {
+  text-decoration: none;
+  font-weight: normal;
+  background:#F6F6F6;
+}
+
+div.spTopMenu div.SPb {
+  background:url(http://localhost:8888/media/sobipro/styles/j_border.png) repeat-x scroll 0 100% transparent;
+}
+
+div.spTopMenu div.SPb div.SPb {
+  background:url(http://localhost:8888/media/sobipro/styles/j_crn_br_dark.png) no-repeat scroll 100% 0 transparent;
+}
+
+div.spTopMenu div.SPb div.SPb div.SPb {
+  background:url(http://localhost:8888/media/sobipro/styles/j_crn_bl_dark.png) no-repeat scroll 0 0 transparent;
+}
+
+div.spTopMenu div.SPt {
+  background:url(http://localhost:8888/media/sobipro/styles/j_border.png) repeat-x scroll 0 0 transparent;
+}
+
+div.spTopMenu div.SPt div.SPt {
+  background:url(http://localhost:8888/media/sobipro/styles/j_crn_tr_dark.png) no-repeat scroll 100% 0 transparent;
+}
+
+div.spTopMenu div.SPt div.SPt div.SPt {
+  background:url(http://localhost:8888/media/sobipro/styles/j_crn_tl_dark.png) no-repeat scroll 0 0 transparent;
+}
+
+/**
+ * ^^^ Style of the submenu toolbar from khepri admin template
+ */
+
+span.spCatListSubCats {
+  font-size: 10px;
+}
+
+div.spCatsListTitle {
+  padding-top: 2px;
+  margin-bottom: 3px;
+}
+
+div.spCatsListTitle a {
+  font-weight: bold;
+  margin: 0px!important;  
+}
+
+div.spCatsListIntrotext {
+  
+}
+
+div.spCatListIcon {
+  float: left;
+  margin-right: 8px;
+}
+
+div.spPaymentHeader {
+  margin: 1px; 
+  background-color: #EEEEEE; 
+  float: left;
+  padding: 2px;
+  padding-left: 5px;
+}
+
+div.spPaymentPosition {
+  margin: 1px; 
+  background-color: #f7f7f7; 
+  float: left;
+  padding: 2px;
+  padding-left: 5px;
+}
+div.spPaymentExpl {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 3px;
+}
+div.spPaymentDiscount,
+div.spPaymentSum {
+  font-weight: bold;
+  margin: 3px;
+}
+
+div.spPaymentSumPosition {
+  margin: 1px; 
+  background-color: #f7f7f7; 
+  float: left;
+  padding: 2px;
+  padding-left: 5px;
+}
+div.spPaymentSumDesc {
+  margin: 1px; 
+  background-color: #EEEEEE; 
+  float: left;
+  padding: 2px;
+  padding-left: 5px;
+}
+
+div.spPaymentPreview button {
+  margin: 5px;
+}
+
+a.spDisabled:hover {
+  text-decoration: none;
+}
+
+div.spAlphaMenu {
+  width:100%;
+  text-align:center!important;
+}
+
+div.spAlphaMenu span {
+  font-weight: normal;
+  font-size: 14px;
+  color: #868686;
+}
+div.spAlphaMenu a {
+  font-weight: bold;
+  text-decoration: none!important;
+}
+
+span.spAlphaLetterSelected  a {
+  color: #551A8B;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.spclear {
+    clear: both;
+}

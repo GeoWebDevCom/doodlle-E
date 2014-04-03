@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ @version: $Id: review.xml 3550 2013-07-11 18:35:14Z Radek Suski $
+ @package: SobiPro Review & Rating Application
+
+ @author
+ Name: Sigrid Suski & Radek Suski, Sigsiu.NET GmbH
+ Email: sobi[at]sigsiu.net
+ Url: http://www.Sigsiu.NET
+
+ @copyright Copyright (C) 2006 - 2013 Sigsiu.NET GmbH (http://www.sigsiu.net). All rights reserved.
+ @license GNU/GPL Version 3
+ This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3
+ as published by the Free Software Foundation, and under the additional terms according section 7 of GPL v3.
+ See http://www.gnu.org/licenses/gpl.html and http://sobipro.sigsiu.net/licenses.
+
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+ $Date: 2013-07-11 20:35:14 +0200 (Do, 11 Jul 2013) $
+ $Revision: 3550 $
+ $Author: Radek Suski $
+-->
+<definition>
+	<header>
+		<title value="SPRRA" />
+		<file type="script" filename="bootstrap.tabs" />
+		<file type="script" filename="rating" />
+		<file type="script" filename="review-tags" />
+		<file type="script" filename="adm.review-rating" />
+		<file type="style" filename="adm.review" />
+	</header>
+	<toolbar title="SPRRA" icon="SobiEdit">
+		<button type="apply" task="review.applyReview" />
+		<divider />
+		<button type="save" task="review.saveReview" />
+		<divider />
+		<button type="exit" task="review.cancel" />
+		<divider />
+		<button type="help" target="_blank" />
+	</toolbar>
+	<body disable-menu="true">
+		<div class="row-fluid">
+			<message id="spMessage" />
+			<tabs>
+				<tab label="SPRRA.TAB_REVIEW">
+					<fieldset>
+						<field type="text" name="review.title" label="SPRRA.FORM_REV_TITLE" maxlength="255" class="input-splarge" required="true" />
+						<field type="textarea" name="review.review" label="SPRRA.FORM_REVIEW" editor="false" style="" class="input-splarge" rows="14" />
+						<field type="textarea" name="review.positiveReview" placeholder="SPRRA.FORM_ADD_POSITIVE" label="SPRRA.ADMFORM_POS_REVIEW" editor="false" style="" id="review-positives" />
+						<field type="textarea" name="review.negativeReview" placeholder="SPRRA.FORM_ADD_NEGATIVE" label="SPRRA.ADMFORM_NEG_REVIEW" editor="false" style="" id="review-negatives" />
+					</fieldset>
+				</tab>
+				<tab label="SPRRA.TAB_RATING" condition="rating-enabled">
+					<fieldset label="SPRRA.REV_OA_RATING">
+						<div class="oar-rating">
+							<call function="SPRrCtrl::ParseRating">
+								<param>OAR</param>
+							</call>
+							<div class="badge rating-value oar-value">
+								<text value="review.oar" parse="true" />
+							</div>
+						</div>
+					</fieldset>
+					<fieldset label="SPRRA.REV_RATINGS_DETAILED" />
+					<fieldset>
+						<table>
+							<head>
+								<cell label="SPRRA.FIELD_NAME" type="text" class="rating-label" />
+								<cell label="SPRRA.FIELD_RATING" type="text" />
+							</head>
+							<loop subject="ratings">
+								<cell class="SpCellContainer rating-label">
+									<cell type="text" value="field.label" />
+								</cell>
+								<cell class="SpCellContainer">
+									<cell>
+										<call function="SPRrCtrl::ParseRating" />
+									</cell>
+									<cell type="text" value="rating.vote" class="badge rating-value" />
+								</cell>
+							</loop>
+						</table>
+					</fieldset>
+				</tab>
+				<tab label="SPRRA.TAB_PUBLISHING">
+					<fieldset>
+						<field type="toggle" name="review.state" label="SPRRA.PUBLISHED" prefix="yes_no" />
+						<field type="toggle" name="review.approved" label="SPRRA.APPROVED" prefix="yes_no" />
+						<field type="datePicker" label="CREATED_AT" name="review.date" class="span2" dateFormat="d-m-Y H:i:s" icon="edit" />
+					</fieldset>
+					<fieldset label="SPRRA.CREATED_BY">
+						<field type="userSelector" label="CREATED_BY" name="review.author.uid" class="span2" format="%name (%id)" />
+						<field type="text" name="review.author.name" label="SPRRA.ADMFORM_VISITOR_NAME" maxlength="255" class="input-xlarge" required="true" />
+						<field type="text" name="review.author.email" label="SPRRA.ADMFORM_VISITOR_MAIL" maxlength="255" class="input-xlarge" required="true" />
+						<field type="output" label="SPRRA.CREATED_BY_IP" name="review.authorIP" class="infoText">
+							<value>
+								<url type="external" host="http://apps.db.ripe.net/search/query.html?" content="review.authorIP" target="_blank">
+									<param name="searchtext" value="review.authorIP" parse="true" />
+								</url>
+							</value>
+						</field>
+					</fieldset>
+					<fieldset label="SPRRA.APPROVAL" condition="review.approved">
+						<field type="output" label="SPRRA.APPROVED_BY" class="infoText">
+							<value>
+								<url type="intern" content="review.approval.user.name">
+									<param name="option" value="com_users" />
+									<param name="task" value="user.edit" />
+									<param name="id" value="review.approval.user.id" parse="true" />
+								</url>
+							</value>
+						</field>
+						<field type="dateGetter" label="SPRRA.APPROVED_AT" value="review.approval.date" dateFormat="d-m-Y H:i:s" class="infoText" />
+						<field type="output" label="SPRRA.APPROVED_BY_IP" name="review.approval.ip" class="infoText">
+							<value>
+								<url type="external" host="http://apps.db.ripe.net/search/query.html?" content="review.approval.ip" target="_blank">
+									<param name="searchtext" value="review.approval.ip" parse="true" />
+								</url>
+							</value>
+						</field>
+					</fieldset>
+				</tab>
+			</tabs>
+		</div>
+	</body>
+	<config>
+		<action value="index.php" />
+		<hidden>
+			<field name="option" default="com_sobipro" />
+			<field name="task" default="" />
+			<field name="rid" value="rid" />
+			<field name="eid" value="review.sid" />
+			<field name="sid" value="sid" />
+			<field name="method" default="xhr" />
+		</hidden>
+	</config>
+</definition>

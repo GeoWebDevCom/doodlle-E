@@ -1,0 +1,161 @@
+/**
+ * @version: $Id: review.less 3570 2013-07-19 16:54:35Z Sigrid Suski $
+ * @package: SobiPro Review & Rating Application
+
+ * @author
+ * Name: Sigrid Suski & Radek Suski, Sigsiu.NET GmbH
+ * Email: sobi[at]sigsiu.net
+ * Url: http://www.Sigsiu.NET
+
+ * @copyright Copyright (C) 2006 - 2013 Sigsiu.NET GmbH (http://www.sigsiu.net). All rights reserved.
+ * @license GNU/GPL Version 3
+ * This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3
+ * as published by the Free Software Foundation, and under the additional terms according section 7 of GPL v3.
+ * See http://www.gnu.org/licenses/gpl.html and http://sobipro.sigsiu.net/licenses.
+
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+ * $Date: 2013-07-19 18:54:35 +0200 (Fr, 19 Jul 2013) $
+ * $Revision: 3570 $
+ * $Author: Sigrid Suski $
+ */
+/* Review */
+.review-title,
+.review-rating {
+  float: left;
+  font-size: 20px;
+  line-height: 25px;
+}
+.review-rating {
+  font-weight: bold;
+}
+.review-header {
+  margin-bottom: 5px;
+}
+.review-text {
+  margin-top: 5px;
+}
+.review-censored-word {
+  text-decoration: line-through;
+}
+/* Rating */
+.oar-rating {
+  padding-left: 260px;
+  width: 300px;
+}
+.rating-label {
+  text-align: right!important;
+  width: 192px;
+  padding-right: 35px!important;
+}
+.rating-value {
+  margin-left: 10px;
+}
+/* Likes and Dislikes */
+div#review-negatives_tagsinput span.tag {
+  border: 1px solid #840000;
+  background: #c60000;
+  color: #f5f5f5;
+}
+div#review-negatives_tagsinput span.tag a {
+  color: #f5f5f5;
+}
+div.tagsinput input {
+  width: 90px;
+  border: 1px solid transparent;
+  padding: 3px;
+  background: transparent;
+  color: #000;
+  outline: 0px;
+  margin: 1px 0 2px 0;
+  font-size: 13px;
+  line-height: 18px;
+  height: 18px;
+}
+div.tagsinput div {
+  display: block;
+  float: left;
+}
+.tags_clear {
+  clear: both;
+  width: 100%;
+  height: 0px;
+}
+input#review-positives_tag,
+input#review-negatives_tag,
+div.tagsinput {
+  border: 1px solid #cccccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  border-radius: 3px;
+  padding: 3px;
+  overflow-y: auto;
+}
+div.tagsinput span.tag {
+  border: 1px solid #a5d24a;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  float: left;
+  padding: 3px 8px 3px 8px;
+  text-decoration: none;
+  background: #cde69c;
+  color: #336600;
+  margin: 1px 3px 2px 1px;
+}
+div.tagsinput span.tag a {
+  font-weight: bold;
+  color: #336633;
+  text-decoration: none;
+  margin-top: 3px;
+}
+/* End of Likes and Dislikes */
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+div.rating-cancel,
+div.star-rating {
+  float: left;
+  width: 18px;
+  height: 20px;
+  text-indent: -999em;
+  cursor: pointer;
+  display: block;
+  background: transparent;
+  overflow: hidden;
+}
+div.rating-cancel {
+  width: 28px;
+}
+div.rating-cancel,
+div.rating-cancel a {
+  background: url("../../icons/rating/delete.gif") no-repeat 0 -20px;
+}
+div.star-rating,
+div.star-rating a {
+  background: url("../../icons/rating/star-orange-grey.gif") no-repeat 0 0px;
+}
+div.rating-cancel a,
+div.star-rating a {
+  display: block;
+  width: 18px;
+  height: 100%;
+  background-position: 0 0px;
+  border: 0;
+}
+div.star-rating-on a {
+  background-position: 0 -20px !important;
+}
+div.star-rating-hover a {
+  background-position: 0 -40px;
+}
+/* Read Only CSS */
+div.star-rating-readonly a {
+  cursor: default !important;
+}
+/* Partial Star CSS */
+div.star-rating {
+  background: transparent !important;
+  overflow: hidden !important;
+}
+/* END jQuery.Rating Plugin CSS */

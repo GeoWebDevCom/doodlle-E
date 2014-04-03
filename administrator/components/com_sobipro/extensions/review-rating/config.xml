@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ @version: $Id: config.xml 3536 2013-07-08 17:46:39Z Sigrid Suski $
+ @package: SobiPro Review & Rating Application
+
+ @author
+ Name: Sigrid Suski & Radek Suski, Sigsiu.NET GmbH
+ Email: sobi[at]sigsiu.net
+ Url: http://www.Sigsiu.NET
+
+ @copyright Copyright (C) 2006 - 2013 Sigsiu.NET GmbH (http://www.sigsiu.net). All rights reserved.
+ @license GNU/GPL Version 3
+ This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3
+ as published by the Free Software Foundation, and under the additional terms according section 7 of GPL v3.
+ See http://www.gnu.org/licenses/gpl.html and http://sobipro.sigsiu.net/licenses.
+
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+ $Date: 2013-07-08 19:46:39 +0200 (Mo, 08 Jul 2013) $
+ $Revision: 3536 $
+ $Author: Sigrid Suski $
+-->
+<definition>
+	<header>
+		<title value="SPRRA" />
+		<file type="script" filename="bootstrap.tooltips" />
+		<file type="script" filename="bootstrap.tabs" />
+		<script>
+			<![CDATA[
+			SobiPro.jQuery( document ).ready( function () {
+				SobiPro.jQuery( '#SPAdminForm' ).on( 'BeforeAjaxSubmit', function ( e, handler, task ) {
+					if ( task == 'review.editField' ) {
+						handler.takeOver = true;
+					}
+				} );
+				SobiPro.jQuery( '.field-edit' ).click( function( e ) {
+					e.preventDefault();
+					var saved = false;
+					var url = SobiPro.jQuery( this ).attr( 'href' );
+					if( !( url ) || url == '#' ) {
+						url = SobiProUrl.replace( '%task%', 'review.editField'  ) + '&sid=' + SobiProSection;
+						SobiPro.jQuery( '#delete-field' ).addClass( 'hide' );
+					}
+					else {
+						SobiPro.jQuery( '#delete-field' ).removeClass( 'hide' );
+					}
+					SobiPro.jQuery( "#spFieldEdit" ).html( '<iframe id="field-frame" src="' + url + '&tmpl=component" style="width: 100%; height: 100%; min-height: 405px; border: none;"> </iframe>' );
+					var modal = SobiPro.jQuery( '#spField' ).modal();
+					SobiPro.jQuery( '#save-field' ).click( function( e ) {
+						SobiPro.jQuery( '#field-frame' )[ 0 ].contentWindow.clickHandler( 'saveField' );
+						saved = true;
+					} );
+					SobiPro.jQuery( '#delete-field' ).click( function( e ) {
+						SobiPro.jQuery( '#field-frame' )[ 0 ].contentWindow.clickHandler( 'deleteField' );
+						saved = true;
+					} );
+					modal.on( 'hidden', function () {
+						if( saved ) {
+							location.reload();
+						}
+					} );
+				} );
+			} );
+			]]>
+		</script>
+	</header>
+	<toolbar title="SPRRA" icon="SobiApplication">
+		<button type="apply" task="review.save" />
+		<divider />
+        <button type="new" task="review.editField" class="field-edit" label="SPRRA.TB.NEW_FIELD" />
+        <divider />
+		<buttons icon="sitemap" buttons="sections-list" label="TB.SECTIONS" />
+		<divider />
+		<buttons type="options" dropdown-class="pull-right">
+			<button type="url" task="panel" />
+			<button type="url" task="config" />
+            <button type="url" task="acl" />
+			<button type="url" task="extensions.installed" />
+			<button type="url" task="template.info" />
+			<button type="help" target="_blank" />
+		</buttons>
+	</toolbar>
+	<body>
+		<div class="row-fluid">
+			<div class="span2" id="SPRightMenu">
+				<menu />
+			</div>
+			<div class="span10">
+				<message id="spMessage" />
+				<tabs>
+					<tab label="SPRRA.SETTINGS_RATING_TAB">
+						<div class="span12">
+							<fieldset>
+								<field type="toggle" name="settings.ratingEnabled" label="SPRRA.SETTINGS_RATING_ENABLED" prefix="yes_no" />
+							</fieldset>
+							<fieldset label="SPRRA.SETTINGS_CRITERIA_FIELDS" />
+                            <table condition="fields.length" label="sfdg" >
+                                <head>
+                                    <cell label="SPRRA.SETTINGS_FHEAD_ID" type="text" class="SpCellCenter" />
+                                    <cell label="SPRRA.SETTINGS_FHEAD_LABEL" type="text" class="SpCellLeft" />
+                                    <cell label="SPRRA.SETTINGS_FHEAD_PRIO" type="text" class="SpCellCenter" />
+                                    <cell label="SPRRA.SETTINGS_FHEAD_STATE" type="text" class="SpCellCenter" />
+                                    <cell label="SPRRA.SETTINGS_FHEAD_POSITION" type="text" class="SpCellCenter" />
+                                    <cell label="SPRRA.SETTINGS_FHEAD_EDIT" type="text" class="SpCellCenter" />
+                                </head>
+                                <loop subject="fields">
+                                    <cell type="text" value="fid" class="SpCellCenter" />
+                                    <cell type="text" value="label" class="SpCellLeft" />
+                                    <cell type="text" value="importance" class="SpCellCenter" />
+                                    <cell type="ticker" value="enabled" class="SpCellCenter" icons="{'0':'remove-sign','1':'ok'}" />
+                                    <cell type="text" value="position" class="SpCellCenter" />
+                                    <cell type="text" class="SpCellCenter">
+                                        <cell type="link" icon="edit">
+                                            <url type="intern" class="field-edit btn">
+                                                <param name="task" value="review.editField" />
+                                                <param name="sid" value="sid" parse="true" />
+                                                <param name="fid" value="fid" parse="true" />
+                                            </url>
+                                        </cell>
+                                    </cell>
+                                </loop>
+                            </table>
+                        </div>
+					</tab>
+					<tab label="SPRRA.SETTINGS_REVIEW_TAB">
+						<div class="row-fluid">
+							<div class="span12">
+								<fieldset>
+									<field type="toggle" name="settings.revEnabled" label="SPRRA.SETTINGS_REV_ENABLED" prefix="yes_no" />
+								</fieldset>
+								<fieldset label="SPRRA.SETTINGS_REV_GENERAL">
+									<field type="toggle" name="settings.revMulti" label="SPRRA.SETTINGS_REV_MULTI" prefix="yes_no" />
+									<field type="toggle" name="settings.revMailRequ" label="SPRRA.SETTINGS_REV_MAIL_REQ" prefix="yes_no" />
+									<field type="toggle" name="settings.revPositive" label="SPRRA.SETTINGS_REV_POSITIVE" prefix="yes_no" />
+									<field type="select" label="SPRRA.SETTINGS_REV_ORDER" name="settings.revOrdering" selected="settings.revOrdering" class="input-large">
+										<values>
+											<option value="date.asc" label="SPRRA.SETTINGS_REV_ORDER_ASC" />
+											<option value="date.desc" label="SPRRA.SETTINGS_REV_ORDER_DESC" />
+										</values>
+									</field>
+									<field type="select" label="SPRRA.SETTINGS_REV_ON_SITE" name="settings.revOnSite" selected="category.showIntrotext" class="input-small">
+										<values>
+											<option value="5" />
+											<option value="10" />
+											<option value="15" />
+											<option value="20" />
+											<option value="25" />
+											<option value="30" />
+											<option value="35" />
+											<option value="40" />
+											<option value="45" />
+											<option value="50" />
+										</values>
+									</field>
+									<field type="textarea" name="settings.badWords" label="SPRRA.BAD_WORDS_FILTER" editor="false" class="input-splarge" rows="10" style="" />
+								</fieldset>
+							</div>
+						</div>
+					</tab>
+					<tab label="SPRRA.SETTINGS_REPORT_TAB">
+						<div class="row-fluid">
+							<div class="span12">
+								<fieldset>
+									<field type="toggle" name="settings.revReportsEnabled" label="SPRRA.SETTINGS_REV_REPORTS_ENABLED" prefix="yes_no" />
+									</fieldset>
+									<fieldset label="SPRRA.SETTINGS_REPORT_GENERAL">
+									<field type="toggle" name="settings.revReportsAnonymous" label="SPRRA.SETTINGS_REPORTS_ANONYMOUS" prefix="yes_no" />
+									<field type="textarea" name="settings.revReportTypes" label="SPRRA.SETTINGS_REPORTS_TYPES" editor="false" class="input-splarge" rows="10" style="" />
+								</fieldset>
+							</div>
+						</div>
+					</tab>
+				</tabs>
+			</div>
+		</div>
+		<div class="modal hide" id="spField" style="width:600px;">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<text value="×" />
+				</button>
+				<h3>
+					<text value="SPRRA.EDIT_FIELD" />
+				</h3>
+			</div>
+			<div class="modal-body">
+				<div id="spFieldEdit"></div>
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="btn pull-left btn-danger" id="delete-field">
+					<text value="SPRRA.SETTINGS_FDEL_BT" />
+				</a>
+				<a href="#" class="btn" data-dismiss="modal">
+					<text value="CLOSE" />
+				</a>
+				<a href="#" id="save-field" class="btn btn-primary">
+					<text value="SAVE" />
+				</a>
+			</div>
+		</div>
+	</body>
+	<config>
+		<action value="index.php" />
+		<hidden>
+			<field name="option" default="com_sobipro" />
+			<field name="task" default="" />
+			<field name="method" default="xhr" />
+		</hidden>
+	</config>
+</definition>

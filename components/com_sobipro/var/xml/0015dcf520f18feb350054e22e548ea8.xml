@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category>
+  <id>43</id>
+  <counter>1</counter>
+  <section id="40" lang="en-GB">Creative Directory</section>
+  <name lang="en-GB">Graphic Design</name>
+  <icon>http://localhost:8888/media/sobipro/images/icons/graphic_design.png</icon>
+  <meta>
+    <description></description>
+    <keys>
+      <key></key>
+    </keys>
+    <author></author>
+    <robots></robots>
+  </meta>
+  <entries_in_line>3</entries_in_line>
+  <categories_in_line>2</categories_in_line>
+  <number_of_subcats>6</number_of_subcats>
+  <entries>
+    <entry id="50" nid="xcxcx">
+      <id>50</id>
+      <nid>xcxcx</nid>
+      <name lang="en-GB">itinary architecture</name>
+      <url>/index.php/directory?pid=43&amp;sid=50:xcxcx</url>
+      <created_time>2013-12-30 23:16:34</created_time>
+      <updated_time>2014-02-25 20:56:25</updated_time>
+      <valid_since>2013-12-30 23:16:34</valid_since>
+      <valid_until></valid_until>
+      <state>published</state>
+      <author>993</author>
+      <counter>3678</counter>
+      <approved>1</approved>
+      <categories>
+        <category lang="en-GB" id="42" position="1" url="/index.php/directory?sid=42:retail-interior-design">Retail Interior Design</category>
+        <category lang="en-GB" id="43" position="1" url="/index.php/directory?sid=43:graphic-design">Graphic Design</category>
+      </categories>
+      <fields>
+        <field_company_description id="26" type="textarea" suffix="" position="4" css_class="spField" css-class="spField">
+          <label lang="en-GB" show="1">Company Description</label>
+          <data lang="en-GB" class="spField field_company_description">The standard Lorem Ipsum passage, used since the 1500s&lt;br /&gt;&#13;
+&lt;br /&gt;&#13;
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est </data>
+        </field_company_description>
+        <field_cover_image id="25" type="image" suffix="340px high x 240px wide" position="5" css_class="spField cover" css-class="spField cover">
+          <label lang="en-GB" show="1">Cover image</label>
+          <data icon="images/sobipro/entries/50/ico_currys-digital-uk3.jpg.jpg" image="images/sobipro/entries/50/img_Currys-Digital-UK3.jpg.jpg" thumbnail="" original="" class="spField cover field_cover_image">
+            <img class="spField cover field_cover_image" src="http://localhost:8888/images/sobipro/entries/50/img_Currys-Digital-UK3.jpg.jpg" alt=""/>
+          </data>
+        </field_cover_image>
+      </fields>
+      <reviews>
+        <summary_rating>
+          <overall count="0" value="">0</overall>
+        </summary_rating>
+      </reviews>
+    </entry>
+  </entries>
+  <navigation lang="en-GB">
+    <current_site_txt>Page 1 of 1</current_site_txt>
+    <current_site>1</current_site>
+    <all_sites>1</all_sites>
+    <entries>1</entries>
+    <sites/>
+  </navigation>
+  <template_path>http://localhost:8888/components/com_sobipro/usr/templates/usbydesign/</template_path>
+  <header>
+    <addcssfile>
+      <value>
+        <file>sobipro</file>
+        <adm></adm>
+        <media></media>
+        <force></force>
+        <ext>css</ext>
+        <params></params>
+        <checksum>5527bdcd5b30f40400c44a1fcc7d21a3</checksum>
+      </value>
+      <value>
+        <file>absolute./Users/RichardClark/Sites/E/components/com_sobipro/usr/templates/usbydesign/.css.default</file>
+        <adm></adm>
+        <media></media>
+        <force></force>
+        <ext>css</ext>
+        <params></params>
+        <checksum>b4c1507bc9ab8dd61661d76c0be0412f</checksum>
+      </value>
+      <value>
+        <file>review</file>
+        <adm></adm>
+        <media></media>
+        <force></force>
+        <ext>css</ext>
+        <params></params>
+        <checksum>8379c7aa45f5ea8e5559a984b3ec82a3</checksum>
+      </value>
+    </addcssfile>
+    <addjsfile>
+      <value>
+        <script>sobipro</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>e4448795ea9ccd83606ddf4fa617caa0</checksum>
+      </value>
+      <value>
+        <script>jquery</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>67ca7d0e84c2e42c686014dc81144f13</checksum>
+      </value>
+      <value>
+        <script>jqnc</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>53f5392ca25fec759c622104cb8dd312</checksum>
+      </value>
+      <value>
+        <script>absolute./Users/RichardClark/Sites/E/components/com_sobipro/usr/templates/usbydesign/.js.alpha</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>8e1878d155616f9a6c3d9f8d76ce70c2</checksum>
+      </value>
+      <value>
+        <script>pagination</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>5e459c32faa99412489721564408113c</checksum>
+      </value>
+      <value>
+        <script>absolute./Users/RichardClark/Sites/E/components/com_sobipro/usr/templates/usbydesign/.js.v-card_custom</script>
+        <adm></adm>
+        <params></params>
+        <force></force>
+        <ext>js</ext>
+        <checksum>0a12be8db222deed585ec7d484ab788f</checksum>
+      </value>
+    </addjsfile>
+    <addtitle>
+      <value>
+        <title>Directory</title>
+        <checksum>e73cda510e8bb947f7e61089e5581494</checksum>
+      </value>
+      <value>
+        <title>Graphic Design</title>
+        <checksum>f36a773a60a98ae7fa7d7895f423541a</checksum>
+      </value>
+    </addtitle>
+    <addcanonical>
+      <value>
+        <url>http://localhost:8888/index.php/directory?sid=43:graphic-design</url>
+        <checksum>eb83c4614eaf0f803d6fd673d89b8a3f</checksum>
+      </value>
+    </addcanonical>
+    <addheadlink>
+      <value>
+        <href>http://localhost:8888/index.php/directory?sid=43:graphic-design</href>
+        <type></type>
+        <title></title>
+        <rel>canonical</rel>
+        <reltype>rel</reltype>
+        <params></params>
+        <checksum>55cad7c2aac5d456f2e9fb9714f932c2</checksum>
+      </value>
+      <value>
+        <href>/index.php/directory?sid=40&amp;sptpl=feeds.rss&amp;out=raw&amp;tmpl=component&amp;format=raw</href>
+        <type>application/atom+xml</type>
+        <title>Creative Directory</title>
+        <rel>alternate</rel>
+        <reltype>rel</reltype>
+        <params></params>
+        <checksum>bf01abc4f8917f8f7adb525c21588db9</checksum>
+      </value>
+      <value>
+        <href>/index.php/directory?sid=43&amp;sptpl=feeds.rss&amp;out=raw&amp;tmpl=component&amp;format=raw</href>
+        <type>application/atom+xml</type>
+        <title>Graphic Design</title>
+        <rel>alternate</rel>
+        <reltype>rel</reltype>
+        <params></params>
+        <checksum>22c251ec56f568a6e0b557fd3a14a39e</checksum>
+      </value>
+    </addheadlink>
+  </header>
+  <cache-data>
+    <hidden/>
+    <pathway>
+      <value>
+        <name>Graphic Design</name>
+        <url>/index.php/directory?sid=43:graphic-design</url>
+      </value>
+    </pathway>
+  </cache-data>
+</category>
