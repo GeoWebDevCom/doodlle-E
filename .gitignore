@@ -26,5 +26,8 @@ administrator/components/com_patchtester/
 administrator/templates/hathor/html/com_patchtester
 components/com_patchtester/
 
+# Database
+libraries/joomla/database/Dump20140412.sql
+
 # SobiPro temp files
 components/com_sobipro/var/xml/
