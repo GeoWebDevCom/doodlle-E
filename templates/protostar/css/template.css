@@ -7387,10 +7387,8 @@ li > a, a {
 a:hover{
 	text-decoration:none;
 }
-.body {
-	background-color: #f9f9f9;
-}
-body.site.fluid {
+html body, .body, body.site.fluid {
+	background:none;
 	background-color: #f9f9f9;
 }
 .header-shape{
@@ -7409,7 +7407,6 @@ body.site.fluid {
 }
 #sidebar, #content {
 /*	opacity:0;*/
-	
 /*	display:none;*/
 }
 
@@ -8057,9 +8054,7 @@ width:95%;
 
 /*********************************end detail edit****************************/
 /*********************************begin Social Piniterest edit****************************/
-body{
-/*	background:none;*/
-}
+
 div#header_container, footer {
 	background-color:#f9f9f8;
 }
@@ -8072,12 +8067,39 @@ div#header_container, footer {
 	padding:0;
 	text-align:initial;
 }
-#container{
-/*	margin:0px 200px;*/
-/*	padding:0px 200px;*/
+.pin{
+	border-radius: 3px;
+	box-shadow:0 1px 1px 0 rgba(0,0,0,0.18);
+	-moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.18);
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.18);
 }
-
-
+div.pic_show_functional{
+	padding:0;
+}
+/*user area*/
+div > .convo{
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	background:white;
+	border-top:solid 1px rgba(0,0,0,0.1);
+	padding:6px 10px 6px 10px;
+	text-transform:capitalize;
+	font-size:10px;
+}
+.pin img{
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.convo a, .description{
+	font-size:10px;
+	text-transform:capitalize;
+}
+.convo a:hover{
+	text-decoration:none;
+}
+.convo:hover{
+	background-color:#f8f8f8;
+}
 /*module images*/
 .CloseupLeft #sideboard{
 	padding:10px;
@@ -8087,7 +8109,6 @@ div#header_container, footer {
 	border: 0 solid black;
   	border-radius: 3px;
     -moz-border-radius: 3px;
-    -khtml-border-radius: 3px;
     -webkit-border-radius: 3px;
 }
 .pinBoard .link{
@@ -8095,5 +8116,25 @@ div#header_container, footer {
 	margin-left:auto ;
 	margin-right:auto ;
 }
+/*login page*/
+.logo-header, span.logo{
+	display:none;
+	visibility: hidden;
+}
 
+#loginForm input, form #login-button input, div.twitter_login,
+#facebook_login_button .login_button , div#twitter_login_button,
+.social-media .login_button, .social-media .login_button:hover,
+.invite_frnds input{
+	height:40px;
+	border-radius:3px;
+/*	padding:0;*/
+	box-shadow:none;
+}
+ul li #content{
+	left:0;
+}
+
+
+/*login page end*/
 /*********************************end Social Piniterest edit****************************/
