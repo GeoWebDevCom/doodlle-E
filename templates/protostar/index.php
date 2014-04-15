@@ -16,7 +16,7 @@ if(!defined('DS')){
 
 require (JPATH_ROOT.DS.'components' .DS.'com_socialpinboard'. DS . 'layouts/socialpinboard.php');
 
-JHtml::_('behavior.framework', true);
+// JHtml::_('behavior.framework', true);
 //create instance for the class
 $thumb = new thumb();
 $fthumb = $thumb->fthumb();
@@ -42,6 +42,7 @@ $templateparams		= $app->getTemplate(true)->params;
 $config				= JFactory::getConfig();
 $site_name 			= $config->get('sitename');
 $logo				= $this->params->get('logo');
+$view 				= JRequest::getVar('view');
 
 // clarky edit end SP
 
@@ -208,15 +209,24 @@ else
 	
 			<!-- clarky edit SP -->
 	      <?php
+			if ($view != 'contact' && $view != 'registration' && $view != 'register'){
 	            $headerstuff=$this->getHeadData();
 	            reset($headerstuff['scripts']);
 	            foreach($headerstuff['scripts'] as $key=>$value){ 
 
-	            if (strstr($key,"/media/system/js/mootools-core.js") || strstr($key,"/media/system/js/mootools-more.js") )
+	            if ((strstr($key,"/media/system/js/mootools-core.js") || strstr($key,"/media/system/js/mootools-more.js")) )
 	            {
+						JHtml::_('behavior.framework', true);
 	            unset($headerstuff['scripts'][$key]);
-	            }        }
+	            }        
+	
+				}
 	            $this->setHeadData($headerstuff);
+				}
+				 else {
+					 JHtml::_('behavior.keepalive');
+						JHtml::_('bootstrap.framework');
+					}
 	        ?>   
 	        <?php
 	            $files = JHtml::_('stylesheet','templates/socialpinboard/css/template.css',null,false,true);
@@ -315,7 +325,7 @@ else
 				<!-- start social pinboard if selected -->
 				<?php if ($itemid==113):?>
 						<body id="CategoriesBarPage">
-					            <?php  $view = JRequest::getVar('view');
+					            <?php 
 					            if($view != 'people'  &&  $view != 'inviterequest'  && $view != 'userfollow'){
 					//                if($view != 'people' && $view != 'inviterequest') {
 					            ?>

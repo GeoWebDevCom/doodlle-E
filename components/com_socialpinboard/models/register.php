@@ -25,6 +25,16 @@ class socialpinboardModelregister extends SocialpinboardModel {
         $mailer = JFactory::getMailer();
         $app = Jfactory::getApplication();
         $detail = JRequest::get('POST');
+  
+JPluginHelper::importPlugin('captcha');
+$dispatcher = JDispatcher::getInstance();
+$res = $dispatcher->trigger('onCheckAnswer',$detail['recaptcha_response_field']);
+if(!$res[0]){
+	$app->redirect(JRoute::_('index.php?option=com_socialpinboard&view=register', false), 'Invalid Captcha', '');
+//    die('Invalid Captcha');
+}
+
+
         $new_email = $detail['email'];
         $first_name = $detail['first_name'];
         $last_name = $detail['last_name'];

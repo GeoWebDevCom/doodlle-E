@@ -152,6 +152,15 @@ foreach ($modules as $module) {
                 </li>
 
             </div>
+			<?php
+			JPluginHelper::importPlugin('captcha');
+$dispatcher = JDispatcher::getInstance();
+$dispatcher->trigger('onInit','dynamic_recaptcha_1');
+
+//html code inside form tag
+?>
+			<div id="dynamic_recaptcha_1"></div>
+
              <div class="signup_right">
                  </div>
         </ul>
