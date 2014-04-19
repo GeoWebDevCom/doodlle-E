@@ -31,3 +31,53 @@ libraries/joomla/database/Dump20140412.sql
 
 # SobiPro temp files
 components/com_sobipro/var/xml/
+
+# PLIGG
+#
+# COMMON ELEMENTS
+#
+
+# Windows image file caches
+pligg/Thumbs.db
+pligg/ehthumbs.db
+
+# Folder config file
+pligg/Desktop.ini
+
+# Recycle Bin used on file shares
+pligg/$RECYCLE.BIN/
+
+# Mac crap
+pligg/.DS_Store
+
+#
+# PLIGG ELEMENTS
+#
+
+# Uploaded Avatars
+pligg/avatars/groups_uploaded/*.jpg
+pligg/avatars/groups_uploaded/*.png
+pligg/avatars/groups_uploaded/*.gif
+pligg/avatars/user_uploaded/*.jpg
+pligg/avatars/user_uploaded/*.png
+pligg/avatars/user_uploaded/*.gif
+
+# Renamed .default Pligg files
+pligg/.htaccess
+pligg/languages/*.conf
+pligg/libs/dbconnect.php
+pligg/logs/
+pligg/settings.php
+
+
+# Upload module attachments
+pligg/modules/upload/attachments/*.jpg
+pligg/modules/upload/attachments/*.png
+pligg/modules/upload/attachments/*.gif
+pligg/modules/upload/attachments/thumbs/*.jpg
+pligg/modules/upload/attachments/thumbs/*.png
+pligg/modules/upload/attachments/thumbs/*.gif
+
+
+# All .log files
+pligg/*.log
