@@ -1,0 +1,1137 @@
+/*------------------------------------------------------------------------------*/
+/*																				*/
+/*	OTNewz v1.0RC1																*/
+/*	http://www.oxythemes.com/products/templates/otnewz.html						*/
+/*																				*/
+/*	Copyright ©2013 OxyThemes.com												*/
+/*	All Rights Reserved															*/
+/*																				*/
+/*------------------------------------------------------------------------------*/
+
+/*==============================================================================*/
+/* COMMON STYLES and ELEMENTS													*/
+/*==============================================================================*/
+.otFieldLabel {
+	background: #fafbfc;
+	border: 1px solid #d9e4e9;
+	float: left;
+	padding: 11px 20px;
+}
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="search"] {
+	border-left: 0;
+	float: left;
+	min-height: 15px;
+	padding: 15px 3px;
+}
+select {
+	padding: 14px 0;
+}
+input[type="submit"] {
+	padding: 13px 30px 12px;
+}
+.button {
+	padding: 11px 30px;
+}
+.modal {
+	background: #3e3e3e;
+	padding: 5px;
+}
+.modalHeader {
+	font-size: 1.143em;
+	padding: 15px 20px;
+}
+.modalClose {
+	right: 17px;
+}
+.modalContent {
+	padding: 20px;
+}
+.tabLinks>li>a {
+	padding: 12px 0;
+}
+/*==============================================================================*/
+/* LAYOUT																		*/
+/*==============================================================================*/
+.pageWrap {
+	max-width: 1000px;
+	width: 1000px;
+}
+#contentWrap,
+.contentWrap {
+	margin: 30px auto;
+}
+#contentWrap:before,
+#contentWrap:after,
+.contentWrap:before,
+.contentWrap:after {
+	content: " ";
+	display: table;
+}
+#contentWrap:after,
+.contentWrap:after {
+	clear: both;
+}
+.contentBlock {
+	border-right: 1px solid #e4ecef;
+	border-left: 1px solid #e4ecef;
+}
+.contentBlockSpace {
+	padding: 25px 20px;
+}
+#content {
+	float: left;
+	margin-right: 2%;
+	width: 66%;
+}
+#sidebar {
+	float: left;
+	margin: 0;
+	width: 32%
+}
+/*==============================================================================*/
+/* HEADER																		*/
+/*==============================================================================*/
+#header {
+	padding: 10px 0;
+}
+#logo, #navAcct, #navAcctMenu {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+}
+#logo {
+	border: 0;
+	padding: 0;
+}
+#logo img {
+	margin: 0;
+}
+#navAcct, #navAcctMenu {
+	border: 0;
+	margin: 0 0 0 -4px;
+	text-align: right;
+}
+#navAcct>li {
+	width: auto;
+}
+#navAcct>li>a {
+	padding: 8px 30px;
+}
+.navAcctRegister,
+.navAcctLogin {
+	border: 0;
+}
+.navAcctRegister {
+	background: #d74440;
+}
+#navAcctMenu {
+	text-align: right;
+}
+#navAcctMenu>li {
+	display: inline-block;
+}
+#navAcctMenu a {
+	padding: 12px 0;
+}
+#navAcctMenu ul:before {
+	margin: 0;
+	left: auto;
+	right: 4px;
+}
+#navAcctMenu ul {
+	left: auto;
+	margin: 0;
+	width: 240px;
+}
+#navAcctMenu ul>li.navAcctMenuEvenChild {
+	border-left: 1px solid #e4ecef;
+	margin-left: -4px;
+}
+#navAcctMenu ul>li.navAcctMenuLastChild {
+	border: 0;
+	text-align: center;
+	width: 100%;
+}
+#navAcctMenu ul a {
+	padding: 10px 20px;
+}
+.modalLoginInfo {
+	padding: 14px 20px;
+}
+#modalLogin .otFieldLabel {
+	width: 40%;
+}
+#modalLogin input[type="text"],
+#modalLogin input[type="password"] {
+	width: 60%;
+}
+.remember,
+.modalLoginAction {
+	display: inline-block;
+	vertical-align: top;
+}
+.remember {
+	margin-right: -4px;
+	margin-top: 15px;
+	width: 40%;
+}
+#modalLogin .remember .otFieldLabel {
+	float: none;
+	width: auto;
+}
+.modalLoginAction {
+	width: 60%;
+}
+.modalLoginSocial {
+	padding: 20px;
+}
+#modalLogin .buttonFacebook,
+#modalLogin .buttonTwitter {
+	float: left;
+	margin: 0;
+	width: 47%;
+}
+#modalLogin .buttonFacebook {
+	margin-right: 3%;
+}
+#modalLogin .buttonTwitter {
+	margin-left: 3%;
+}
+#modalLogin .oneLoginSocial>.buttonFacebook,
+#modalLogin .oneLoginSocial>.buttonTwitter {
+	margin: 0;
+	width: 100%;
+}
+/*==============================================================================*/
+/* PRIMARY NAVIGATION															*/
+/*==============================================================================*/
+.navMainHeader {
+	display: none;
+}
+.js .navMain,
+.navMain {
+	background: #fff;
+	border-right: 1px solid #e4ecef;
+	border-bottom: 1px solid #e4ecef;
+	border-left: 1px solid #e4ecef;
+	font-family: Oswald, "Archivo Narrow", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	display: block;
+	text-transform: uppercase;
+}
+.navMain:before,
+.navMain:after {
+	content: " ";
+	display: table;
+}
+.navMain:after {
+	clear: both;
+}
+.navMain a:link,
+.navMain a:visited {
+	color: #6a747a;
+}
+.navMain a:hover,
+.navMain a:active {
+	color: #d74440;
+}
+.navMain>li {
+	border-top: 0;
+	border-left: 1px solid #eff4f5;
+	float: left;
+	position: relative;
+	text-align: center;
+	width: 12.5%;
+}
+.navMain.navMainOneOff>li {
+	width: 14.285714%;
+}
+.navMain.navMainTwoOff>li {
+	width: 16.67%;
+}
+.navMain.navMainThreeOff>li {
+	width: 20%;
+}
+.navMain>li.current>a {
+	background: #fff;
+	color: #d74440;
+}
+.navMain>li.current:after {
+	border: 6px solid;
+	border-color: transparent transparent #d74440 transparent;
+	content: "";
+	margin-left: -6px;
+	position: absolute;
+	bottom: -1px;
+	left: 50%;
+	height: 0;
+	width: 0;
+}
+.navMain>li>a {
+	display: block;
+	padding: 68px 0 30px;
+}
+.navMain>li>a:before {
+	background: url(../images/default/iconsNavPrimary.png) no-repeat;
+	content: "";
+	height: 24px;
+	margin-top: 0;
+	position: absolute;
+	left: 50%;
+	top: 35px;
+}
+li#navHome>a:before {
+	margin-left: -13px;
+	width: 27px;
+}
+li#navHome:hover>a:before,
+li#navHome.current>a:before {
+	background-position: 0 -29px;
+}
+li#navNew>a:before {
+	background-position: -32px 0;
+	margin-left: -11px;
+	width: 22px;
+}
+li#navNew:hover>a:before,
+li#navNew.current>a:before {
+	background-position: -32px -29px;
+}
+li#navSubmit>a:before {
+	background-position: -59px 0;
+	margin-left: -12px;
+	width: 23px;
+}
+li#navSubmit:hover>a:before,
+li#navSubmit.current>a:before {
+	background-position: -59px -29px;
+}
+li#navGroups>a:before {
+	background-position: -87px 0;
+	margin-left: -12px;
+	width: 24px;
+}
+li#navGroups:hover>a:before,
+li#navGroups.current>a:before {
+	background-position: -87px -29px;
+}
+li#navCloud>a:before {
+	background-position: -116px 0;
+	margin-left: -15px;
+	width: 30px;
+}
+li#navCloud:hover>a:before,
+li#navCloud.current>a:before {
+	background-position: -116px -29px;
+}
+li#navLive>a:before {
+	background-position: -151px 0;
+	margin-left: -18px;
+	width: 36px;
+}
+li#navLive:hover>a:before,
+li#navLive.current>a:before {
+	background-position: -151px -29px;
+}
+li#navUsers>a:before {
+	background-position: -192px 0;
+	margin-left: -12px;
+	width: 24px;
+}
+li#navUsers:hover>a:before,
+li#navUsers.current>a:before {
+	background-position: -192px -29px;
+}
+li#navRSS>a:before {
+	background-position: -221px 0;
+	margin-left: -12px;
+	width: 24px;
+}
+li#navRSS:hover>a:before,
+li#navRSS.current>a:before {
+	background-position: -221px -29px;
+}
+.navMain>li>a>span {
+	display: block;
+}
+/*==============================================================================*/
+/* CATEGORIES																	*/
+/*==============================================================================*/
+#navCategories {
+	position: relative;
+}
+.navCatsHeader {
+	display: none;
+}
+.js .navCats {
+	display: block;
+	padding: 0 10px;
+}
+.navCats:before, .navCats:after {
+	content: " ";
+	display: table;
+}
+.navCats:after {
+	clear: both;
+}
+.navCats>li {
+	border: 0;
+	float: left;
+}
+.navCats>li>a {
+	padding: 18px 10px;
+}
+.navCats>li.navCatsParent>a {
+	padding: 18px 25px 18px 10px;
+}
+.navCats>li.navCatsParent>a:after {	
+	right: 10px;
+}
+.navCats ul {
+	background: #d74440;
+	border-top: 1px solid #e16460;
+	position: absolute;
+	width: 180px;
+}
+.navCats ul li {
+	border-top: 1px solid #e16460;
+}
+.navCats ul li:first-child {
+	border-top: 0;
+}
+.navCats ul li.navCatsParent>a:after {	
+	border-color: transparent transparent transparent #fff;
+	margin-top: -5px;
+	right: 10px;
+}
+.navCats ul li.navCatsParent.sfHover>a:after {
+	border-color: transparent transparent transparent #af0000;
+}
+.navCats ul li.sfHover,
+.navCats ul li:hover {
+	background: #da4e4a;
+}
+.navCats ul ul {
+	margin-top: 0px;
+	margin-left: 1px;
+	top: 0;
+	left: 100%;
+}
+.navCats ul ul,
+.navCats ul ul ul,
+.navCats ul ul ul ul,
+.navCats ul ul ul ul ul {
+	background: #d74440;
+	border-top: 0;
+}
+.navCats li li li,
+.navCats li li li li,
+.navCats li li li li li {
+	border-top:1px solid #e16460;
+}
+.navCats li li>a,
+.navCats li li li>a,
+.navCats li li li li>a,
+.navCats li li li li li>a,
+.navCats li li li li li li>a {
+	border-left: 0
+}
+/*==============================================================================*/
+/* PAGINATION																	*/
+/*==============================================================================*/
+.pagination {
+	border-right: 1px solid #e4ecef;
+	border-bottom: 1px solid #e4ecef;
+	border-left: 1px solid #e4ecef;
+	padding: 13px 5px;
+	text-align: center;
+}
+.pagination>li>a {
+	padding: 4px 13px;
+}
+/*==============================================================================*/
+/* CONTENT HEADING / SORTER														*/
+/*==============================================================================*/
+.xFolkHeader {
+	border: 1px solid #e4ecef;
+}
+.xFolkHeaderTitle {
+	font-size: 1.286em;
+	margin: 0 66px 0 0;
+	padding: 14px 20px 12px;
+}
+.entrySorter {
+	width: 64px;
+}
+.entrySorter>li>a {
+	height: 56px;
+}
+.entrySorter>li>a:after {
+	right: 20px;
+}
+.entrySorter ul {
+	font-size: 0.857em;
+	width: 240px;
+}
+.entrySorter ul a {
+	padding: 12px 20px;
+}
+.entrySorter ul:before,
+.entrySorter ul:after {
+	right: 20px;
+}
+.entrySorter ul {
+	right: -1px;
+}
+.entrySorterOddChild {
+	border-left: 1px solid #e4ecef;
+	margin-left: -4px;
+}
+.entrySorter ul>li:first-child {
+	padding: 13px 20px;
+}
+/*==============================================================================*/
+/* ENTRIES SUMMARY & DETAILS													*/
+/*==============================================================================*/
+.xfolkentry {
+	border-right: 1px solid #e4ecef;
+	border-left: 1px solid #e4ecef;
+	padding: 27px 20px 22px 65px;
+}
+.xfolkentryHeader {
+	margin: 0;
+}
+.xfolkentryTitle {
+	font-size: 1.429em;
+}
+.xfolkentryHeaderMeta {
+	font-size: 0.857em;
+}
+.xfolkentryVote	{
+	border-left: 0;
+	top: 31px;
+	left: 0;
+	right: auto;
+	width: 45px;
+}
+.xfolkentryVote>li {
+	border-top: 1px solid #e4ecef;
+	border-left: 0;
+	float: none;
+	position: relative;
+	width: 100%;
+}
+.xfolkentryVote>li>a {
+	padding: 6px 0;
+}
+.xfolkentryCtrl,
+.xfolkentryCtrlAlt {
+	font-size: 0.857em;
+}
+.xfolkentryCtrl li,
+.xfolkentryCtrl li.xfolkentryCtrlDiscuss,
+.xfolkentryCtrl li.xfolkentryCtrlSave,
+.xfolkentryCtrl li.xfolkentryCtrlShare,
+.xfolkentryCtrlAlt li {
+	margin-left: 50px;
+	width: auto;
+}
+.xfolkentryCtrl li:first-child,
+.xfolkentryCtrlAlt li:first-child,
+.xfolkentryCtrlAlt li li {
+	margin-left: 0;
+}
+.xfolkentryShareTitle {
+	padding: 14px 20px;
+}
+.xfolkentryShareHeader {
+	padding: 11px 20px;
+}
+.xfolkentryShareGroup li,
+.xfolkentryShareSites li {
+	font-size: 0.857em;
+}
+.xfolkentryShareSites li:after {
+	left: 20px;
+}
+.xfolkentryShareSites li {
+	float: left;
+	width: 50%;
+}
+.xfolkentryShareGroup li a {
+	padding: 12px 20px;
+}
+.xfolkentryShareSites li a {
+	padding: 12px 10px 12px 41px;
+}
+/*----------- Entry Comments ----------*/
+#commentsList,
+#commentsAdd {
+	margin: 0 0 0 -45px;
+}
+.commentsListHeader {
+	font-size: 1em;
+	margin: 15px -20px 0;
+	padding: 14px 20px
+}
+.comment {
+	margin: 25px 0 0;
+}
+.commentAvatarVote {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+}
+.commentAvatar {
+	max-width: 48px;
+}
+.commentVote {
+	display: block;
+	margin: 12px 0 0 0;
+}
+.commentVote>li {
+	margin-left: -3px;
+}
+.commentVote>li:first-child {
+	margin-left: 0;
+}
+.commentContentWrap:before,
+.commentContentWrap:after {
+	border: 8px solid;
+	left: 14px;
+	top: 15px;
+}
+.commentContentWrap:before {
+	border-color: transparent #d9e4e9 transparent transparent;
+	left: -17px;
+}
+.commentContentWrap:after {
+	border-color: transparent #fcfdfd transparent transparent;
+	left: -16px;
+}
+.commentContentWrap {
+	margin: 0 0 0 63px;
+}
+.commentHeader {
+	padding: 0;
+}
+.commentAuthor {
+	font-size: 1em;
+}
+.commentDate {
+	font-size: 0.857em;
+}
+.commentHeader header,
+.commentCtrl {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+}
+.commentHeader header {
+	padding-left: 10px;
+}
+.commentCtrl {
+	background: #fcfdfd;
+	font-size: 0.857em;
+	margin-left: -4px;
+}
+.commentCtrl>li {
+	border: 0;
+	float: right;
+	position: relative;
+	width: auto;
+}
+.commentCtrl>li>a:before {
+	margin-top: -5px;
+	margin-left: 0;
+	left: 0;
+}
+.commentCtrl>li.commentCtrlReply>a:before {
+	margin-left: 0;
+}
+.commentCtrl>li>a {
+	display: block;
+	padding: 15px 30px 15px 14px;
+	text-indent: 0;
+	overflow: hidden;
+}
+.commentCtrl>li:first-child>a {
+	padding: 15px 10px 15px 14px;
+}
+.commentCtrl>li.commentCtrlReply>a {
+	padding: 15px 30px 15px 18px;
+}
+.commentCtrlOps ul:before,
+.commentCtrlOps ul:after {
+	left: auto;
+	right: 10px;
+}
+.commentCtrlOps ul {
+	left: auto;
+	right: -2px;
+}
+.commentCtrlOps li a {
+	padding: 15px;
+}
+.commentContent {
+	padding: 13px 10px;
+}
+.commentCtrlAlt {
+	display: none;
+}
+.child-comment {
+	margin-left: 15px;
+}
+/*==============================================================================*/
+/* MEMBERS LIST																	*/
+/*==============================================================================*/
+.memberListHeader {
+	background: #fcfdfd;
+	border-right: 1px solid #e4ecef;
+	border-bottom: 1px solid #eff4f5;
+	border-left: 1px solid #e4ecef;
+	display: block;
+	padding: 0 20px;
+}
+.memberListHeader>li {
+	float: left;
+	padding: 12px 0;
+}
+.memberListHeaderUser 		{ width: 36%; }
+.memberListHeaderKarma 		{ width: 18%; }
+.memberListHeaderSubmitted 	{ width: 18%; }
+.memberListHeaderPublished 	{ width: 18%; }
+.memberListHeaderCommented 	{ width: 10%; }
+#memberList>li {
+	padding: 15px 20px;
+}
+.memberListAvatar {
+	max-height: 48px;
+	max-width: 48px;
+}
+.memberListInfo {
+	font-size: 1em;
+	margin-left: 58px;
+	padding: 14px 0;
+}
+.memberListName {
+	font-size: 1em;
+	float: left;
+	margin: 0;
+	width: 29.2%;
+}
+.memberListInfo dl {
+	float: left;
+}
+.memberListKarma 			{ width: 19.8%; }
+.memberListSubmitted		{ width: 20%; }
+.memberListPublished		{ width: 20%; }
+.memberListCommented		{ width: 11%; }
+.memberListInfo dt 			{ display: none; }
+/*==============================================================================*/
+/* GROUPS																		*/
+/*==============================================================================*/
+.groupsIntro {
+	padding: 18px 20px;
+}
+.groupsIntro,
+.groupsEntry {
+	border-right: 1px solid #e4ecef;
+	border-left: 1px solid #e4ecef;
+}
+.groupsEntryThumb {
+	float: left;
+	width: 95px;
+}
+.groupsEntryContent {
+	margin-left: 115px;
+}
+.groupsEntry {
+	padding: 25px 20px 18px;
+}
+.groupsEntryTitle {
+	margin: -7px 0 3px;
+}
+.groupsEntryTabs {
+	margin: 15px -20px 0;
+}
+.xfolkentry.xfolkentryGroups {
+	margin: 0 -20px;
+}
+#groupsMembersList {
+	margin: 0 -20px;
+}
+.groupsMembers th {
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+.groupsMembers th.groupsMembersActivate {
+	min-width: 75px;
+	width: 75px;
+}
+.groupsMembers td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.groupsMembers td:first-child {
+	padding: 10px 5px 10px 20px;
+}
+/*==============================================================================*/
+/* LIVE																			*/
+/*==============================================================================*/
+#live th {
+	padding: 13px 10px;
+}
+#live th.liveTime {
+	padding-left: 20px;
+}
+#live td {
+	padding: 15px 10px;
+}
+#live td.liveTime {
+	padding-left: 20px;
+	width: 90px;
+}
+/*==============================================================================*/
+/* RSS FEEDS PAGE																*/
+/*==============================================================================*/
+#rssFeeds {
+	border-right: 1px solid #e4ecef;
+	border-left: 1px solid #e4ecef;
+	padding: 20px 0 0;
+}
+#rssFeeds li {
+	border: 0;
+	padding: 0 20px 20px;
+}
+#rssFeeds li:before,
+#rssFeeds li:after {
+	content: " ";
+	display: table;
+}
+#rssFeeds li:after {
+	clear: both;
+}
+.rssFeedsCat {
+	background: #fafbfc;
+	border: 1px solid #d9e4e9;
+	float: left;
+	padding: 11px 10px;
+	width: 30%;
+}
+.rssFeedsLinks {
+	float: left;
+	width: 70%;
+}
+/*==============================================================================*/
+/* SUBMISSION & EDIT FORMS														*/
+/*==============================================================================*/
+.formBoxHeader {
+	padding: 11px 20px;
+}
+.formBoxContent {
+	padding: 15px 20px;
+}
+.formError {
+	margin: 0 0 20px;
+}
+.formErrorHeader {
+	padding: 12px 20px 11px;
+}
+.formErrorContent {
+	padding: 17px 0;
+}
+.formErrorContent li {
+	margin: 6px 0 0 33px;
+}
+.formErrorContent li:first-child {
+	margin: 0 0 0 33px;
+}
+.formError p {
+	padding: 11px 20px;
+}
+/*----------- Register Form -----------*/
+#registerPage #navPrimary {
+	display: block;
+}
+#regForm {
+	float: left;
+	margin-right: 3%;
+	width: 60%;
+}
+#register .otFieldLabel {
+	width: 30%;
+}
+.otFieldLabelUsername {
+	padding: 12px 20px 11px;
+}
+#register input[type="text"],
+#register input[type="password"],
+#register input[type="email"] {
+	width: 70%;
+}
+#register .button {
+	width: 70%;
+}
+#register .formBox {
+	display: block;
+	float: left;
+	width: 37%;
+}
+/*------------- Login Form ------------*/
+#loginPage #navPrimary {
+	display: block;
+}
+#login .otFieldLabel,
+#login .remember,
+#forgotPass .otFieldLabel {
+	width: 35%;
+}	
+#login input[type="text"],
+#login input[type="password"],
+#login input[type="email"],
+.loginAction,
+#forgotPass input[type="email"],
+#forgotPass .button {
+	width: 65%;
+}
+#login .remember .otFieldLabel {
+	float: none;
+	width: auto;
+}
+.loginAction {
+	display: inline-block;
+	vertical-align: top;
+}
+/*------------ Submit Form ------------*/
+#submitForm {
+	float: left;
+	margin-right: 2.5%;
+	width: 60%;
+}
+#submitOne input[type="url"] {
+	border: 1px solid #d9e4e9;
+	border-right: 0;
+	width: 75%;
+}
+#submitOne input[type="url"]:focus {
+	border: 1px solid #75b9f0;
+	border-right: 0;
+	outline: 0;
+}
+.submitOneButton {
+	display: block;
+	float: left;
+	width: 25%;
+}
+.submitURLField {
+	padding: 15px 20px;
+}
+.submitOneButtonExtra {
+	display: none;
+}
+#submitBookmarklet {
+	display: block;
+}
+#submitTwo .otFieldLabel {
+	border-right: 0;
+	width: 30%;
+}
+.otFieldSubmitURL {
+	display: block;
+}
+#submitTwo select,
+#submitTwo textarea,
+#submitTwo input[type="text"],
+#submitTwo input[type="url"] {
+	border: 1px solid #d9e4e9;
+	width: 70%;
+}
+#submitTwo select:focus,
+#submitTwo textarea:focus,
+#submitTwo input[type="text"]:focus,
+#submitTwo input[type="url"]:focus {
+	border: 1px solid #75b9f0;
+	outline: 0;
+}
+#submitTwo .button {
+	width: 70%;
+}
+#submitRules {
+	display: block;
+	float: left;
+	width: 37.5%;
+}
+/*==============================================================================*/
+/* OTslider MODULE																*/
+/*==============================================================================*/
+#otSlider {
+	margin: 0 auto 30px auto;
+}
+.otSliderTitle,
+.otSlider_nav {
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)";
+	zoom: 1;
+}
+.otSliderTitle {
+	display: block;
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0;
+	padding: 12px 10px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+}
+a .otSliderTitle {
+	color: #fff;
+}
+.otSlider_nav {
+	top: 41%;
+}
+/*==============================================================================*/
+/* SIDEBAR COMPONENTS															*/
+/*==============================================================================*/
+.sidebarBlock,
+.sidebarTab {
+	margin-bottom: 20px;
+}
+.sidebarBlockHeader {
+	font-size: 1em;
+	padding: 12px 15px;
+}
+.sidebarTabLinks {
+	padding: 0 15px;
+}
+.sidebarTabLink {
+	text-align: center;
+	width: 50%;
+}
+.sidebarTabLink a {
+	font-size: 0.875em;
+	padding: 12px 2px;
+}
+.sidebarBlockContent,
+.sidebarTabPanel {
+	padding: 14px 15px;
+}
+.sidebarList li>a {
+	padding: 13px 15px;
+}
+/*----------- Social Sharing ----------*/
+.socialShare li>a {
+	padding: 16px 0;
+}
+/*------------ Site Search ------------*/
+#siteSearch input[type="search"] {
+	border-left: 1px solid #d9e4e9;
+	min-height: 15px;
+	padding: 16px 3px 15px;
+	width: 70%;
+}
+#siteSearch input[type="search"]:focus {
+	border: 1px solid #75b9f0;
+}
+.siteSearchButton {
+	width: 15%;
+}
+#siteSearch input[type="submit"] {
+	padding: 13px 10px;
+}
+#aSearchLink {
+	padding: 12px 0 11px;
+	width: 15%;
+}
+/*------------ Sitebar Ads ------------*/
+.sidebarBlock.sidebarAds125 {
+	background: #fff;
+	margin-bottom: 20px;
+	padding: 10px 10px 0;
+}
+.sidebarAds125 li {
+	display: inline-block;
+	float: none;
+	margin-bottom: 10px;
+	vertical-align: top;
+}
+.sidebarAds125 li img {
+	border: 7px solid #ebeff5;
+	display: inline-block;
+}
+.sidebarBlock.sidebarAds300 {
+	background: #fff;
+	margin-bottom: 15px;
+	padding: 10px 10px 5px;
+}
+/*--------- Sidebar Users List --------*/
+.sidebarUsers > .sidebarTabPanel {
+	padding: 15px 7px 4px 15px;
+}
+.sidebarUsersList>li {
+	margin: 0 8px 11px 0;
+	max-width: 48px;
+}
+/*---------- Latest Comments ----------*/
+.latestCommentsAvatar {
+	max-width: 73px;
+	width: 73px;
+}
+.latestCommentsAvatar a {
+	padding: 15px 10px 15px 15px;
+}
+#latestComments p>a {
+	padding: 8px 10px 8px 0;
+}
+/*-------------- Top Tags -------------*/
+#topTags > .sidebarBlockContent {
+	padding: 15px 0 5px 29px;
+}
+/*------------- Statistics ------------*/
+#siteStats dt, #siteStats dd {
+	padding: 13px 15px;
+}
+/*==============================================================================*/
+/* FOOTER																		*/
+/*==============================================================================*/
+.copyright,
+.footerLinks {
+	border: 0;
+	display: inline-block;
+	font-size: 1em;
+	padding: 25px 0;
+	width: 50%;
+}
+.footerLinks {
+	margin-left: -4px;
+	text-align: right;
+}
+.footerLinks li a {
+	padding: 0 10px;
+}
+.footerLinks li:first-child a {
+	padding: 0 10px 0 0;
+}
+.footerLinks li:last-child a {
+	padding: 0 0 0 10px;
+}
+.credits {
+	border-top: 1px solid #2b2f31;
+	font-size: 0.857em;
+	padding: 5px 0;
+}
+.creditsPowered {
+	padding: 15px 0 15px 0;
+}
+.creditsDesign {
+	padding: 15px 0;
+}

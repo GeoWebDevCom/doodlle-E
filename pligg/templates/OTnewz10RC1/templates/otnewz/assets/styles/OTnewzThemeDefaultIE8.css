@@ -1,0 +1,231 @@
+/*------------------------------------------------------------------------------*/
+/*																				*/
+/*	OTNewz v1.0RC1																*/
+/*	http://www.oxythemes.com/products/templates/otnewz.html						*/
+/*																				*/
+/*	Copyright ©2013 OxyThemes.com												*/
+/*	All Rights Reserved															*/
+/*																				*/
+/*------------------------------------------------------------------------------*/
+
+/*==============================================================================*/
+/* COMMON STYLES and ELEMENTS													*/
+/*==============================================================================*/
+.otFieldLabel {
+	background: #fafbfc;
+	border: 1px solid #d9e4e9;
+}
+.modal {
+	background: #3e3e3e;
+}
+/*==============================================================================*/
+/* LAYOUT																		*/
+/*==============================================================================*/
+.contentBlock {
+	border-right: 1px solid #e4ecef;
+	border-left: 1px solid #e4ecef;
+}
+/*==============================================================================*/
+/* HEADER																		*/
+/*==============================================================================*/
+.navAcctRegister {
+	background: #d74440;
+}
+#navAcctMenu ul>li.navAcctMenuEvenChild {
+	border-left: 1px solid #e4ecef;
+}
+/*==============================================================================*/
+/* PRIMARY NAVIGATION															*/
+/*==============================================================================*/
+.navMain {
+	background: #fff;
+	border-right: 1px solid #e4ecef;
+	border-bottom: 1px solid #e4ecef;
+	border-left: 1px solid #e4ecef;
+}
+.navMain a:link,
+.navMain a:visited {
+	color: #6a747a;
+}
+.navMain a:hover,
+.navMain a:active {
+	color: #d74440;
+}
+.navMain>li {
+	border-top: 0;
+	border-left: 1px solid #eff4f5;
+}
+.navMain>li.current>a {
+	background: #fff;
+	color: #d74440;
+}
+.navMain>li.current:after {
+	border-color: transparent transparent #d74440 transparent;
+}
+/*==============================================================================*/
+/* CATEGORIES																	*/
+/*==============================================================================*/
+.navCats ul {
+	background: #d74440;
+	border-top: 1px solid #e16460;
+}
+.navCats ul li {
+	border-top: 1px solid #e16460;
+}
+.navCats ul li:first-child {
+	border-top: 0;
+}
+.navCats ul li.navCatsParent>a:after {	
+	border-color: transparent transparent transparent #fff;
+}
+.navCats ul li.navCatsParent.sfHover>a:after {
+	border-color: transparent transparent transparent #af0000;
+}
+.navCats ul li.sfHover,
+.navCats ul li:hover {
+	background: #da4e4a;
+}
+.navCats ul ul,
+.navCats ul ul ul,
+.navCats ul ul ul ul,
+.navCats ul ul ul ul ul {
+	background: #d74440;
+	border-top: 0;
+}
+.navCats li li li,
+.navCats li li li li,
+.navCats li li li li li {
+	border-top:1px solid #e16460;
+}
+.navCats li li>a,
+.navCats li li li>a,
+.navCats li li li li>a,
+.navCats li li li li li>a,
+.navCats li li li li li li>a {
+	border-left: 0
+}
+/*==============================================================================*/
+/* PAGINATION																	*/
+/*==============================================================================*/
+.pagination {
+	border-right: 1px solid #e4ecef;
+	border-bottom: 1px solid #e4ecef;
+	border-left: 1px solid #e4ecef;
+}
+/*==============================================================================*/
+/* CONTENT HEADING / SORTER														*/
+/*==============================================================================*/
+.xFolkHeader {
+	border: 1px solid #e4ecef;
+}
+.entrySorterOddChild {
+	border-left: 1px solid #e4ecef;
+}
+/*==============================================================================*/
+/* ENTRIES SUMMARY & DETAILS													*/
+/*==============================================================================*/
+.xfolkentry {
+	border-right: 1px solid #e4ecef;
+	border-left: 1px solid #e4ecef;
+}
+.xfolkentryVote>li {
+	border-top: 1px solid #e4ecef;
+}
+.commentContentWrap:before {
+	border-color: transparent #d9e4e9 transparent transparent;
+}
+.commentContentWrap:after {
+	border-color: transparent #fcfdfd transparent transparent;
+}
+.commentCtrl {
+	background: #fcfdfd;
+}
+/*==============================================================================*/
+/* MEMBERS LIST																	*/
+/*==============================================================================*/
+.memberListHeader {
+	background: #fcfdfd;
+	border-right: 1px solid #e4ecef;
+	border-bottom: 1px solid #eff4f5;
+	border-left: 1px solid #e4ecef;
+}
+/*==============================================================================*/
+/* GROUPS																		*/
+/*==============================================================================*/
+.groupsIntro,
+.groupsEntry {
+	border-right: 1px solid #e4ecef;
+	border-left: 1px solid #e4ecef;
+}
+/*==============================================================================*/
+/* RSS FEEDS PAGE																*/
+/*==============================================================================*/	
+#rssFeeds {
+	border-right: 1px solid #e4ecef;
+	border-left: 1px solid #e4ecef;
+}
+.rssFeedsCat {
+	background: #fafbfc;
+	border: 1px solid #d9e4e9;
+}
+/*==============================================================================*/
+/* SUBMISSION & EDIT FORMS														*/
+/*==============================================================================*/
+#submitOne input[type="url"] {
+	border: 1px solid #d9e4e9;
+}
+#submitOne input[type="url"]:focus {
+	border: 1px solid #75b9f0;
+	border-right: 0;
+}
+#submitTwo .otFieldLabel {
+	border-right: 0;
+}
+#submitTwo select,
+#submitTwo textarea,
+#submitTwo input[type="text"],
+#submitTwo input[type="url"] {
+	border: 1px solid #d9e4e9;
+}
+#submitTwo select:focus,
+#submitTwo textarea:focus,
+#submitTwo input[type="text"]:focus,
+#submitTwo input[type="url"]:focus {
+	border: 1px solid #75b9f0;
+}
+/*==============================================================================*/
+/* OTslider MODULE																*/
+/*==============================================================================*/
+.otSliderTitle,
+.otSlider_nav {
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)";
+	zoom: 1;
+}
+/*==============================================================================*/
+/* SIDEBAR COMPONENTS															*/
+/*==============================================================================*/
+#siteSearch input[type="search"] {
+	border-left: 1px solid #d9e4e9;
+	min-height: 15px;
+	padding: 16px 3px 15px;
+	width: 70%;
+}
+#siteSearch input[type="search"]:focus {
+	border: 1px solid #75b9f0;
+}
+.sidebarBlock.sidebarAds125 {
+	background: #fff;
+}
+.sidebarAds125 li img {
+	border: 7px solid #ebeff5;
+}
+.sidebarBlock.sidebarAds300 {
+	background: #fff;
+}
+/*==============================================================================*/
+/* FOOTER																		*/
+/*==============================================================================*/
+.credits {
+	border-top: 1px solid #2b2f31;
+}

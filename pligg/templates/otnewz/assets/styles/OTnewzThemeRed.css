@@ -1,0 +1,16 @@
+/*------------------------------------------------------------------------------*/
+/*																				*/
+/*	Create your own "Red" color scheme for OTnewz								*/
+/*																				*/
+/*	STEPS:																		*/
+/*	1.  Copy all the contents of OTnewzThemeDefault.css and paste it below.		*/
+/*	2.  Copy OTnewzThemeDefaultIE8.css and renamed it to						*/
+/*		OTnewzThemeRedIE8.css													*/
+/*	3.  On /otnewz/stylesheet.tpl, find themeDefault and replace with			*/
+/*		themeRed																*/
+/*	4.  On /otnewz/stylesheet.tpl, find OTnewzThemeDefaultIE8.css and replace	*/
+/*		with OTnewzThemeRedIE8.css												*/
+/*	5.  Edit the color values you've pasted earlier below and also the color	*/
+/*		values in OTnewzThemeRedIE8.css											*/
+/*																				*/
+/*------------------------------------------------------------------------------*/

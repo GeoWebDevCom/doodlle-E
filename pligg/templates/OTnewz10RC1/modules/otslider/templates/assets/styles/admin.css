@@ -1,0 +1,14 @@
+/*
+ * OTslider Admin CSS
+*/
+#otslider .nav-tabs,
+#otsliderAdd .nav-tabs {
+	margin-left: 0;
+	padding-left: 15px;
+}
+#otsliderList td {
+	vertical-align: middle;
+}
+#otsliderList .thumbWrap {
+	width: 48px;
+}

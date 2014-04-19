@@ -1,0 +1,433 @@
+/*------------------------------------------------------------------------------*/
+/*																				*/
+/*	OTNewz v1.0RC1																*/
+/*	http://www.oxythemes.com/products/templates/otnewz.html						*/
+/*																				*/
+/*	Copyright ©2013 OxyThemes.com												*/
+/*	All Rights Reserved															*/
+/*																				*/
+/*------------------------------------------------------------------------------*/
+
+/*==============================================================================*/
+/* MEMBER PROFILE STYLES														*/
+/*==============================================================================*/
+#userPage #sidebar,
+#user_editPage #sidebar {
+	display: none;
+}
+#userProfile.contentBlock {
+	border-top: 1px solid #e4ecef;
+}
+.userHeader {
+	margin: 10px 10px 15px;
+	position: relative;
+}
+.userAvatar {
+	max-width: 40px;
+	position: absolute;
+	top: 0;
+}
+.userHeaderUser {
+	margin-left: 50px;
+}
+.userHeaderName {
+	font-size: 18px;
+	line-height: 18px;
+}
+.userHeaderJoined {
+	color: #a7afb4;
+	font-size: 13px;
+	margin-top: 3px;
+}
+.userActions {
+	background: #fafbfc;
+	border: 1px solid #e4ecef;
+	border-bottom: 0;
+	border-radius: 2px;
+}
+.userActions>li {
+	border-right: 1px solid #e4ecef;
+	border-bottom: 1px solid #e4ecef;
+	float:  left;
+	text-align: center;
+	width: 50%;
+}
+.userActions>li:last-child,
+.userActions>li:nth-child(2){
+	border-right: 0;
+}
+.userActionsOneOff>li {
+	width: 33.33%;
+}
+.userActionsOneOff>li:nth-child(2){
+	border-right: 1px solid #e4ecef;
+}
+.userActionsTwoOff>li {
+	width: 50%;
+}
+.userActionsTwoOff>li:last-child {
+	border-right: 0;
+}
+.userActions>li>a {
+	display: block;
+	padding: 5px 0;
+}
+.userTabs {
+	font-family: Oswald, "Archivo Narrow", Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.userTabs>li>a {
+	background: #fafbfc;
+	border-top: 1px solid #e4ecef;
+	border-bottom: 1px solid #e4ecef;
+	display: block;
+	outline: 0;
+	padding: 10px;
+	position: relative;
+}
+.userTabs>li.open>a {
+	color: #d74440;
+}
+.userTabs>li>a:after {
+	background: url(../images/default/iconsMisc.png) -56px -26px no-repeat;
+	content: "";
+	cursor: pointer;
+	display: block;
+	height: 15px;
+	margin-top: -7px;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	width: 20px;
+}
+.userTabs>li:hover>a:after,
+.userTabs>li.open>a:after {
+	background: url(../images/default/iconsMisc.png) -84px -26px no-repeat;
+}
+.userTabs ul:before,
+.userTabs ul:after {
+	border: 8px solid;		
+	content: "";
+	display: block;
+	height: 0;
+	width: 0;
+	position: absolute;
+	right: 11px;
+}
+.userTabs ul:before {
+	border-color: transparent transparent #d9e4e9 transparent;
+	top: -16px;
+}
+.userTabs ul:after {
+	border-color: transparent transparent #fafbfc transparent;
+	top: -15px;
+}
+.userTabs ul {
+	background: #fafbfc;
+	border-bottom: 1px solid #e4ecef;
+	font-size: 0.875em;
+	font-size: 0.875rem;
+	left: 0;
+	width: 100%;
+}
+.userTabs ul>li {
+	border-bottom: 1px solid #e4ecef;
+}
+.userTabs ul>li>a {
+	display: block;
+	padding: 10px;
+}
+.userSectionHeading {
+	background: #fafbfc;
+	border-top: 1px solid #f1f5f7;
+	border-bottom: 1px solid #f1f5f7;
+	font-size: 0.875em;
+	font-size: 0.875rem;
+	margin: 0;
+	padding: 10px;
+}
+#userSectionStats li,
+#userSectionSocial li{
+	border-bottom: 1px solid #f1f5f7;
+	padding: 7px 10px;
+}
+#userSectionStats li:last-child,
+#userSectionSocial li:last-child{
+	border-bottom: 0;
+}
+.userSectionStatsField {
+	display: inline-block;
+	width: 100px;
+}
+#userSectionGroups td,
+.userFriends td {
+	border-bottom: 1px solid #f1f5f7;
+	padding: 7px 10px;
+}
+.userProfileFriends {
+	padding: 10px 5px 5px 10px;
+}
+.userProfileFriends>li {
+	float: left;
+	margin: 0 5px 5px 0;
+	max-width: 48px;
+}
+#userProfile .xfolkentry:first-child {
+	border-top: 0;
+}
+.userSettingsForm .userSectionHeading {
+	background: #ffd;
+	border-top: 1px solid #fef9c3;
+	border-bottom: 1px solid #fef9c3;
+}
+.userSettingsForm fieldset {
+	padding: 10px 10px 0;
+}
+.otFieldInputFile {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.userSettingsForm .otFieldInputWrap {
+	margin: 0;
+	text-align: left;
+}
+.userSettingsForm .button {
+	width: 100%;
+}
+.userMsg {
+	background: #ffd;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+}
+@media only screen and (min-width : 20em) {
+	.userHeader {
+		margin: 15px 10px;
+	}
+	.userAvatar {
+		max-width: 64px;
+	}
+	.userHeaderUser {
+		margin-left: 74px;
+	}
+	.userActions {
+		margin: 25px 0 0;
+	}
+	.userActions>li {
+		width: 25%;
+	}
+	.userActionsOneOff>li {
+		width: 33.33%;
+	}
+	.userActionsTwoOff>li {
+		width: 50%;
+	}
+	.userActions>li:nth-child(2){
+		border-right: 1px solid #e4ecef;
+	}
+	.userActionsTwoOff>li:last-child {
+		border-right: 0;
+	}
+	.userActions>li>a {
+		padding: 8px 0;
+	}
+	.userTabs ul>li {
+		float: left;
+		width: 50%;
+	}
+	.userTabsOneOn ul>li.userTabsSaved {
+		width: 100%;
+	}
+	.userTabs ul>li:nth-child(even) {
+		border-left: 1px solid #e4ecef;
+	}
+	#userSectionStats li,
+	#userSectionSocial li{
+		padding: 8px 10px;
+	}
+	.userSectionStatsField {
+		width: 130px;
+	}
+	.userProfileFriends {
+		padding: 15px 5px 10px 10px;
+	}
+	.userProfileFriends>li {
+		margin: 0 5px 5px 0;
+		max-width: 54px;
+	}
+	.userSettingsForm fieldset {
+		padding: 15px 10px 0;
+	}
+	.userSettingsForm .otFieldLabel {
+		width: 35%;
+	}
+	.userSettingsForm input[type="text"],
+	.userSettingsForm input[type="password"],
+	.userSettingsForm input[type="email"],
+	.userSettingsForm input[type="url"],
+	.userSettingsForm select,
+	.userSettingsForm .otFieldInputWrap {
+		width: 65%;
+	}
+	.userSettingsPass .otFieldLabel {
+		width: 45%;
+	}
+	.userSettingsPass input[type="password"] {
+		width: 55%;
+	}
+	.userSettingsForm .otFieldInputWrap {
+		border-left: 1px solid #e4ecef;
+		padding: 8px 10px;
+	}
+	.userMsg {
+		margin: 15px 10px;
+	}
+}
+@media only screen and (min-width : 22.5em) {
+	.userProfileFriends>li {
+		max-width: 50px;
+	}
+}
+@media only screen and (min-width : 30em) {
+	.userHeader {
+		margin: 20px 10px;
+	}
+	.userAvatar {
+		max-width: 100px;
+	}
+	.userHeaderUser {
+		margin-left: 110px;
+	}
+	.userHeaderName {
+		font-size: 24px;
+		line-height: 1;
+	}
+	.userHeaderJoined {
+		margin-top: 0px;
+	}
+	.userActions {
+		margin: 12px 0 0 110px;
+	}
+	.userTabs>li>a {
+		padding: 11px 10px;
+	}
+	.userSectionStatsField {
+		width: 150px;
+	}
+	#userSectionGroups td,
+	.userFriends td {
+		padding: 11px 10px;
+	}
+	.userProfileFriends>li {
+		max-width: 52px;
+	}
+	.userSettingsForm fieldset {
+		padding: 20px 10px 5px;
+	}
+	.userSettingsForm .otFieldLabel,
+	.userSettingsPass .otFieldLabel {
+		width: 35%;
+	}
+	.userSettingsForm input[type="text"],
+	.userSettingsForm input[type="password"],
+	.userSettingsForm input[type="email"],
+	.userSettingsForm input[type="url"],
+	.userSettingsForm select,
+	.userSettingsForm .otFieldInputWrap,
+	.userSettingsPass input[type="password"] {
+		width: 65%;
+	}
+	.userSettingsForm .otFieldInputWrap {
+		padding: 10px;
+	}
+}
+@media only screen and (min-width : 40em) {
+	.userHeader {
+		margin: 20px;
+	}
+	.userHeaderUser {
+		margin-left: 120px;
+	}
+	.userActions {
+		margin: 12px 0 0 120px;
+	}
+	.userTabs>li>a {
+		padding: 12px 20px;
+	}
+	.userTabs>li>a:after {
+		right: 20px;
+	}
+	.userTabs ul:before,
+	.userTabs ul:after {
+		right: 20px;
+	}
+	.userTabs ul>li>a {
+		padding: 12px 20px;
+	}
+	.userSectionHeading {
+		padding: 10px 20px;
+	}
+	#userSectionStats li,
+	#userSectionSocial li{
+		padding: 10px 20px;
+	}
+	.userSectionStatsField {
+		width: 160px;
+	}
+	#userSectionGroups td,
+	.userFriends td {
+		padding: 10px 20px;
+	}
+	.userProfileFriends {
+		padding: 15px 10px 10px 20px;
+	}
+	.userProfileFriends>li {
+		max-width: 54px;
+	}
+	.userSettingsForm fieldset {
+		padding: 25px 20px 10px;
+	}
+	.userSettingsForm .button {
+		width: 65%;
+	}
+	.userSettingsForm .otFieldInputWrap {
+		padding: 11px 10px;
+	}
+	.userMsg {
+		margin: 15px 20px;
+	}
+}
+@media only screen and (min-width : 42em) {
+	.xfolkentry.xfolkentryProfile {
+		border-left: 0;
+		border-right: 0;
+	}
+	#userProfile.contentBlock {
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+	}
+	.userProfileFriends>li {
+		max-width: 52px;
+	}
+}
+@media only screen and (min-width : 50em) {
+	#userPage #sidebar,
+	#user_editPage #sidebar {
+		display: block;
+	}
+	.userProfileFriends>li {
+		max-width: 54px;
+	}
+}
+@media only screen and (min-width : 65.5em) {
+	.userProfileFriends>li {
+		max-width: 52px;
+	}
+}

@@ -1,0 +1,238 @@
+/*------------------------------------------------------------------------------*/
+/*																				*/
+/*	OTNewz v1.0RC1																*/
+/*	http://www.oxythemes.com/products/templates/otnewz.html						*/
+/*																				*/
+/*	Copyright ©2013 OxyThemes.com												*/
+/*	All Rights Reserved															*/
+/*																				*/
+/*------------------------------------------------------------------------------*/
+
+/*==============================================================================*/
+/*	MEMBERS LIST																*/
+/*==============================================================================*/
+.memberListHeader {
+	display: none;
+}
+#memberList>li {
+	border-top: 1px solid #eff4f5;
+	padding: 10px 10px 5px;
+	position: relative;
+}
+#memberList>li:first-child {
+	border-top: 0;
+}
+#memberList>li:nth-child(even) {
+	background: #fcfdfd;
+}
+.memberListAvatar {
+	max-height: 52px;
+	max-width: 52px;
+	position: absolute;
+}
+.memberListAvatar img {
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+.memberListRank {
+	background: #d74440;
+	border: 1px solid #fff;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	color: #fff;
+	display: block;
+	font-size: 0.857em;
+	font-size: 0.75rem;
+	height: 20px;
+	line-height: 17px;
+	margin-top: -10px;
+	position: absolute;
+	top: 50%;
+	left: -10px;
+	text-align: center;
+	width: 20px;
+}
+.memberListInfo {
+	font-size: 0.929em;
+	font-size: 0.813rem;
+	line-height: 1.428571;
+	margin-left: 62px;
+}
+.memberListName {
+	font-size: 1.143em;
+	font-size: 1rem;
+	font-weight: normal;
+	margin: -5px 0 5px;
+	padding: 0;
+}
+.memberListInfo dt,
+.memberListInfo dd {
+	display: inline-block;
+	vertical-align: top;
+}
+.memberListInfo dt {
+	width: 45%;
+}
+@media only screen and (min-width : 20em) {
+	#memberList>li {
+		padding: 15px 10px 10px;
+	}
+	.memberListName {
+		margin: -5px 0 2px;
+	}
+	.memberListInfo dl {
+		float: left;
+	}
+	.memberListKarma,
+	.memberListPublished {
+		width: 60%;
+	}
+	.memberListSubmitted,
+	.memberListCommented {
+		width: 40%;
+	}
+	.memberListKarma dt,
+	.memberListPublished dt {
+		width: 45%;
+	}
+	.memberListSubmitted dt,
+	.memberListCommented dt {
+		width: 70%;
+	}
+}
+@media only screen and (min-width : 22.5em) {
+	.memberListKarma,
+	.memberListPublished {
+		width: 65%;
+	}
+	.memberListSubmitted,
+	.memberListCommented {
+		width: 35%;
+	}
+	.memberListKarma dt,
+	.memberListPublished dt {
+		width: 35%;
+	}
+	.memberListSubmitted dt,
+	.memberListCommented dt {
+		width: 70%;
+	}
+}
+@media only screen and (min-width : 30em) {
+	.memberListHeader {
+		background: #fcfdfd;
+		border-bottom: 1px solid #eff4f5;
+		display: block;
+		padding: 0 10px;
+	}
+	.memberListHeader>li {
+		float: left;
+		padding: 12px 0;
+	}
+	.memberListHeaderUser 		{ width: 38%; }
+	.memberListHeaderKarma 		{ width: 14%; }
+	.memberListHeaderSubmitted 	{ width: 18%; }
+	.memberListHeaderPublished 	{ width: 17%; }
+	.memberListHeaderCommented 	{ width: 13%; }
+	#memberList>li {
+		padding: 15px 10px;
+	}
+	.memberListAvatar {
+		max-height: 48px;
+		max-width: 48px;
+	}
+	.memberListInfo {
+		font-size: 0.875rem;
+		margin-left: 58px;
+		padding: 14px 0;
+	}
+	.memberListName {
+		font-size: 0.875rem;
+		float: left;
+		margin: 0;
+		width: 29%;
+	}
+	.memberListKarma 			{ width: 16%; }
+	.memberListSubmitted		{ width: 20.8%; }
+	.memberListPublished		{ width: 19.2%; }
+	.memberListCommented		{ width: 15%; }
+	.memberListInfo dt 			{ display: none; }
+}
+@media only screen and (min-width : 33.75em) {
+	.memberListHeaderUser 		{ width: 38%; }
+	.memberListHeaderKarma 		{ width: 15.5%; }
+	.memberListHeaderSubmitted 	{ width: 19%; }
+	.memberListHeaderPublished 	{ width: 16%; }
+	.memberListHeaderCommented 	{ width: 11.5%; }
+	.memberListName 			{ width: 30.5%; }
+	.memberListKarma 			{ width: 17.2%; }
+	.memberListSubmitted		{ width: 21.3%; }
+	.memberListPublished		{ width: 18%; }
+	.memberListCommented		{ width: 13%; }
+}
+@media only screen and (min-width : 40em) {
+	.memberListHeader 			{ padding: 0 20px; }
+	.memberListHeaderUser 		{ width: 36%; }
+	.memberListHeaderKarma 		{ width: 18%; }
+	.memberListHeaderSubmitted 	{ width: 18%; }
+	.memberListHeaderPublished 	{ width: 18%; }
+	.memberListHeaderCommented 	{ width: 10%; }	
+	#memberList>li 				{ padding: 15px 20px; }
+	.memberListName 			{ width: 29.2%; }
+	.memberListKarma 			{ width: 19.8%; }
+	.memberListSubmitted		{ width: 20%; }
+	.memberListPublished		{ width: 20%; }
+	.memberListCommented		{ width: 11%; }
+}
+@media only screen and (min-width : 42em) {
+	.memberListHeader {
+		border-right: 1px solid #e4ecef;
+		border-left: 1px solid #e4ecef;
+	}
+	.memberListName 			{ width: 29.3%; }
+	.memberListKarma 			{ width: 20%; }
+	.memberListSubmitted		{ width: 19.8%; }
+	.memberListPublished		{ width: 19.9%; }
+	.memberListCommented		{ width: 11%; }
+}
+@media only screen and (min-width : 50em) {
+	.memberListHeaderUser 		{ width: 37.5%; }
+	.memberListHeaderKarma 		{ width: 15.5%; }
+	.memberListHeaderSubmitted 	{ width: 18.5%; }
+	.memberListHeaderPublished 	{ width: 16%; }
+	.memberListHeaderCommented 	{ width: 12.5%; }
+	.memberListName 			{ width: 28.8%; }
+	.memberListKarma 			{ width: 17.8%; }
+	.memberListSubmitted		{ width: 21%; }
+	.memberListPublished		{ width: 18.2%; }
+	.memberListCommented		{ width: 14.2%; }
+}
+@media only screen and (min-width : 55em) {
+	.memberListHeaderUser 		{ width: 38%; }
+	.memberListHeaderKarma 		{ width: 15.5%; }
+	.memberListHeaderSubmitted 	{ width: 19%; }
+	.memberListHeaderPublished 	{ width: 16%; }
+	.memberListHeaderCommented 	{ width: 11.5%; }
+	.memberListName 			{ width: 30.5%; }
+	.memberListKarma 			{ width: 17.2%; }
+	.memberListSubmitted		{ width: 21.3%; }
+	.memberListPublished		{ width: 18%; }
+	.memberListCommented		{ width: 13%; }
+}
+@media only screen and (min-width : 60em) {
+	.memberListHeaderUser 		{ width: 36%; }
+	.memberListHeaderKarma 		{ width: 18%; }
+	.memberListHeaderSubmitted 	{ width: 18%; }
+	.memberListHeaderPublished 	{ width: 18%; }
+	.memberListHeaderCommented 	{ width: 10%; }	
+	.memberListName 			{ width: 29.2%; }
+	.memberListKarma 			{ width: 19.8%; }
+	.memberListSubmitted		{ width: 20%; }
+	.memberListPublished		{ width: 20%; }
+	.memberListCommented		{ width: 11%; }
+}

@@ -1,0 +1,242 @@
+/*------------------------------------------------------------------------------*/
+/*																				*/
+/*	OTNewz v1.0RC1																*/
+/*	http://www.oxythemes.com/products/templates/otnewz.html						*/
+/*																				*/
+/*	Copyright ©2013 OxyThemes.com												*/
+/*	All Rights Reserved															*/
+/*																				*/
+/*------------------------------------------------------------------------------*/
+
+/*==============================================================================*/
+/*	GROUPS PAGES																*/
+/*==============================================================================*/
+#groups {
+	border-bottom: 1px solid #e4ecef;
+}
+.groupsIntro {
+	background: #fbfcfd;
+	margin: 0;
+	padding: 13px 10px;
+}
+.groupsButton {
+	margin: 8px 0 7px;
+}
+.groupsEntry {
+	background: #fff;
+	border-top: 2px solid #e4ecef;
+	padding: 20px 10px 13px;
+	position: relative;
+}
+.groupsEntryThumb img {
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+.groupsEntryContent {
+	min-height: 110px;
+}
+.groupsEntryTitle {
+	font-size: 1.43em;
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1.5;
+	margin: 10px 0 4px;
+	padding: 0;
+}
+.groupsEntryHeaderMeta {
+	color: #838e94;
+	font-size: 0.857em;
+	font-size: 0.75rem;
+	line-height: 1.5;
+	margin: 0 0 10px;
+	padding: 0;
+	word-wrap: break-word;
+}
+.groupsEntryHeaderMeta a:link,
+.groupsEntryHeaderMeta a:visited {
+	color: #838e94;
+	border-bottom: 1px dotted #a7afb4;
+}
+.groupsEntryHeaderMeta a:hover,
+.groupsEntryHeaderMeta a:active {
+	color: #d74440;
+	border-bottom: 1px dotted #d74440;
+}
+.groupsEntryDate {
+	display: none;
+}
+.groupsEntryDesc {
+	margin: 0;
+	padding: 0;
+}
+#group_storyPage .groupsEntry {
+	border-top: 0;
+	border-bottom: 1px solid #e4ecef;
+	padding-bottom: 0;
+}
+.groupsAction {
+	margin: 8px 0 0;
+}
+.groupsAction .button {
+	margin-bottom: 7px;
+}
+.groupsEntryTabs {
+	margin: 13px -10px 0;
+}
+.groupsEntryTabs>li {
+	width: 25%;
+}
+.xfolkentry.xfolkentryGroups {
+	border-left: 0;
+	border-right: 0;
+	margin: 0 -10px;
+}
+.groupsEntry .groupsEntryTabs + .xfolkentryGroups {
+	border-top: 0;
+}
+#groupsMembersList {
+	margin: 0 -10px;
+}
+#groupsMembersList>table {
+	margin-bottom: 5px;
+}
+.groupsMembers th {
+	background: #fcfdfd;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	text-align: left;
+}
+.groupsMembers tr,
+.groupsMembers th {
+	border-bottom: 1px solid #e4ecef;
+}
+.groupsMembers th.groupsMembersAvatar {
+	width: 32px;
+}
+.groupsMembers th.groupsMembersRole {
+	min-width: 80px;
+	width: 80px;
+}
+.groupsMembers th.groupsMembersEdit {
+	min-width: 60px;
+	width: 60px;
+}
+.groupsMembers th.groupsMembersActivate {
+	min-width: 70px;
+	width: 70px;
+}
+.groupsMembers td {
+	padding-top: 7px;
+	padding-right: 15px;
+	padding-bottom: 7px;
+}
+.groupsMembers td:first-child {
+	padding: 7px 5px 7px 10px;
+}
+.groupsMembers tr:last-child {
+	border-bottom: 0;
+}
+@media only screen and (min-width : 20em) {
+	.groupsEntryThumb {
+		float: left;
+		margin: 0 10px 0 0;
+		width: 90px;
+	}
+	.groupsEntryTitle {
+		margin: -6px 0 3px;
+	}
+	.groupsMembers th {
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+	.groupsMembers td {
+		padding-top: 8px;
+		padding-right: 15px;
+		padding-bottom: 8px;
+	}
+	.groupsMembers td:first-child {
+		padding: 8px 5px 8px 10px;
+	}
+}
+@media only screen and (min-width : 30em) {
+	.groupsEntryThumb {
+		width: 92px;
+	}
+	.groupsEntryContent {
+		margin-left: 102px;
+	}
+	.groupsEntryTitle {
+		font-size: 1.125rem;
+		margin: -7px 0 3px;
+	}
+	.groupsEntryDate {
+		display: inline;
+	}
+	.groupsMembers th {
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	.groupsMembers td {
+		padding-top: 9px;
+		padding-bottom: 9px;
+	}
+	.groupsMembers td:first-child {
+		padding: 9px 5px 9px 10px;
+	}
+}
+@media only screen and (min-width : 40em) {
+	.groupsIntro {
+		padding: 18px 20px;
+	}
+	.groupsEntryContent {
+		margin-left: 112px;
+	}
+	.groupsEntry {
+		padding: 25px 20px 18px;
+	}
+	.groupsEntryTabs {
+		margin: 15px -20px 0;
+	}
+	.xfolkentry.xfolkentryGroups {
+		margin: 0 -20px;
+	}
+	#groupsMembersList {
+		margin: 0 -20px;
+	}
+	.groupsMembers th {
+		padding-top: 13px;
+		padding-bottom: 13px;
+	}
+	.groupsMembers th.groupsMembersActivate {
+		min-width: 75px;
+		width: 75px;
+	}
+	.groupsMembers td {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.groupsMembers td:first-child {
+		padding: 10px 5px 10px 20px;
+	}
+}
+@media only screen and (min-width : 42em) {
+	.groupsEntryThumb {
+		width: 95px;
+	}
+	.groupsEntryContent {
+		margin-left: 115px;
+	}
+	.groupsIntro,
+	.groupsEntry {
+		border-right: 1px solid #e4ecef;
+		border-left: 1px solid #e4ecef;
+	}
+	.groupsEntryTitle {
+		font-size: 1.25rem;
+	}
+}

@@ -80,4 +80,5 @@ pligg/modules/upload/attachments/thumbs/*.gif
 
 
 # All .log files
-pligg/*.log
+*.log
+*.db

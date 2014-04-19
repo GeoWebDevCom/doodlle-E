@@ -1,0 +1,58 @@
+/*------------------------------------------------------------------------------*/
+/*																				*/
+/*	OTNewz v1.0RC1																*/
+/*	http://www.oxythemes.com/products/templates/otnewz.html						*/
+/*																				*/
+/*	Copyright ©2013 OxyThemes.com												*/
+/*	All Rights Reserved															*/
+/*																				*/
+/*------------------------------------------------------------------------------*/
+
+/*==============================================================================*/
+/*	LIVE PAGES																	*/
+/*==============================================================================*/
+#live th {
+	background: #fcfdfd;
+	border-left: 1px solid #e4ecef;
+	padding: 10px;
+	text-align: left;
+}
+#live th:first-child,
+#live td:first-child {
+	border-left: 0;
+}
+#live td {
+	border-top: 1px solid #eff4f5;
+	border-left: 1px solid #eff4f5;
+	font-size: 0.929em;
+	font-size: 0.813rem;
+	line-height: 1.384615;
+	padding: 12px 10px;
+	vertical-align: top;
+}
+#live td.liveTime	{ width: 80px; }
+#live td.liveAction	{ width: 85px; }
+#live td.liveVotes,
+#live th.liveVotes	{ text-align: center; width: 55px; }
+#live td.liveUser	{ width: 100px; }
+#live td.liveState	{ width: 75px; }
+.responsiveTable>#live td.liveStory,
+.responsiveTable>#live td.liveComments {
+	min-width: 200px;
+	white-space: normal;
+}
+@media only screen and (min-width : 40em) {
+	#live th {
+		padding: 13px 10px;
+	}
+	#live th.liveTime {
+		padding-left: 20px;
+	}
+	#live td {
+		padding: 15px 10px;
+	}
+	#live td.liveTime {
+		padding-left: 20px;
+		width: 90px;
+	}
+}

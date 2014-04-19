@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<updateslist>
+  <created>1397675782</created>
+  <createdby>
+    <id>992</id>
+    <name>Super User</name>
+  </createdby>
+  <repositories>
+    <sobipro-core>https://repository.sobi-pro.eu/repository.php</sobipro-core>
+  </repositories>
+  <updates>
+    <sobipro>
+      <name>SobiPro</name>
+      <type>Core</type>
+      <installed>1.1.0.3510</installed>
+      <current>1.0.8.2626</current>
+      <update>false</update>
+      <repository>sobipro_core</repository>
+    </sobipro>
+    <bank-transfer>
+      <name>Offline Payment</name>
+      <type>Payment</type>
+      <installed>1.1</installed>
+      <current>1.0</current>
+      <update>false</update>
+      <repository>sobipro_core</repository>
+    </bank-transfer>
+    <paypal>
+      <name>PayPal</name>
+      <type>Payment</type>
+      <installed>1.1</installed>
+      <current>1.0</current>
+      <update>false</update>
+      <repository>sobipro_core</repository>
+    </paypal>
+    <chbxgroup>
+      <name>Check Box Group</name>
+      <type>Field</type>
+      <installed>1.1</installed>
+      <current>1.0</current>
+      <update>false</update>
+      <repository>sobipro_core</repository>
+    </chbxgroup>
+    <email>
+      <name>Email</name>
+      <type>Field</type>
+      <installed>1.1</installed>
+      <current>1.0</current>
+      <update>false</update>
+      <repository>sobipro_core</repository>
+    </email>
+    <image>
+      <name>Image</name>
+      <type>Field</type>
+      <installed>1.1</installed>
+      <current>1.0</current>
+      <update>false</update>
+      <repository>sobipro_core</repository>
+    </image>
+    <inbox>
+      <name>Input Box</name>
+      <type>Field</type>
+      <installed>1.1</installed>
+      <current>1.0</current>
+      <update>false</update>
+      <repository>sobipro_core</repository>
+    </inbox>
+    <multiselect>
+      <name>Multiple Select List</name>
+      <type>Field</type>
+      <installed>1.1</installed>
+      <current>1.0</current>
+      <update>false</update>
+      <repository>sobipro_core</repository>
+    </multiselect>
+    <radio>
+      <name>Radio Buttons</name>
+      <type>Field</type>
+      <installed>1.1</installed>
+      <current>1.0</current>
+      <update>false</update>
+      <repository>sobipro_core</repository>
+    </radio>
+    <select>
+      <name>Single Select List</name>
+      <type>Field</type>
+      <installed>1.1</installed>
+      <current>1.0</current>
+      <update>false</update>
+      <repository>sobipro_core</repository>
+    </select>
+    <textarea>
+      <name>Text Area</name>
+      <type>Field</type>
+      <installed>1.1</installed>
+      <current>1.0</current>
+      <update>false</update>
+      <repository>sobipro_core</repository>
+    </textarea>
+    <url>
+      <name>URL</name>
+      <type>Field</type>
+      <installed>1.1</installed>
+      <current>1.0</current>
+      <update>false</update>
+      <repository>sobipro_core</repository>
+    </url>
+    <geomap-field>
+      <name>SP-GeoMap Field</name>
+      <type>Field</type>
+      <installed>1.0</installed>
+      <current>1.0</current>
+      <update>false</update>
+      <repository>sobipro_core</repository>
+    </geomap-field>
+    <review-rating>
+      <name>Review and Rating</name>
+      <type>Application</type>
+      <installed>2.0</installed>
+      <current>2.0</current>
+      <update>false</update>
+      <repository>sobipro_core</repository>
+    </review-rating>
+  </updates>
+</updateslist>

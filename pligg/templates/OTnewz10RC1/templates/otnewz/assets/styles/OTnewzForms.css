@@ -1,0 +1,451 @@
+/*------------------------------------------------------------------------------*/
+/*																				*/
+/*	OTNewz v1.0RC1																*/
+/*	http://www.oxythemes.com/products/templates/otnewz.html						*/
+/*																				*/
+/*	Copyright ©2013 OxyThemes.com												*/
+/*	All Rights Reserved															*/
+/*																				*/
+/*------------------------------------------------------------------------------*/
+
+/*==============================================================================*/
+/*	SUBMISSION & EDIT FORMS														*/
+/*==============================================================================*/
+.formBox {
+	border: 1px solid #e4ecef;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+.formBoxHeader {
+	background: #fafbfc;
+	border-bottom: 1px solid #e4ecef;
+	font-family: Oswald, "Archivo Narrow", Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-size: 0.875rem;
+	font-weight: normal;
+	margin: 0;
+	padding: 10px;
+	text-transform: uppercase;
+}
+.formBoxContent {
+	padding: 10px;
+}
+.formBoxContent p {
+	margin: 0 0 10px;
+}
+.formBoxContent li {
+	line-height: 1.285714;
+	list-style: disc;
+	margin: 6px 0 0 15px;
+}
+.formError {
+	background: #f9d8d7;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	color: #d74440;
+	margin: 0 0 10px;
+}
+.formErrorHeader {
+	border-bottom: 1px solid #f4cbca;
+	font-family: Oswald, "Archivo Narrow", Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-size: 0.875rem;
+	font-weight: normal;
+	margin: 0;
+	padding: 10px;
+	text-transform: uppercase;
+}
+.formErrorContent {
+	padding: 12px 0;
+}
+.formErrorContent li {
+	line-height: 1.285714;
+	list-style: disc;
+	margin: 6px 0 0 25px;
+}
+.formErrorContent li:first-child {
+	margin: 0 0 0 25px;
+}
+.formError p {
+	margin: 0;
+	padding: 8px 10px;
+}
+/*----------- Register Form -----------*/
+#registerPage #navPrimary,
+#register .formBox {
+	display: none;
+}
+#register .button {
+	width: 100%;
+}
+/*------------- Login Form ------------*/
+#loginPage #navPrimary {
+	display: none;
+}
+#login .button,
+#forgotPass .button {
+	width: 100%;
+}
+#loginForm,
+.forgetPassDesc,
+#forgotPassForm {
+	margin: 0 auto;
+	max-width: 500px;
+}
+.forgetPassDesc {
+	margin-bottom: 8px;
+}
+/*------------ Submit Form ------------*/
+.submitStep {
+	border-bottom: 1px solid #e4ecef;
+	position: relative;
+	height: 16px;
+	margin: 0 0 35px;
+}
+.submitStep li {
+	background: #fff;
+	border: 1px solid #e4ecef;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	height: 30px;
+	padding-top: 2px;
+	position: absolute;
+	text-align: center;
+	width: 30px;
+}
+.submitStep li.current {
+	background: #d74440;
+	border: 1px solid #d74440;
+	color: #fff;
+}
+.submitStepOne 	{ left:0; }
+.submitStepLast	{ right:0 }
+.submitURLField {
+	background: #fef9c3;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	margin-top: 20px;
+	padding: 8px 10px;
+	position: relative;
+}
+.submitURLField:before {
+	border: 10px solid;
+	border-color: transparent transparent #fef9c3 transparent;
+	content: "";
+	display: block;
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: -20px;
+	left: 10px;
+}
+.submitURLLabel {
+	font-family: Oswald, "Archivo Narrow", Arial, Helvetica, sans-serif;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+.button.submitOneButtonExtra {
+	width: 100%;
+}
+.submitBookmarkletLink {
+	display: block;
+	margin-top: 10px;
+}
+.submitOneButton,
+#submitBookmarklet,
+.otFieldSubmitURL,
+#submitRules {
+	display: none;
+}
+#submitTwo .otFieldInputWrap {
+	text-align: left;
+}
+#submitTwo .button {
+	width: 100%;
+}
+@media only screen and (min-width : 20em) {
+	.formError {
+		margin: 0 0 15px;
+	}
+	/*---------- Register Form ----------*/
+	#register .otFieldLabel {
+		width: 40%;
+	}
+	#register input[type="text"],
+	#register input[type="password"],
+	#register input[type="email"],
+	#register .otFieldInputWrap {
+		width: 60%;
+	}
+	/*------------ Login Form -----------*/
+	#login .otFieldLabel,
+	#login .remember,
+	#forgotPass .otFieldLabel {
+		width: 40%;
+	}	
+	#login input[type="text"],
+	#login input[type="password"],
+	#login input[type="email"],
+	.loginAction,
+	#forgotPass input[type="email"],
+	#forgotPass .button {
+		width: 60%;
+	}
+	#login .remember .otFieldLabel {
+		float: none;
+		width: auto;
+	}
+	.loginAction {
+		display: inline-block;
+		vertical-align: top;
+	}
+	/*----------- Submit Form -----------*/
+	#submitOne input[type="url"] {
+		border: 1px solid #d9e4e9;
+		border-right: 0;
+		-moz-border-radius: 2px 0px 0px 2px;
+		-webkit-border-radius: 2px 0px 0px 2px;
+		border-radius: 2px 0px 0px 2px;
+		width: 70%;
+	}
+	#submitOne input[type="url"]:focus {
+		border: 1px solid #75b9f0;
+		border-right: 0;
+		-moz-box-shadow: inset 0 1px 1px rgba(117,185,240,.3), 0 0 8px rgba(82,168,236,.6);
+		-webkit-box-shadow: inset 0 1px 1px rgba(117,185,240,.3), 0 0 8px rgba(82,168,236,.6);
+		box-shadow: inset 0 1px 1px rgba(117,185,240,.3), 0 0 8px rgba(82,168,236,.6);
+		outline: 0;
+	}
+	input[type="submit"].submitOneButton {
+		-moz-border-radius: 0px 2px 2px 0px;
+		-webkit-border-radius: 0px 2px 2px 0px;
+		border-radius: 0px 2px 2px 0px;
+		display: block;
+		float: left;
+		padding: 10px 15px 9px;
+		width: 30%;
+	}
+	body:not(:-moz-handler-blocked) input[type="submit"].submitOneButton {
+		padding: 9px 15px;
+	}
+	.submitOneButtonExtra {
+		display: none;
+	}
+	#submitTwo .otFieldLabel {
+		background: #fff;
+		border: 0;
+		float: none;
+		padding: 0;
+	}
+	#submitTwo select,
+	#submitTwo textarea,
+	#submitTwo input[type="text"],
+	#submitTwo input[type="url"],
+	#submitTwo .otFieldInputWrap {
+		border: 1px solid #d9e4e9;
+		border-radius: 2px;
+	}
+	#submitTwo select:focus,
+	#submitTwo textarea:focus,
+	#submitTwo input[type="text"]:focus,
+	#submitTwo input[type="url"]:focus {
+		border: 1px solid #75b9f0;
+		-moz-box-shadow: inset 0 1px 1px rgba(117,185,240,.3), 0 0 8px rgba(82,168,236,.6);
+		-webkit-box-shadow: inset 0 1px 1px rgba(117,185,240,.3), 0 0 8px rgba(82,168,236,.6);
+		box-shadow: inset 0 1px 1px rgba(117,185,240,.3), 0 0 8px rgba(82,168,236,.6);
+		outline: 0;
+	}
+	#submitRules {
+		display: block;
+	}
+	#submitTwo #submitRules {
+		margin-top: 20px;
+	}
+}
+@media only screen and (min-width : 30em) {
+	.formError {
+		margin: 0 0 20px;
+	}
+	.formError p {
+		padding: 10px;
+	}
+	/*---------- Register Form ----------*/
+	#registerPage #navPrimary {
+		display: block;
+	}
+	#register .otFieldLabel {
+		width: 30%;
+	}
+	#register input[type="text"],
+	#register input[type="password"],
+	#register input[type="email"],
+	#register .otFieldInputWrap {
+		width: 70%;
+	}
+	#register .button {
+		width: 70%;
+	}
+	/*------------ Login Form -----------*/
+	#loginPage #navPrimary {
+		display: block;
+	}
+	#login .otFieldLabel,
+	#login .remember,
+	#forgotPass .otFieldLabel {
+		width: 35%;
+	}	
+	#login input[type="text"],
+	#login input[type="password"],
+	#login input[type="email"],
+	.loginAction,
+	#forgotPass input[type="email"],
+	#forgotPass .button {
+		width: 65%;
+	}
+	/*----------- Submit Form -----------*/
+	#submitOne input[type="url"] {
+		width: 75%;
+	}
+	input[type="submit"].submitOneButton {
+		padding: 12px 25px 11px;
+		width: 25%;
+	}
+	body:not(:-moz-handler-blocked) input[type="submit"].submitOneButton {
+		padding: 11px 25px;
+	}
+	#submitTwo .otFieldLabel {
+		background: #fafbfc;
+		border-top: 1px solid #d9e4e9;
+		border-bottom: 1px solid #d9e4e9;
+		border-left: 1px solid #d9e4e9;
+		border-right: 0;
+		-webkit-border-radius: 2px 0px 0px 2px;
+		-moz-border-radius: 2px 0px 0px 2px;
+		border-radius: 2px 0px 0px 2px;
+		float: left;
+		padding: 10px;
+		width: 30%;
+	}
+	#submitTwo select,
+	#submitTwo textarea,
+	#submitTwo input[type="text"],
+	#submitTwo input[type="url"],
+	#submitTwo .otFieldInputWrap {
+		-moz-border-radius: 0px 2px 2px 0px;
+		-webkit-border-radius: 0px 2px 2px 0px;
+		border-radius: 0px 2px 2px 0px;
+		width: 70%;
+	}
+	#submitTwo textarea {
+		-moz-border-radius: 0px 2px 2px 2px;
+		-webkit-border-radius: 0px 2px 2px 2px;
+		border-radius: 0px 2px 2px 2px;
+	}
+	#submitTwo .button {
+		width: 70%;
+	}
+	.otFieldSubmitURL {
+		display: block;
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-width : 30em) {
+	#submitTwo .otFieldLabel {
+		padding: 11px 10px 10px;
+	}
+}
+@media only screen and (min-width : 40em) {
+	.formBoxHeader {
+		padding: 11px 20px;
+	}
+	.formBoxContent {
+		padding: 15px 20px;
+	}
+	.formErrorHeader {
+		padding: 12px 20px 11px;
+	}
+	.formErrorContent {
+		padding: 17px 0;
+	}
+	.formErrorContent li {
+		margin: 6px 0 0 35px;
+	}
+	.formErrorContent li:first-child {
+		margin: 0 0 0 35px;
+	}
+	.formError p {
+		padding: 11px 20px;
+	}
+	/*----------- Submit Form -----------*/
+	.submitURLField {
+		padding: 15px 20px;
+	}
+	input[type="submit"].submitOneButton {
+		padding: 13px 30px 12px;
+		padding: 13px 30px\9;
+	}
+	body:not(:-moz-handler-blocked) input[type="submit"].submitOneButton {
+		padding: 12px 30px;
+	}
+	#submitTwo .otFieldLabel {
+		padding: 11px 20px;
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-width : 40em) {
+	#submitTwo .otFieldLabel {
+		padding: 12px 20px 11px;
+	}
+}
+@media only screen and (min-width : 50em) {
+	/*---------- Register Form ----------*/
+	#register .formBox {
+		display: block;
+		float: left;
+		width: 37%;
+	}
+	#regForm {
+		float: left;
+		margin-right: 3%;
+		width: 60%;
+	}
+	/*----------- Submit Form -----------*/
+	#submitForm {
+		float: left;
+		margin-right: 3%;
+		width: 60%;
+	}
+	#submitRules {
+		float: left;
+		width: 37%;
+	}
+	#submitBookmarklet {
+		display: block;
+	}
+	#submitTwo .otFieldLabel {
+		padding-right: 5px;
+	}
+	#submitTwo #submitRules {
+		margin-top: 0;
+	}
+}
+@media only screen and (min-width : 55em) {
+	/*---------- Register Form ----------*/
+	#register .formBox {
+		width: 37.5%;
+	}
+	#regForm {
+		margin-right: 2.5%;
+		width: 60%;
+	}
+	/*----------- Submit Form -----------*/
+	#submitForm {
+		margin-right: 2.5%;
+		width: 60%;
+	}
+	#submitRules {
+		width: 37.5%;
+	}
+}

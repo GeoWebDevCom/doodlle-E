@@ -1,0 +1,116 @@
+/*------------------------------------------------------------------------------*/
+/*																				*/
+/*	OTNewz v1.0RC1																*/
+/*	http://www.oxythemes.com/products/templates/otnewz.html						*/
+/*																				*/
+/*	Copyright ©2013 OxyThemes.com												*/
+/*	All Rights Reserved															*/
+/*																				*/
+/*------------------------------------------------------------------------------*/
+
+/*==============================================================================*/
+/*	RSS FEEDS PAGE																*/
+/*==============================================================================*/
+#rssFeeds {
+	background: #fff;
+	-moz-border-radius: 0px 0px 2px 2px;
+	-webkit-border-radius: 0px 0px 2px 2px;
+	border-radius: 0px 0px 2px 2px;
+	border-bottom: 1px solid #e4ecef;
+}
+#rssFeeds li {
+	border-top: 1px solid #eff4f5;
+	padding: 8px 10px 15px;
+}
+#rssFeeds li:first-child {
+	border-top: 0;
+}
+.rssFeedsCat {
+	font-size: 1em;
+	font-size: 0.875rem;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+@media only screen and (min-width : 20em) {
+	#rssFeeds {
+		padding-top: 15px;
+	}
+	#rssFeeds li {
+		border: 0;
+		padding: 0 10px 15px;
+	}
+	#rssFeeds li:before,
+	#rssFeeds li:after {
+		content: " ";
+		display: table;
+	}
+	#rssFeeds li:after {
+		clear: both;
+	}
+	.rssFeedsCat {
+		background: #fafbfc;
+		border: 1px solid #d9e4e9;
+		-webkit-border-radius: 2px 0px 0px 2px;
+		-moz-border-radius: 2px 0px 0px 2px;
+		border-radius: 2px 0px 0px 2px;
+		float: left;
+		padding: 8px 5px;
+		width: 40%;
+	}
+	.rssFeedsLinks {
+		float: left;
+		width: 60%;
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-width : 20em) {
+	.rssFeedsCat {
+		padding: 8px 5px 9px;
+	}
+}
+@media only screen and (min-width : 30em) {
+	#rssFeeds {
+		padding: 20px 0 5px;
+	}
+	#rssFeeds li {
+		border-top: 0;
+	}
+	.rssFeedsCat {
+		padding: 10px;
+		width: 35%;
+	}
+	.rssFeedsLinks {
+		width: 65%;
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-width : 30em) {
+	.rssFeedsCat {
+		padding: 10px 10px 11px;
+	}
+}
+@media only screen and (min-width : 40em) {
+	#rssFeeds {
+		padding: 20px 0 0;
+	}
+	#rssFeeds li {
+		padding: 0 20px 20px;
+	}
+	.rssFeedsCat {
+		padding: 11px 10px;
+		width: 30%;
+	}
+	.rssFeedsLinks {
+		width: 70%;
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-width : 40em) {
+	.rssFeedsCat {
+		padding: 11px 10px 12px;
+	}
+}
+@media only screen and (min-width : 42em) {
+	#rssFeeds {
+		border-right: 1px solid #e4ecef;
+		border-left: 1px solid #e4ecef;
+	}
+}

@@ -5,9 +5,57 @@
 		<title>Club News</title>
 		<description>SobiPro Club of Sigsiu.NET</description>
 		<link>http://sobipro.sigsiu.net/news</link>
-		<lastBuildDate>Sat, 08 Mar 2014 22:51:23 +0000</lastBuildDate>
+		<lastBuildDate>Wed, 16 Apr 2014 19:03:55 +0000</lastBuildDate>
 		<generator>SobiPro Club of Sigsiu.NET</generator>
 		<language>en-gb</language>
+		<item>
+			<title>SobiPro 1.1.7 stable released</title>
+			<link>http://sobipro.sigsiu.net/news/165-sobipro-117-stable-released</link>
+			<guid>http://sobipro.sigsiu.net/news/165-sobipro-117-stable-released</guid>
+			<description><![CDATA[<img src="http://sobipro.sigsiu.net/images/stories/sobipro/Downloadicon-SobiPro.png" alt="SobiPro 1.1.7 stable released" align="left" title="SobiPro 1.1.7 stable released" />
+<p>This is a maintenance release. It is recommended to update SobiPro to version 1.1.7!</p>
+
+]]></description>
+			<author>noreply@sigsiu.net (Sigrid Suski)</author>
+			<category>Club News</category>
+			<pubDate>Thu, 27 Mar 2014 23:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Featured Entries Module now available</title>
+			<link>http://sobipro.sigsiu.net/news/164-featured-entries-module-now-available</link>
+			<guid>http://sobipro.sigsiu.net/news/164-featured-entries-module-now-available</guid>
+			<description><![CDATA[<img src="http://sobipro.sigsiu.net/images/stories/sobipro/Downloadicon-Module.png" border="0" alt="Featured Entries Module now available" title="Featured Entries Module now available" align="left" />
+Show featured entries or specific entries of your SobiPro directory in a module!<br/>
+
+]]></description>
+			<author>noreply@sigsiu.net (Sigrid Suski)</author>
+			<category>Club News</category>
+			<pubDate>Mon, 24 Mar 2014 23:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Download Field for SobiPro 1.1 available</title>
+			<link>http://sobipro.sigsiu.net/news/163-download-field-for-sobipro-11-available</link>
+			<guid>http://sobipro.sigsiu.net/news/163-download-field-for-sobipro-11-available</guid>
+			<description><![CDATA[<img src="http://sobipro.sigsiu.net/images/stories/sobipro/Downloadicon-Module.png" border="0" alt="Download Field for SobiPro 1.1 available" title="Download Field for SobiPro 1.1 available" align="left" />
+Download Field for SobiPro 1.1 available.
+This new version is SobiPro 1.1 compliant and there are some bugs fixed as well as languages added.
+
+]]></description>
+			<author>noreply@sigsiu.net (Sigrid Suski)</author>
+			<category>Club News</category>
+			<pubDate>Mon, 17 Mar 2014 23:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Seven language packages for SobiPro updated</title>
+			<link>http://sobipro.sigsiu.net/news/162-seven-language-packages-for-sobipro-updated</link>
+			<guid>http://sobipro.sigsiu.net/news/162-seven-language-packages-for-sobipro-updated</guid>
+			<description><![CDATA[<img src="http://sobipro.sigsiu.net/images/stories/sobipro/Downloadicon-Language.png" align="left" alt="Finnish, Polish, Russian, French, Spanish, Swedish and German Languages updated" title="Finnish, Polish, Russian, French, Spanish, Swedish and German Languages updated" />
+<p>Finnish, Polish, Russian, French, Spanish, Swedish and German Languages for SobiPro 1.1 are updated and available to download in the Download Directory.</p>
+]]></description>
+			<author>noreply@sigsiu.net (Sigrid Suski)</author>
+			<category>Club News</category>
+			<pubDate>Mon, 10 Mar 2014 23:00:00 +0000</pubDate>
+		</item>
 		<item>
 			<title>Slovak Language for SobiPro 1.1 available</title>
 			<link>http://sobipro.sigsiu.net/news/161-slovak-language-for-sobipro-11-available</link>
@@ -77,52 +125,6 @@ This new version is not only SobiPro 1.1 compliant, you can create a complete Ev
 			<author>noreply@sigsiu.net (Sigrid Suski)</author>
 			<category>Club News</category>
 			<pubDate>Sun, 02 Feb 2014 23:00:00 +0000</pubDate>
-		</item>
-		<item>
-			<title>SobiPro 1.1.5 stable published</title>
-			<link>http://sobipro.sigsiu.net/news/154-sobipro-115-stable-published</link>
-			<guid>http://sobipro.sigsiu.net/news/154-sobipro-115-stable-published</guid>
-			<description><![CDATA[<img src="http://sobipro.sigsiu.net/images/stories/sobipro/Downloadicon-SobiPro.png" alt="SobiPro 1.1.5 published" align="left" title="SobiPro 1.1.5 published" />
-<p>This is a security release. It is highly recommended to update SobiPro to version 1.1.5!</p>
-
-]]></description>
-			<author>noreply@sigsiu.net (Sigrid Suski)</author>
-			<category>Club News</category>
-			<pubDate>Mon, 27 Jan 2014 23:00:00 +0000</pubDate>
-		</item>
-		<item>
-			<title>SobiPro 1.1.4 has been released</title>
-			<link>http://sobipro.sigsiu.net/news/153-sobipro-114-has-been-released</link>
-			<guid>http://sobipro.sigsiu.net/news/153-sobipro-114-has-been-released</guid>
-			<description><![CDATA[<img src="http://sobipro.sigsiu.net/images/stories/sobipro/Downloadicon-SobiPro.png" alt="SobiPro 1.1.4 has been released" align="left" title="SobiPro 1.1.4 has been released" />
-<p>We are happy to announce the last SobiPro release this year.
-
-Notwithstanding with a lot of holidays happening this month we were working hard to provide a new regular update of SobiPro. 
-</p>
-]]></description>
-			<author>noreply@sigsiu.net (Radek Suski)</author>
-			<category>Club News</category>
-			<pubDate>Fri, 27 Dec 2013 23:00:00 +0000</pubDate>
-		</item>
-		<item>
-			<title>One year of Joomla! events</title>
-			<link>http://sobipro.sigsiu.net/news/152-one-year-of-joomla-events</link>
-			<guid>http://sobipro.sigsiu.net/news/152-one-year-of-joomla-events</guid>
-			<description><![CDATA[<p><img src="http://sobipro.sigsiu.net/images/stories/news/nuremberg.png" border="0" alt="Joomladay Germany" width="280" style="vertical-align: top;" /><br /> This year was very successful considering the number of Joomla!  events held around the world. Here is a short report from the events in which we were able to participate.</p>
-]]></description>
-			<author>noreply@sigsiu.net (Sigrid Suski)</author>
-			<category>Club News</category>
-			<pubDate>Wed, 18 Dec 2013 23:00:00 +0000</pubDate>
-		</item>
-		<item>
-			<title>New SobiPro Restaurant Guide Template</title>
-			<link>http://sobipro.sigsiu.net/news/151-new-sobipro-restaurant-guide-template</link>
-			<guid>http://sobipro.sigsiu.net/news/151-new-sobipro-restaurant-guide-template</guid>
-			<description><![CDATA[<p>New version of SobiPro's Restaurants Guide Template now available!</p>
-]]></description>
-			<author>noreply@sigsiu.net (Sigrid Suski)</author>
-			<category>Club News</category>
-			<pubDate>Mon, 25 Nov 2013 23:00:00 +0000</pubDate>
 		</item>
 	</channel>
 </rss>

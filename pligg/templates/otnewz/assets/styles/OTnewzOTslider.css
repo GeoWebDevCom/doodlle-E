@@ -1,0 +1,136 @@
+/*------------------------------------------------------------------------------*/
+/*																				*/
+/*	OTslider v1.0RC1															*/
+/*	http://www.oxythemes.com/products/modules/otslider.html						*/
+/*																				*/
+/*	Copyright ©2013 OxyThemes.com												*/
+/*	All Rights Reserved															*/
+/*																				*/
+/*------------------------------------------------------------------------------*/
+#otSlider {
+	background: #1b1e1f;
+	margin: 0 auto 10px auto;
+	position: relative;
+}
+#otSliderEntries {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+#otSliderEntries li {
+	-webkit-backface-visibility: hidden;
+	display: none;
+	max-height: 255px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+#otSliderEntries li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+.otSliderTitle {
+	display: none;
+}
+#otSliderEntries img {
+	display: block; 
+	height: auto;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.otSlider_nav {
+	background: rgba(0,0,0,0.5);
+	display: block;
+	height: 40px;
+	margin-top: -20px;
+	outline: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	text-indent: -200em;
+	width: 33px;
+	z-index: 2;
+}
+.otSlider_nav.prev {
+	-moz-border-radius: 0px 2px 2px 0px;
+	-webkit-border-radius: 0px 2px 2px 0px;
+	border-radius: 0px 2px 2px 0px;
+	left: 0;
+}
+.otSlider_nav.next {
+	-moz-border-radius: 2px 0px 0px 2px;
+	-webkit-border-radius: 2px 0px 0px 2px;
+	border-radius: 2px 0px 0px 2px;
+	right: 0;
+}
+.otSlider_nav.prev:after,
+.otSlider_nav.next:after {
+	background: url(../images/default/iconsMisc.png) no-repeat;
+	content: "";
+	display: block;
+	height: 21px;
+	left: 10px;
+	position: absolute;
+	top: 10px;
+	width: 13px;
+}
+.otSlider_nav.prev:after {
+	background-position: -49px -88px;
+}
+.otSlider_nav.next:after {
+	background-position: -71px -88px;
+}
+@media only screen and (min-width : 20em) {
+	#otSlider {		
+		margin: 0 auto 15px auto;
+	}
+}
+@media only screen and (min-width : 30em) {
+	#otSlider {
+		margin: 0 auto 20px auto;
+	}
+	.otSliderTitle {
+		background: rgba(0,0,0,0.5);
+		-moz-border-radius: 0px 0px 2px 2px;
+		-webkit-border-radius: 0px 0px 2px 2px;
+		border-radius: 0px 0px 2px 2px;
+		display: block;
+		font-size: 0.875rem;
+		font-weight: normal;
+		margin: 0;
+		padding: 12px 10px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		text-align: center;
+		width: 100%;
+	}
+	a .otSliderTitle {
+		color: #fff;
+	}
+	.otSlider_nav {
+		top: 41%;
+	}
+}
+@media only screen and (min-width : 42em) {
+	#otSlider {
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+	}
+	#otSlider img {
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+	}
+}
+@media only screen and (min-width : 55em) {
+	#otSlider {
+		margin: 0 auto 30px auto;
+	}
+}

@@ -1,0 +1,133 @@
+/*------------------------------------------------------------------------------*/
+/*																				*/
+/*	OTNewz v1.0RC1																	*/
+/*	http://www.oxythemes.com/products/templates/otnewz.html						*/
+/*																				*/
+/*	Copyright ©2013 OxyThemes.com												*/
+/*	All Rights Reserved															*/
+/*																				*/
+/*------------------------------------------------------------------------------*/
+
+/*==============================================================================*/
+/*	FOOTER																		*/
+/*==============================================================================*/
+#footer {
+	background: #1b1e1f;
+	color: #6a747a;
+}
+#footer a:link,
+#footer a:visited {
+	color: #d3dce9;
+}
+#footer a:hover,
+#footer a:active {
+	color: #6a747a;
+}
+.copyright,
+.footerLinks {
+	border-bottom: 1px solid #2b2f31;
+	font-size: 0.813rem;
+	margin: 0;
+	padding: 8px 10px;
+}
+.footerLinks li {
+	display: inline-block;
+}
+.footerLinks li a {
+	display: block;	
+	padding: 0 5px;
+}
+.footerLinks li:first-child a {
+	padding: 0 5px 0 0;
+}
+.creditsPowered,
+.creditsDesign {
+	display: inline-block;
+	font-size: 0.75rem;
+	vertical-align: top;
+}
+.creditsPowered {
+	padding: 8px 0 8px 10px;
+	width: 40%;
+}
+.creditsDesign {
+	margin-left: -4px;
+	padding: 8px 10px;
+	text-align: right;
+	width: 60%;
+}
+@media only screen and (min-width : 20em) {
+	.copyright,
+	.footerLinks {
+		padding: 12px 10px;
+	}
+	.footerLinks li a {
+		padding: 0 10px;
+	}
+	.footerLinks li:first-child a {
+		padding: 0 10px 0 0;
+	}
+	.creditsPowered {
+		padding: 12px 0 12px 10px;
+	}
+	.creditsDesign {
+		padding: 12px 10px;
+	}
+}
+@media only screen and (min-width : 30em) {
+	.copyright,
+	.footerLinks {
+		font-size: 0.875rem;
+		padding: 15px 20px;
+	}
+	.creditsPowered {
+		padding: 15px 0 15px 20px;
+	}
+	.creditsDesign {
+		padding: 15px 20px;
+	}
+}
+@media only screen and (min-width : 42em) {
+	.copyright,
+	.footerLinks {
+		border: 0;
+		display: inline-block;
+		padding: 15px 0;
+		width: 50%;
+	}
+	.footerLinks {
+		border-bottom: 0;
+		margin-left: -4px;
+		text-align: right;
+	}
+	.footerLinks li:last-child a {
+		padding: 0 0 0 10px;
+	}
+	.credits {
+		border-top: 1px solid #2b2f31;
+	}
+	.creditsPowered {
+		padding: 15px 0 15px 0;
+	}
+	.creditsDesign {
+		padding: 15px 0;
+	}
+}
+@media only screen and (min-width : 50em) {
+	.copyright,
+	.footerLinks {
+		padding: 25px 10px;
+	}
+	.credits {
+		padding: 5px 10px;
+	}
+}
+@media only screen and (min-width : 63.125em) {
+	.copyright,
+	.footerLinks {
+		padding: 25px 0;
+	}
+	.credits {
+		padding: 5px 0;
+	}
+}

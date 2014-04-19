@@ -1,0 +1,1 @@
+				<li><a href="{$story_url}"><span class="newEntryVotes"><b>{$link_shakebox_votes}</b></span> <span class="newEntryTitle">{$title_short}</span></a></li>

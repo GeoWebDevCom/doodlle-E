@@ -1,0 +1,1160 @@
+/*------------------------------------------------------------------------------*/
+/*																				*/
+/*	OTNewz v1.0RC1																*/
+/*	http://www.oxythemes.com/products/templates/otnewz.html						*/
+/*																				*/
+/*	Copyright ©2013 OxyThemes.com												*/
+/*	All Rights Reserved															*/
+/*																				*/
+/*------------------------------------------------------------------------------*/
+
+/*==============================================================================*/
+/*	GLOBAL STYLES																*/
+/*==============================================================================*/
+html {
+	background: #1b1e1f;
+	color: #6a747a;
+}
+body {
+	background: #f5f7fa;
+}
+a:link,
+a:visited {
+	color: #d74440;
+}
+a:hover,
+a:active {
+	color: #43494d;
+}
+.altLinkColor a:link,
+.altLinkColor a:visited {
+	color: #6a747a;
+}
+.altLinkColor a:hover,
+.altLinkColor a:active,
+.altLinkColor a.current,
+.altLinkColor .current>a {
+	color: #d74440;
+}
+button,
+input,
+select,
+textarea {
+	color: #6a747a;
+}
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+::-webkit-input-placeholder {
+	color: #b7bec2;
+}
+:-moz-placeholder {
+	color: #b7bec2;
+}
+::-moz-placeholder {
+	color: #b7bec2;
+}
+:-ms-input-placeholder {
+	color: #b7bec2;
+}
+/*==============================================================================*/
+/* COMMON STYLES and ELEMENTS													*/
+/*==============================================================================*/
+/*-------- HTML Forms Elements --------*/
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="search"] {
+	background: #fff;
+	border: 1px solid #d9e4e9;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus {
+	border: 1px solid #75b9f0;
+}
+input[type="url"][disabled=disabled] {
+	background: #fafbfc;
+	color: #b8bfc2;
+}
+.buttonDefault {
+	background: #fafbfc;
+	border-color: #e4ecef;
+	color: #6a747a;
+}
+.buttonDefault:link {
+	color: #6a747a;
+}
+.buttonDefault:hover,
+.buttonDefault:focus,
+.buttonDefault:active,
+.buttonDefault.active {
+	background: #f5f7f9;
+	border-color: #e4ecef;
+}
+.buttonAction {
+	background: #26a77a;
+	border-color: #26a77a;
+	color: #fff;
+}
+.buttonAction:link {
+	color: #fff;
+}
+.buttonAction:hover,
+.buttonAction:focus,
+.buttonAction:active,
+.buttonAction.active {
+	background: #32af85;
+	border-color: #32af85;
+}
+.buttonLink {
+	background: #d74440;
+	border-color: #d74440;
+	color: #fff;
+}
+.buttonLink:link {
+	color: #fff;
+}
+.buttonLink:hover,
+.buttonLink:focus,
+.buttonLink:active,
+.buttonLink.active {
+	background: #ce3734;
+	border-color: #ce3734;
+}
+.buttonFacebook {
+	background: #5e87c2;
+	border-color: #5e87c2;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.buttonFacebook:link {
+	color: #fff;
+}
+.buttonFacebook:hover,
+.buttonFacebook:focus,
+.buttonFacebook:active,
+.buttonFacebook.active {
+	background: #6d94c9;
+	border-color: #6d94c9;
+}
+.buttonTwitter {
+	background: #18b2e6;
+	border-color: #18b2e6;
+	color: #fff;
+}
+.buttonTwitter:link {
+	color: #fff;
+}
+.buttonTwitter:hover,
+.buttonTwitter:focus,
+.buttonTwitter:active,
+.buttonTwitter.active {
+	background: #24bbe9;
+	border-color: #24bbe9;
+}
+/*----------- Modal Windows -----------*/
+.modalHeader {
+	background: #fafbfc;
+	border-bottom: 1px solid #e4ecef;
+}
+.modalContent {
+	background: #fff;
+}
+.modalClose {
+	background: url(../images/default/iconsMisc.png) 0 -85px;
+}
+/*---------------- Tabs ---------------*/
+.tabLinks {
+	border-top: 1px solid #e4ecef;
+	border-bottom: 1px solid #e4ecef;
+}
+.tabLinks>li {
+	border-left: 1px solid #ebf1f3;
+}
+.tabLinks>li.current {
+	background: #fafbfc;
+}
+.tabLinks>li.current:before {
+	border-color: #d9e4e9 transparent transparent transparent;
+}
+.tabLinks>li.current:after {
+	border-color: #fafbfc transparent transparent transparent;
+}
+/*==============================================================================*/
+/* LAYOUT																		*/
+/*==============================================================================*/
+.contentBlock {
+	background: #fff;
+	border-bottom: 1px solid #e4ecef;
+}
+/*==============================================================================*/
+/* HEADER																		*/
+/*==============================================================================*/
+#header {
+	background: #1b1e1f;
+}
+/*---------------- Logo ---------------*/
+#logo {
+	border-bottom: 1px solid #0d0e0f;
+}
+/*------------ Join / Login -----------*/
+#navAcct {
+	border-top: 1px solid #2b2e30;
+}
+#navAcct>li>a {
+	color: #fff;
+}
+.navAcctLogin {
+	border-right: 1px solid #0d0e0f;
+}
+.navAcctRegister {
+	border-left: 1px solid #2b2e30;
+}
+/*------------ Account Menu -----------*/
+#navAcctMenu {
+	border-top: 1px solid #2b2e30;
+	color: #fff;
+}
+#navAcctMenu>li>a,
+#navAcctMenu>li>a:visited {
+	color: #fff;
+}
+#navAcctMenu>li>a:hover,
+#navAcctMenu>li>a:active {
+	color: #dee5ef;
+}
+#navAcctMenu>li>a:after {
+	background: #000 url(../images/default/iconsMisc.png) 4px 4px no-repeat;
+}
+#navAcctMenu>li:hover>a:after,
+#navAcctMenu>li.open>a:after {
+	background: #000 url(../images/default/iconsMisc.png) -44px 4px no-repeat;
+}
+#navAcctMenu ul:before {
+	border-color: transparent transparent #fff transparent;
+}
+#navAcctMenu ul {
+	background: #fff;
+	border: 1px solid #e4ecef;
+}
+#navAcctMenu ul>li {
+	border-bottom: 1px solid #eff4f5;
+}
+#navAcctMenu ul>li:nth-child(even) {
+	border-left: 1px solid #eff4f5;
+}
+/*------------ Popup Login ------------*/
+.modalLoginInfo {
+	background: #ffd;
+	border-bottom: 1px solid #e4ecef;
+}
+/*==============================================================================*/
+/* PRIMARY NAVIGATION															*/
+/*==============================================================================*/
+.navMainHeader {
+	background: #fafbfc;
+	border-bottom: 1px solid #e4ecef;
+}
+.navMainHeaderActive {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+	color: #d74440;
+}
+.navMainHeaderActive:after {
+	border-color: transparent transparent #d74440 transparent;
+}
+.navMain {
+	background: #d74440;
+}
+.navMain>li {
+	border-top: 1px solid #e16460;
+}
+.navMain>li.current>a {
+	background: #dc5450;
+	color: #f3c3c2;
+}
+.navMain a {
+	color: #fff;
+}
+/*==============================================================================*/
+/* CATEGORIES																	*/
+/*==============================================================================*/
+.navCatsHeader {
+	background: #fafbfc;
+	border-bottom: 1px solid #e4ecef;
+}
+.navCatsHeaderActive {
+	background: #fff;
+	border-bottom: 1px solid #d74440;
+	color: #d74440;
+}
+.navCatsHeaderActive:after {
+	border-color: transparent transparent #d74440 transparent;
+}
+.navCats {
+	background: #d74440;
+	color: #fff;
+}
+.navCats li {
+	border-top:1px solid #e16460;
+}
+.navCats a {
+	color: #fff;
+}
+.navCats a:hover,
+.navCats a:active {
+	color: #f1c0be;
+}
+.navCatsParent.sfHover>a,
+.navCatsParent:hover>a {
+	color: #f1c0be;
+}
+.navCatsParent>a:after {
+	border-color: #fff transparent transparent transparent;
+}
+.navCatsParent.sfHover>a:after {
+	border-color: transparent transparent #af0000 transparent;
+}
+.navCats ul {
+	background: #da4e4a;
+}
+.navCats li li 			{ border-top:1px solid #e16460; }
+.navCats ul ul 			{ background: #dd5753; }
+.navCats ul ul ul 		{ background: #df5d59; }
+.navCats li li li li 	{ border-top:1px solid #e3706c; }
+.navCats ul ul ul ul 	{ background: #e26965; }
+.navCats li li li li li	{ border-top:1px solid #e77c78; }
+/*==============================================================================*/
+/* CONTENT HEADING / SORTER														*/
+/*==============================================================================*/
+.xFolkHeader {
+	background: #fafbfc;
+	border-top: 1px solid #e4ecef;
+	border-bottom: 1px solid #e4ecef;
+}
+.entrySorter>li>a:after {
+	background: url(../images/default/iconsMisc.png) -56px -26px no-repeat;
+}
+.entrySorter>li:hover>a:after,
+.entrySorter>li.open>a:after {
+	background: url(../images/default/iconsMisc.png) -84px -26px no-repeat;
+}
+.entrySorter ul:before {
+	border-color: transparent transparent #d9e4e9 transparent;
+}
+.entrySorter ul:after {
+	border-color: transparent transparent #fafbfc transparent;
+}
+.entrySorter ul {
+	background: #fff;
+	border: 1px solid #e4ecef;
+}
+.entrySorter ul>li {
+	border-bottom: 1px solid #e4ecef;
+}
+.entrySorter ul>li:nth-child(odd) {
+	border-left: 1px solid #e4ecef;
+}
+.entrySorter ul>li:first-child {
+	background: #fafbfc;
+}
+.entrySorter li.current>a {
+	color: #d74440;
+}
+/*==============================================================================*/
+/* PAGINATION																	*/
+/*==============================================================================*/
+.pagination {
+	background: #fafbfc;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e4ecef;
+}
+.pagination>li>a {
+	background: #d74440;
+	color: #fff;
+}
+.pagination>li>a:hover {
+	background: #43494d;
+}
+.pagination>li.active>a {
+	background: #43494d;
+}
+/*==============================================================================*/
+/*	ENTRIES / LINKS SUMMARY & DETAILS											*/
+/*==============================================================================*/
+#xFolfEntries {
+	border-bottom: 1px solid #e4ecef;
+}
+.xfolkentry	{
+	background: #fff;
+	border-top: 3px solid #e4ecef;
+}
+.xfolkentryHeaderMeta {
+	color: #838e94;
+}
+.xfolkentryHeaderMeta a:link,
+.xfolkentryHeaderMeta a:visited,
+.xfolkentryDesc a:link,
+.xfolkentryDesc a:visited {
+	color: #838e94;
+	border-bottom: 1px dotted #a7afb4;
+}
+.xfolkentryHeaderMeta a:hover,
+.xfolkentryHeaderMeta a:active,
+.xfolkentryDesc a:hover,
+.xfolkentryDesc a:active {
+	color: #d74440;
+	border-bottom: 1px dotted #d74440;
+}
+/*------------ Vote Buttons -----------*/
+.xfolkentryVote	{
+	background: #fafbfc;
+	border: 1px solid #e4ecef;
+}
+.xfolkentryVote>li {
+	border-left: 1px solid #e4ecef;
+}
+/*----------- Entry Controls ----------*/
+li.xfolkentryCtrlOptions a:focus {
+	color: #6a747a;
+}
+.xfolkentryCtrlAlt ul ul:before {
+	border-color: transparent transparent #d9e4e9 transparent;
+}
+.xfolkentryCtrlAlt ul ul:after {
+	border-color: transparent transparent #fafbfc transparent;
+}
+.xfolkentryCtrlAlt ul ul {
+	background: #fafbfc;
+	border: 1px solid #dee7eb;
+}
+.xfolkentryCtrlAlt li li {
+	border-top: 1px solid #e4ecef;
+}
+/*------------ Share Entry ------------*/
+.xfolkentryShareTitle,
+.xfolkentryShareHeader {
+	border-bottom: 1px solid #e4ecef;
+}
+.xfolkentryShareTitle {
+	background: #fff;
+}
+.xfolkentryShareHeader {
+	background: #fafbfc;
+}
+.xfolkentryShareGroup li,
+.xfolkentryShareSites li {
+	border-bottom: 1px solid #e4ecef;
+}
+/*---------- Thumbnail Popup ----------*/
+#embedModal>div {
+	background: #fff url(../images/default/loader.gif) center no-repeat;
+}
+.embedModalClose {
+	background: #fff url(../images/default/iconsMisc.png) -20px -79px;
+}
+/*----------- Entry Details -----------*/
+#storyPage .xfolkentry	{
+	border-top: 0;
+	border-bottom: 1px solid #e4ecef;
+}
+/*----------- Entry Comments ----------*/
+.commentsListHeader {
+	background: #fcfdfd;
+	border-top: 1px solid #e4ecef;
+	border-bottom: 1px solid #e4ecef;
+}
+.commentContentWrap {
+	border: 1px solid #e4ecef;
+}
+.commentContentWrap:before {
+	border-color: transparent transparent #d9e4e9 transparent;
+}
+.commentContentWrap:after {
+	border-color: transparent transparent #fcfdfd transparent;
+}
+.commentHeader {
+	background: #fafbfc;
+	border-bottom: 1px solid #e4ecef;
+}
+.commentCtrlAlt {
+	background: #fafbfc;
+	border-top: 1px solid #e4ecef;
+}
+.commentCtrlOps.open>a {
+	color: #43494d;
+}
+.commentCtrlOps ul:before {
+	border-color: transparent transparent #d9e4e9 transparent;
+}
+.commentCtrlOps ul:after {
+	border-color: transparent transparent #fafbfc transparent;
+}
+.commentCtrlOps ul {
+	background: #fafbfc;
+	border: 1px solid #dee7eb;
+}
+.commentCtrlOps li {
+	border-top: 1px solid #e4ecef;
+}
+/*==============================================================================*/
+/*	MEMBERS LIST																*/
+/*==============================================================================*/
+#memberList>li {
+	border-top: 1px solid #eff4f5;
+}
+#memberList>li:nth-child(even) {
+	background: #fcfdfd;
+}
+.memberListRank {
+	background: #d74440;
+	border: 1px solid #fff;
+	color: #fff;
+}
+/*==============================================================================*/
+/*	GROUPS PAGES																*/
+/*==============================================================================*/
+#groups {
+	border-bottom: 1px solid #e4ecef;
+}
+.groupsIntro {
+	background: #fbfcfd;
+}
+.groupsEntry {
+	background: #fff;
+	border-top: 2px solid #e4ecef;
+}
+.groupsEntryHeaderMeta {
+	color: #838e94;
+}
+.groupsEntryHeaderMeta a:link,
+.groupsEntryHeaderMeta a:visited {
+	color: #838e94;
+	border-bottom: 1px dotted #a7afb4;
+}
+.groupsEntryHeaderMeta a:hover,
+.groupsEntryHeaderMeta a:active {
+	color: #d74440;
+	border-bottom: 1px dotted #d74440;
+}
+#group_storyPage .groupsEntry {
+	border-bottom: 1px solid #e4ecef;
+}
+.groupsMembers th {
+	background: #fcfdfd;
+}
+.groupsMembers tr,
+.groupsMembers th {
+	border-bottom: 1px solid #e4ecef;
+}
+/*==============================================================================*/
+/*	LIVE PAGES																	*/
+/*==============================================================================*/
+#live th {
+	background: #fcfdfd;
+	border-left: 1px solid #e4ecef;
+}
+#live td {
+	border-top: 1px solid #eff4f5;
+	border-left: 1px solid #eff4f5;
+}
+/*==============================================================================*/
+/*	RSS FEEDS PAGE																*/
+/*==============================================================================*/
+#rssFeeds {
+	background: #fff;
+}
+#rssFeeds li {
+	border-top: 1px solid #eff4f5;
+}
+/*==============================================================================*/
+/*	SUBMISSION & EDIT FORMS														*/
+/*==============================================================================*/
+.formBox {
+	border: 1px solid #e4ecef;
+}
+.formBoxHeader {
+	background: #fafbfc;
+	border-bottom: 1px solid #e4ecef;
+}
+.formError {
+	background: #f9d8d7;
+}
+.formErrorHeader {
+	border-bottom: 1px solid #f4cbca;
+}
+/*------------ Submit Form ------------*/
+.submitStep {
+	border-bottom: 1px solid #e4ecef;
+}
+.submitStep li {
+	background: #fff;
+	border: 1px solid #e4ecef;
+}
+.submitStep li.current {
+	background: #d74440;
+	border: 1px solid #d74440;
+	color: #fff;
+}
+.submitURLField {
+	background: #fef9c3;
+}
+.submitURLField:before {
+	border-color: transparent transparent #fef9c3 transparent;
+}
+/*==============================================================================*/
+/*	OTslider MODULE																*/
+/*==============================================================================*/
+#otSlider {
+	background: #1b1e1f;
+}
+/*==============================================================================*/
+/*	SIDEBAR BLOCKS / COMPONENTS													*/
+/*==============================================================================*/
+.sidebarBlockHeader {
+	background: #1b1e1f;
+	border-bottom: 3px solid #d74440;
+	color: #d3dce9;
+}
+.sidebarTabLinks {
+	background: #1b1e1f;
+	border-bottom: 3px solid #d74440;
+}
+.sidebarTabLink a:link,
+.sidebarTabLink a:visited,
+.sidebarTabLink a:hover,
+.sidebarTabLink a:active {
+	color: #fff !important;
+}
+.sidebarTabLink a {
+	background: #2b3031;
+}
+.sidebarTabLink a.active {
+	background: #d74440;
+}
+.sidebarBlockContent,
+.sidebarTabPanel {
+	background: #fff;
+	border-right: 1px solid #e4ecef;
+	border-bottom: 1px solid #e4ecef;
+	border-left: 1px solid #e4ecef;
+}
+.sidebarList li {
+	border-top: 1px solid #eff4f5;
+}
+/*----------- Social Sharing ----------*/
+.socialShare {
+	background: #fff;
+	border: 1px solid #e4ecef;
+}
+.socialShare li {
+	border-left: 1px solid #eff4f5;
+}
+/*------------ Site Search ------------*/
+.siteSearchButton {
+	background: #fafbfc;
+}
+#siteSearch input[type="submit"] {
+	background: transparent;
+	border-top: 1px solid #d9e4e9;
+	border-right: 0;
+	border-bottom: 1px solid #d9e4e9;
+	border-left: 0;
+	color: #6a747a;
+}
+#aSearchLink {
+	background: #fafbfc;
+	border-top: 1px solid #d9e4e9;
+	border-right: 1px solid #d9e4e9;
+	border-bottom: 1px solid #d9e4e9;
+	border-left: 1px solid #e4ecef;
+}
+/*------------ New Entries ------------*/
+.newEntryVotes b {
+	background: #d74440;
+	color: #fff;
+}
+/*---------- Latest Comments ----------*/
+#latestComments p>a:before,
+#latestComments p>a:after {
+	color: #a7afb4;
+}
+/*-------------- Top Tags -------------*/
+#topTags a:link,
+#topTags a:visited,
+#topTags a:hover,
+#topTags a:active {
+	color: #fff;
+}
+#topTags a {
+	background: #d74440;
+}
+#topTags a:hover,
+#topTags a:active {
+	background: #43494d;
+}
+#topTags a:before {
+	border-color: transparent #d74440 transparent transparent;
+}
+#topTags a:hover:before,
+#topTags a:active:before {
+	border-color: transparent #43494d transparent transparent;
+}
+#topTags a:after {
+	background: #fff;
+}
+/*------------- Statistics ------------*/
+#siteStats dt,
+#siteStats dd {
+	border-bottom: 1px solid #eff4f5;
+}
+/*==============================================================================*/
+/*	FOOTER																		*/
+/*==============================================================================*/
+#footer {
+	background: #1b1e1f;
+	color: #6a747a;
+}
+#footer a:link,
+#footer a:visited {
+	color: #d3dce9;
+}
+#footer a:hover,
+#footer a:active {
+	color: #6a747a;
+}
+.copyright,
+.footerLinks {
+	border-bottom: 1px solid #2b2f31;
+}
+@media only screen and (min-width : 20em) {
+	/*==========================================================================*/
+	/* COMMON STYLES and ELEMENTS												*/
+	/*==========================================================================*/
+	.otFieldLabel {
+		background: #fafbfc;
+		border: 1px solid #d9e4e9;
+	}
+	select,
+	textarea,
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"] {
+		border-left: 0;
+	}
+	/*==========================================================================*/
+	/* HEADER																	*/
+	/*==========================================================================*/
+	#logo {
+		border: 0;
+	}
+	#navAcct,
+	#navAcctMenu {
+		border: 0;
+	}
+	.navAcctRegister,
+	.navAcctLogin {
+		border: 0;
+	}
+	.navAcctRegister {
+		background: #d74440;
+	}
+	.navAcctRegister:hover {
+		background: #dc5450;
+	}
+	/*==========================================================================*/
+	/* CATEGORIES																*/
+	/*==========================================================================*/
+	.navCats li li>a			{ border-left: 10px solid #d74440; }
+	.navCats li li li>a 		{ border-left: 20px solid #da4e4a; }
+	.navCats li li li li>a    	{ border-left: 30px solid #dd5753; }
+	.navCats li li li li li>a 	{ border-left: 40px solid #df5d59; }
+	.navCats li li li li li li>a{ border-left: 40px solid #e26965; }
+	/*==========================================================================*/
+	/*	ENTRIES / LINKS SUMMARY & DETAILS										*/
+	/*==========================================================================*/
+	.xfolkentryVote	{
+		border-left: 0;
+	}
+	.xfolkentryVote>li {
+		border-top: 1px solid #e4ecef;
+		border-left: 0;
+	}
+	.xfolkentryShareSites li:nth-child(even) {
+		border-left: 1px solid #e4ecef;
+	}
+	.xfolkentryShareSites li:nth-last-child(2) {
+		border-bottom: 0;
+	}
+	.commentCtrl {
+		background: #fcfdfd;
+	}
+	.commentCtrl>li {
+		border-left: 1px solid #e4ecef;
+	}
+	#comment_content {
+		border: 1px solid #d9e4e9;
+	}
+	#comment_content:focus {
+		border: 1px solid #75b9f0;
+	}
+	/*==========================================================================*/
+	/*	RSS FEEDS PAGE															*/
+	/*==========================================================================*/
+	#rssFeeds li {
+		border-top: 0;
+	}
+	.rssFeedsCat {
+		background: #fafbfc;
+		border: 1px solid #d9e4e9;
+	}
+	/*==========================================================================*/
+	/*	SUBMISSION & EDIT FORMS													*/
+	/*==========================================================================*/
+	#submitOne input[type="url"] {
+		border: 1px solid #d9e4e9;
+		border-right: 0;
+	}
+	#submitOne input[type="url"]:focus {
+		border: 1px solid #75b9f0;
+		border-right: 0;
+		-moz-box-shadow: inset 0 1px 1px rgba(117,185,240,.3), 0 0 8px rgba(82,168,236,.6);
+		-webkit-box-shadow: inset 0 1px 1px rgba(117,185,240,.3), 0 0 8px rgba(82,168,236,.6);
+		box-shadow: inset 0 1px 1px rgba(117,185,240,.3), 0 0 8px rgba(82,168,236,.6);
+	}
+	#submitTwo .otFieldLabel {
+		background: #fff;
+		border: 0;
+	}
+	#submitTwo select,
+	#submitTwo textarea,
+	#submitTwo input[type="text"],
+	#submitTwo input[type="url"] {
+		border: 1px solid #d9e4e9;
+	}
+	#submitTwo select:focus,
+	#submitTwo textarea:focus,
+	#submitTwo input[type="text"]:focus,
+	#submitTwo input[type="url"]:focus {
+		border: 1px solid #75b9f0;
+		-moz-box-shadow: inset 0 1px 1px rgba(117,185,240,.3), 0 0 8px rgba(82,168,236,.6);
+		-webkit-box-shadow: inset 0 1px 1px rgba(117,185,240,.3), 0 0 8px rgba(82,168,236,.6);
+		box-shadow: inset 0 1px 1px rgba(117,185,240,.3), 0 0 8px rgba(82,168,236,.6);
+	}
+	/*==========================================================================*/
+	/*	SIDEBAR BLOCKS / COMPONENTS												*/
+	/*==========================================================================*/
+	#siteSearch input[type="search"] {
+		border-left: 1px solid #d9e4e9;
+	}
+	#siteSearch input[type="search"]:focus {
+		border: 1px solid #75b9f0;
+	}
+	.sidebarAds125 li img {
+		border: 5px solid #e6ebf2;
+	}
+}
+@media only screen and (min-width : 30em) {
+	/*==========================================================================*/
+	/* PRIMARY NAVIGATION														*/
+	/*==========================================================================*/
+	.navMain {
+		background: #fff;
+		border-bottom: 1px solid #e4ecef;
+	}
+	.navMain>li {
+		border-top: 0;
+		border-left: 1px solid #eff4f5;
+	}
+	.navMain>li.current>a {
+		background: #fff;
+		color: #d74440;
+	}
+	.navMain>li>a:before {
+		background: url(../images/default/iconsNavPrimary.png) no-repeat;
+	}
+	/*==========================================================================*/
+	/* CATEGORIES																*/
+	/*==========================================================================*/
+	.navCatsHeader {
+		background: #fff;
+	}
+	/*==========================================================================*/
+	/*	ENTRIES / LINKS SUMMARY & DETAILS										*/
+	/*==========================================================================*/
+	.commentContentWrap:before {
+		border-color: transparent #d9e4e9 transparent transparent;
+	}
+	.commentContentWrap:after {
+		border-color: transparent #fcfdfd transparent transparent;
+	}
+	/*==========================================================================*/
+	/*	MEMBERS LIST															*/
+	/*==========================================================================*/
+	.memberListHeader {
+		background: #fcfdfd;
+		border-bottom: 1px solid #eff4f5;
+	}
+	/*==========================================================================*/
+	/*	SUBMISSION & EDIT FORMS													*/
+	/*==========================================================================*/
+	#submitTwo .otFieldLabel {
+		background: #fafbfc;
+		border-top: 1px solid #d9e4e9;
+		border-bottom: 1px solid #d9e4e9;
+		border-left: 1px solid #d9e4e9;
+		border-right: 0;
+	}
+	/*==========================================================================*/
+	/*	OTslider MODULE															*/
+	/*==========================================================================*/
+	.otSliderTitle {
+		background: rgba(0,0,0,0.5);
+	}
+	a .otSliderTitle {
+		color: #fff;
+	}
+}
+@media only screen and (min-width : 33.75em) {
+	/*==========================================================================*/
+	/*	ENTRIES / LINKS SUMMARY & DETAILS										*/
+	/*==========================================================================*/
+	.commentCtrl>li {
+		border: 0;
+	}
+}
+@media only screen and (min-width : 40em) {
+	/*==========================================================================*/
+	/* PRIMARY NAVIGATION														*/
+	/*==========================================================================*/
+	.navMain a:link,
+	.navMain a:visited {
+		color: #6a747a;
+	}
+	.navMain a:hover,
+	.navMain a:active {
+		color: #d74440;
+	}
+}
+@media only screen and (min-width : 42em) {
+	/*==========================================================================*/
+	/* LAYOUT																	*/
+	/*==========================================================================*/
+	.contentBlock {
+		border-right: 1px solid #e4ecef;
+		border-left: 1px solid #e4ecef;
+	}
+	/*==========================================================================*/
+	/* PRIMARY NAVIGATION														*/
+	/*==========================================================================*/
+	.navMain {
+		border-right: 1px solid #e4ecef;
+		border-left: 1px solid #e4ecef;
+	}
+	/*==========================================================================*/
+	/* CATEGORIES																*/
+	/*==========================================================================*/
+	.navCatsHeader {
+		border-right: 1px solid #e4ecef;
+		border-left: 1px solid #e4ecef;
+	}
+	.navCatsHeaderActive {		
+		border-bottom: 1px solid #d74440;
+	}
+	/*==========================================================================*/
+	/* CONTENT HEADING / SORTER													*/
+	/*==========================================================================*/
+	.xFolkHeader {
+		border: 1px solid #e4ecef;
+	}
+	/*==========================================================================*/
+	/* PAGINATION																*/
+	/*==========================================================================*/
+	.pagination {
+		border-right: 1px solid #e4ecef;
+		border-bottom: 1px solid #e4ecef;
+		border-left: 1px solid #e4ecef;
+	}
+	/*==========================================================================*/
+	/*	ENTRIES / LINKS SUMMARY & DETAILS										*/
+	/*==========================================================================*/
+	.xfolkentry	{
+		border-right: 1px solid #e4ecef;
+		border-left: 1px solid #e4ecef;
+	}
+	/*==========================================================================*/
+	/*	GROUPS PAGES															*/
+	/*==========================================================================*/
+	.groupsIntro,
+	.groupsEntry {
+		border-right: 1px solid #e4ecef;
+		border-left: 1px solid #e4ecef;
+	}
+	/*==========================================================================*/
+	/*	RSS FEEDS PAGE															*/
+	/*==========================================================================*/
+	#rssFeeds {
+		border-right: 1px solid #e4ecef;
+		border-left: 1px solid #e4ecef;
+	}
+	/*==========================================================================*/
+	/*	FOOTER																	*/
+	/*==========================================================================*/
+	.copyright,
+	.footerLinks {
+		border: 0;
+	}
+	.footerLinks {
+		border-bottom: 0;
+	}
+	.credits {
+		border-top: 1px solid #2b2f31;
+	}
+}
+@media only screen and (min-width : 50em) {
+	/*==========================================================================*/
+	/* PRIMARY NAVIGATION														*/
+	/*==========================================================================*/
+	.navMain {
+		border-right: 0;
+		border-left: 0;
+	}
+	/*==========================================================================*/
+	/* CATEGORIES																*/
+	/*==========================================================================*/
+	.navCatsHeader {
+		border-right: 0;
+		border-left: 0;
+	}
+	.navCatsHeaderActive {
+		border-bottom: 1px solid #d74440;
+	}
+	/*==========================================================================*/
+	/*	ENTRIES / LINKS SUMMARY & DETAILS										*/
+	/*==========================================================================*/
+	.commentCtrl>li {
+		border-left: 1px solid #e4ecef;
+	}
+	/*==========================================================================*/
+	/*	SIDEBAR BLOCKS / COMPONENTS												*/
+	/*==========================================================================*/
+	.sidebarAds125 li img {
+		border: 0;
+	}
+}
+@media only screen and (min-width : 55em) {
+	/*==========================================================================*/
+	/* PRIMARY NAVIGATION														*/
+	/*==========================================================================*/
+	.navMain>li.current:after {
+		border-color: transparent transparent #d74440 transparent;
+	}
+	/*==========================================================================*/
+	/* CATEGORIES																*/
+	/*==========================================================================*/
+	.navCats>li {
+		border: 0;
+	}
+	.navCats ul {
+		background: #d74440;
+		border-top: 1px solid #e16460;
+	}
+	.navCats ul li {
+		border-top: 1px solid #e16460;
+	}
+	.navCats ul li:first-child {
+		border-top: 0;
+	}
+	.navCats ul li.navCatsParent>a:after {	
+		border-color: transparent transparent transparent #fff;
+	}
+	.navCats ul li.navCatsParent.sfHover>a:after {
+		border-color: transparent transparent transparent #af0000;
+	}
+	.navCats ul li.sfHover,
+	.navCats ul li:hover {
+		background: #da4e4a;
+	}
+	.navCats ul ul,
+	.navCats ul ul ul,
+	.navCats ul ul ul ul,
+	.navCats ul ul ul ul ul {
+		background: #d74440;
+		border-top: 0;
+	}
+	.navCats li li li,
+	.navCats li li li li,
+	.navCats li li li li li {
+		border-top:1px solid #e16460;
+	}
+	.navCats li li>a,
+	.navCats li li li>a,
+	.navCats li li li li>a,
+	.navCats li li li li li>a,
+	.navCats li li li li li li>a {
+		border-left: 0
+	}
+	.navCatsDivider {
+		background: #e16460;
+	}
+	/*==========================================================================*/
+	/*	ENTRIES / LINKS SUMMARY & DETAILS										*/
+	/*==========================================================================*/
+	.commentCtrl>li {
+		border: 0;
+	}
+	/*==========================================================================*/
+	/*	SIDEBAR BLOCKS / COMPONENTS												*/
+	/*==========================================================================*/
+	.sidebarAds125 li img {
+		border: 5px solid #e6ebf2;
+	}
+}
+@media only screen and (min-width : 60em) {
+	/*==========================================================================*/
+	/*	SIDEBAR BLOCKS / COMPONENTS												*/
+	/*==========================================================================*/
+	.sidebarBlock.sidebarAds125	{
+		background: #fff;
+	}
+	.sidebarAds125 li img {
+		border: 5px solid #ebeff5;
+	}
+}
+@media only screen and (min-width : 61.25em) {
+	/*==========================================================================*/
+	/*	SIDEBAR BLOCKS / COMPONENTS												*/
+	/*==========================================================================*/
+	.sidebarBlock.sidebarAds300	{
+		background: #fff;
+	}
+}
+@media only screen and (min-width : 62.5em) {
+	/*==========================================================================*/
+	/* PRIMARY NAVIGATION														*/
+	/*==========================================================================*/
+	.navMain {
+		border-right: 1px solid #e4ecef;
+		border-left: 1px solid #e4ecef;
+	}
+	/*==========================================================================*/
+	/*	SIDEBAR BLOCKS / COMPONENTS												*/
+	/*==========================================================================*/
+	.sidebarAds125 li img {
+		border: 7px solid #ebeff5;
+	}
+}
