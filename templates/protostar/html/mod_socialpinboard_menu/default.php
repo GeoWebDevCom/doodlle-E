@@ -447,7 +447,7 @@ var board_name_exist = "<?php echo JTEXT::_('MOD_SOCAILPINBOARD_MENU_BOARD_NAME_
 <script src="components/com_socialpinboard/javascript/jquery.mousewheel.js"></script>
 
                                 <script type="text/javascript">
-                                    var currencyvalue = document.getElementById("currencyvalue").value;
+                                    var currencyvalue = <?php echo $currency; ?>;
                                      scr(document).ready(function($){
 
                                         ScrapePinDialog.setup();
@@ -1580,7 +1580,7 @@ var board_name_exist = "<?php echo JTEXT::_('MOD_SOCAILPINBOARD_MENU_BOARD_NAME_
     var tagmate=tagmate||{
         USER_TAG_EXPR:"@\\w+(?: \\w*)?",
         HASH_TAG_EXPR:"#\\w+",
-        USD_TAG_EXPR:"\\"+currencyvalue+"(?:(?:\\d{1,3}(?:\\,\\d{3})+)|(?:\\d+))(?:\\.\\d{2})?",
+        USD_TAG_EXPR:"\\<?php echo $currency; ?>(?:(?:\\d{1,3}(?:\\,\\d{3})+)|(?:\\d+))(?:\\.\\d{2})?",
 
         filter_options:function(a,c){
             for(var d=[],e=0;e<a.length;e++){

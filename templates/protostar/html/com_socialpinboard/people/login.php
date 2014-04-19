@@ -38,6 +38,7 @@ $sitetitle = $config->get('sitename');
 }
 ?>
 <script type="text/javascript">
+var scroll_to_top="<?php echo JTEXT::_('COM_SOCAILPINBOARD_HEADER_SCROLL_TO_TOP'); ?>";
 function onClickEvent()
 {   
 document.getElementById("passwordfield").style.display='none';
